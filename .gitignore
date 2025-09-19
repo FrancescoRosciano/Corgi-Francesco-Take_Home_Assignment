@@ -4,4 +4,3 @@ final_folder/
 **/__pycache__/
 *.pyc
 .DS_Store
-.env
