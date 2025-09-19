@@ -1,0 +1,17 @@
+{
+  "carrier": "Embroker",
+  "program": "Tech E&O / Cyber (with Everspan)",
+  "paper": "Surplus lines (Everspan Indemnity Company)",
+  "states_available": "Not specified (US)",
+  "form_codes_and_edition": "Not publicly listed",
+  "specimen_pdf_link": "https://ess.embroker.com/wp-content/uploads/2024/06/Access_Tech-EO_Cyber_Sell-Sheet_May-2024.pdf",
+  "product_page_link": "https://www.embroker.com/coverage/tech-errors-omissions/",
+  "min_max_limit": "Up to $5m (retentions starting at $5k)",
+  "target_segments": "Private companies with revenues up to $300m, including tech startups, software developers, IT consultants and service providers",
+  "notable_features": "Comprehensive protection against technology liabilities and data‑related risks; covers product mistakes, unmet contractual obligations, professional negligence, defects/errors in software or hardware, and product launch delays; express breach‑of‑contract and liability assumed under contract; software code infringement coverage; war/hostile actions carve‑back; full policy limits for system damage, regulatory actions (including GDPR/CCPA), PCI fines, cyber extortion, business income and dependent business income; sublimits for reputational harm ($1m), social engineering ($500k), telecommunications fraud ($1m) and bricking ($500k + $100k betterment); duty‑to‑defend form, full prior acts, worldwide coverage",
+  "last_verified_date": "2025-09-17",
+  "pdf_files": [
+    "Embroker - Tech E&O - Cyber (with Everspan).pdf"
+  ],
+  "source_csv_row": 17
+}

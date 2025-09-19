@@ -1,0 +1,17 @@
+{
+  "carrier": "AXA XL",
+  "program": "CyberRiskConnect (Technology & Cyber)",
+  "paper": "Surplus lines (AXA XL Catlin, various domestic carriers)",
+  "states_available": "Not specified (US & global)",
+  "form_codes_and_edition": "TRD 050 0619",
+  "specimen_pdf_link": "https://xaxl.com/-/media/axaxl/files/pdfs/insurance/cyber-north-america/cyberriskconnectpolicyform_axaxl_trd-050-0619.pdf",
+  "product_page_link": "https://axaxl.com/insurance/products/cyber-insurance",
+  "min_max_limit": "Up to $25M (E&O), Up to $15M (Cyber/Tech E&O/Media for 100M+ revenue companies)",
+  "target_segments": "Technology product and service providers, professional services firms, media companies, mid-sized and multinational companies",
+  "notable_features": "Combined professional liability and cyber coverage; insuring agreements for technology products/services, professional services, media, privacy and security liability; first‑party cover for data breach response, business interruption/extra expense, data recovery and cyber extortion; optional enhancements (PCI, social engineering, system failure, dependent BI); risk mitigation resources and access to breach response partners; customized coverage, primary and excess",
+  "last_verified_date": "2025-09-17",
+  "pdf_files": [
+    "AXA XL - CyberRiskConnect (Technology & Cyber).pdf"
+  ],
+  "source_csv_row": 6
+}
