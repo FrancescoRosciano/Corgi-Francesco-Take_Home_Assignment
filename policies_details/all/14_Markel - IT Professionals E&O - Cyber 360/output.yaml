@@ -1,0 +1,116 @@
+policy:
+  metadata:
+    carrier: "Markel International Insurance Company Limited"
+    product: "Technology Combined — Professional liability section"
+    form_code: null
+    edition_date: "2024-05"
+    jurisdiction: "GB-UK"
+    source:
+      link: "https://content.markel.com/api/public/content/specimen-wording-and-product-information-technology-combined?v=b39af7c2"
+      type: "carrier_pdf"
+      citation: "cover footer '© 2024 — 05/24 RCT v1', p. 2"
+
+  compare:
+    trigger: "claims_made_and_reported"
+    duty: "hybrid"
+    defense_costs: "mixed"
+    consent_to_settle:
+      required: true
+      hammer: "hard_100"
+      details: "Insurer may take over or settle; if you contest a claim we think should be compromised/settled, we are not liable for any loss arising from your refusal to settle."
+      cite: "§ Claims conditions — Defence of claims, p. 12–14"
+
+  limits:
+    per_claim_limit:
+      amount: null
+      currency: "GBP"
+      cite: "§ Professional liability — What we will pay, p. 19–20"
+    aggregate_limit:
+      amount: null
+      currency: "GBP"
+      cite: "§ Professional liability — What we will pay, p. 19–20"
+    retention:
+      amount: null
+      currency: "GBP"
+      applies_to: "each_claim"
+      cite: "§ Professional liability — What we will pay (Excess applies), p. 19–20"
+    sublimits:
+      - name: "Crisis response service (PR)"
+        amount: 50000
+        currency: "GBP"
+        applies_to: "aggregate"
+        cite: "§ Professional liability — Public relations crisis management / What we will pay, p. 20"
+      - name: "Loss of documents"
+        amount: 100000
+        currency: "GBP"
+        applies_to: "aggregate"
+        cite: "§ Professional liability — Loss of documents / What we will pay, p. 20–21"
+      - name: "Court attendance (director per day)"
+        amount: 500
+        currency: "GBP"
+        applies_to: "each_claim"
+        cite: "§ Professional liability — Compensation for court attendance, p. 21"
+      - name: "Court attendance (employee per day)"
+        amount: 250
+        currency: "GBP"
+        applies_to: "each_claim"
+        cite: "§ Professional liability — Compensation for court attendance, p. 21"
+
+  coverage:
+    tech_services_eo: { covered: true, summary: "Civil liability for claims first made and reported, arising from wrongful acts in the provision of your technology products and services; includes mitigation costs and outstanding invoices (conditions apply).", cite: "§ Professional liability — What is covered (a–c), p. 19–20" }
+    media_liability: { covered: true, summary: "Defamation (libel, slander) included within civil liability when arising from technology products and services.", cite: "§ Professional liability — What is covered (a. Civil liability includes libel/slander/defamation), p. 19" }
+    ip_infringement: { covered: true, summary: "Civil liability includes infringement of intellectual property rights and breach of confidentiality arising from technology products and services.", cite: "§ Professional liability — What is covered (a. Civil liability), p. 19" }
+    privacy: { covered: true, summary: "Breach of confidentiality or privacy expressly included in civil liability coverage.", cite: "§ Professional liability — What is covered (a. Civil liability includes breach of confidentiality or privacy), p. 19" }
+    network_security: { covered: true, summary: "Cyber liability is excluded, but there is a carve-back when the cyber incident arises from your technology products and services.", cite: "§ Professional liability — Exclusion 28 (Cyber liability) with carve-back, p. 26" }
+    business_interruption:
+      covered: false
+      dependent_providers: false
+      system_failure: false
+      cite: "§ Professional liability — What is covered (liability only; no first-party BI), p. 19"
+    regulatory: { covered: false, summary: "No regulatory defence/penalties in this section; such cover appears under Entity defence.", cite: "§ Entity defence — What is covered (including Data protection), p. 56–57" }
+    pci: { covered: false, summary: "No PCI assessments/fines cover in this section; claims involving credit/debit/payment card misuse are excluded.", cite: "§ Professional liability — Exclusion 22 (Credit, debit, charge and store cards), p. 26" }
+    breach_response: { covered: true, summary: "Public relations crisis management (crisis response service) sublimit available when a wrongful act could lead to adverse media.", cite: "§ Professional liability — Public relations crisis management / What we will pay, p. 20" }
+    cyber_extortion: { covered: false, summary: "Not provided under this section; addressed under Cyber and data risks (separate section).", cite: "§ Professional liability — Exclusion 28 (Cyber liability), p. 26" }
+    social_engineering: { covered: false, summary: "No first-party funds transfer or social engineering cover in this liability section.", cite: "§ Professional liability — What is covered (liability only; no first-party loss), p. 19" }
+    contractual_liability_carveback: { exists: true, summary: "Unintentional breach of contract is defined; ‘Outstanding invoices’ mitigation coverage where pursuing fees would likely trigger a larger claim.", cite: "§ Professional liability — Definitions (Breach of contract); What is covered (c. Outstanding invoices), p. 28–29; p. 19" }
+
+  exclusions:
+    - label: "Fines and penalties"
+      effect: "No cover for fines, penalties, or non-compensatory damages."
+      carvebacks: "None noted in this section."
+      cite: "§ Professional liability — What is not covered (1. Fines and penalties), p. 21"
+    - label: "Pollution"
+      effect: "Liability arising from pollution excluded."
+      carvebacks: "Pollution allocation noted under What we will pay; exclusion otherwise bars cover."
+      cite: "§ Professional liability — Exclusion 13 (Pollution), p. 23"
+    - label: "Retroactive date"
+      effect: "No cover for work prior to the retroactive date."
+      carvebacks: ""
+      cite: "§ Professional liability — Exclusion 12 (Retroactive date), p. 23"
+    - label: "Publication prohibited by law"
+      effect: "Liability from publishing material prohibited by law excluded."
+      carvebacks: ""
+      cite: "§ Professional liability — Exclusion 20 (Prohibited material), p. 25–26"
+    - label: "Email/social media"
+      effect: "Liability involving email or social media excluded."
+      carvebacks: "Carve-back when used in connection with your technology products and services."
+      cite: "§ Professional liability — Exclusion 21 (Email/social media), p. 26"
+    - label: "Cyber liability"
+      effect: "Cyber incident, virus transmission, or data recovery excluded."
+      carvebacks: "Carve-back if arising from your technology products and services."
+      cite: "§ Professional liability — Exclusion 28 (Cyber liability), p. 26–27"
+
+  definitions:
+    professional_services: { text: "Scope is framed as ‘technology products and services’ rather than a standalone ‘professional services’ term.", cite: "§ Professional liability — Definitions (Technology products and services), p. 29–30" }
+    technology_services: { text: "Services performed by you (or on your behalf) in connection with your business that we have accepted; also goods/products (and containers, labelling, instructions) you sell/supply/process/install/service/repair/alter/treat/renovate.", cite: "§ Professional liability — Definitions (Technology products and services), p. 29–30" }
+    wrongful_act: { text: "Any civil liability arising from negligence; breach of contract; breach of confidentiality or privacy; breach of copyright; libel, slander or defamation; breach of intellectual property rights; or any other act/error/omission during provision of technology products and services.", cite: "§ Professional liability — What is covered (a. Civil liability lists included perils), p. 19" }
+
+  conditions:
+    notice_reporting: { summary: "Claims must be first made against you and reported within the policy period; you must not admit liability or settle without written consent; insurer may take over defence/settlement.", cite: "§ Professional liability — What is covered (claims-made and reported), p. 19; § Claims conditions — Defence/handling, p. 12–14" }
+    extended_reporting: { available: true, duration: "30 days", cite: "§ Professional liability — i. Discovery period (30 days), p. 21" }
+    territory: { summary: "Governed by the law of England & Wales or Scotland (as applicable); proceedings in courts of the relevant part of the UK.", cite: "§ Choice of law, p. 8–9; § Professional liability — c. Outstanding invoices (jurisdiction example), p. 19" }
+
+  unknowns:
+    - item: "Numerical limits (per claim and aggregate) and excess/retention amounts"
+      searched: ["site:markel.com \"Technology Combined\" schedule limits", "Markel Technology Combined policy schedule specimen", "policy schedule limits professional liability Markel UK"]
+      next_best_sources: ["Policy schedule issued with the bound policy", "Markel UK broker/product page with schedule example", "Broker placement summary noting selected limits/excess"]

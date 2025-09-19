@@ -1,0 +1,17 @@
+{
+  "carrier": "Swiss Re Corporate Solutions",
+  "program": "Technology Liability Insurance",
+  "paper": "Not specified",
+  "states_available": "Not specified",
+  "form_codes_and_edition": "Not specified (08-24)",
+  "specimen_pdf_link": "https://corporatesolutions.swissre.com/dam/jcr:39151bac-841e-49df-b4ed-e12525243a8a/swiss-re-corporate-solutions-technology-liability-insurance-policy-wording2024.pdf",
+  "product_page_link": "Not found",
+  "min_max_limit": "Not specified",
+  "target_segments": "Technology companies",
+  "notable_features": "Professional Liability, Public Liability, Technology Product Liability sections, various extensions including intellectual property, defamation, emergency costs",
+  "last_verified_date": "September 2025",
+  "pdf_files": [
+    "Swiss Re Corporate Solutions - Technology Liability Insurance.pdf"
+  ],
+  "source_csv_row": 18
+}

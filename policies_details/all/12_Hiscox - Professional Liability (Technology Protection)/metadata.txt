@@ -1,0 +1,18 @@
+{
+  "carrier": "Hiscox",
+  "program": "Professional Liability (Technology Protection)",
+  "paper": "Likely admitted (via Hiscox Insurance Company)",
+  "states_available": "Not specified (US)",
+  "form_codes_and_edition": "DPL P001 CW 01/10",
+  "specimen_pdf_link": "https://www.hiscox.com/documents/pl-sample-policy-wording.pdf",
+  "product_page_link": "https://www.hiscox.com/documents/brokers/tech/9896_us_technology_protection_factsheet.pdf",
+  "min_max_limit": "Up to $10m (min premium $999)",
+  "target_segments": "IT consultants, software/hardware suppliers, technology companies",
+  "notable_features": "Claims‑made E&O coverage; affirmative breach‑of‑contract coverage; broad IP infringement and media coverage; negligence for network security/privacy incidents; optional cyber modules (breach costs, privacy liability, hacker damage, business interruption, extortion); risk management and breach response services",
+  "last_verified_date": "2025-09-17",
+  "pdf_files": [
+    "Hiscox - Professional Liability (Technology Protection) - Factsheet.pdf",
+    "Hiscox - Professional Liability (Technology Protection) - Policy Wording.pdf"
+  ],
+  "source_csv_row": 3
+}

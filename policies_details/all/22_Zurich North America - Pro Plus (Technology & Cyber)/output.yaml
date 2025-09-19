@@ -1,0 +1,89 @@
+policy:
+  metadata:
+    carrier: "Zurich North America"
+    product: "Pro Plus (Technology & Cyber)"
+    form_code: null
+    edition_date: ""
+    jurisdiction: null
+    source:
+      link: "https://www.oid.ok.gov/wp-content/uploads/2019/11/071017_MarchMonthlyReport.pdf"
+      type: "other"
+      citation: "Zurich Pro Plus E&O program forms filed and approved (ZURC-130846495), p. 203"
+
+  compare:
+    trigger: "unclear"
+    duty: "unclear"
+    defense_costs: "unclear"
+    consent_to_settle:
+      required: null
+      hammer: "unclear"
+      details: ""
+      cite: "Not found"
+
+  limits:
+    per_claim_limit:
+      amount: null
+      currency: "USD"
+      cite: "Not found"
+    aggregate_limit:
+      amount: null
+      currency: "USD"
+      cite: "Not found"
+    retention:
+      amount: null
+      currency: "USD"
+      applies_to: "each_claim"
+      cite: "Not found"
+    sublimits: []
+
+  coverage:
+    tech_services_eo: { covered: null, summary: "Not found in specimen.", cite: "Not found" }
+    media_liability: { covered: null, summary: "Not found in specimen.", cite: "Not found" }
+    ip_infringement: { covered: null, summary: "Not found in specimen.", cite: "Not found" }
+    privacy: { covered: null, summary: "Not found in specimen.", cite: "Not found" }
+    network_security: { covered: null, summary: "Not found in specimen.", cite: "Not found" }
+    business_interruption:
+      covered: null
+      dependent_providers: null
+      system_failure: null
+      cite: "Not found"
+    regulatory: { covered: null, summary: "Not found in specimen.", cite: "Not found" }
+    pci: { covered: null, summary: "Not found in specimen.", cite: "Not found" }
+    breach_response: { covered: null, summary: "Not found in specimen.", cite: "Not found" }
+    cyber_extortion: { covered: null, summary: "Not found in specimen.", cite: "Not found" }
+    social_engineering: { covered: null, summary: "Not found in specimen.", cite: "Not found" }
+    contractual_liability_carveback: { exists: null, summary: "Not found in specimen.", cite: "Not found" }
+
+  exclusions: []
+
+  definitions:
+    professional_services: { text: "", cite: "Not found" }
+    technology_services: { text: "", cite: "Not found" }
+    wrongful_act: { text: "", cite: "Not found" }
+
+  conditions:
+    notice_reporting: { summary: "", cite: "Not found" }
+    extended_reporting: { available: null, duration: null, cite: "Not found" }
+    territory: { summary: "", cite: "Not found" }
+
+  unknowns:
+    - item: "Full specimen wording for Zurich Pro Plus (Technology & Cyber) including insuring agreements, exclusions, conditions, and definitions."
+      searched:
+        - "Zurich Pro Plus Technology & Cyber specimen policy PDF"
+        - "\"Zurich Pro Plus\" specimen policy"
+        - "site:oid.ok.gov Zurich Pro Plus ZURC-130846495"
+        - "\"U-ZPRO-100\" policy form PDF"
+        - "\"U-ZPRO-400-B CW\" Zurich Pro Plus Common Policy Conditions"
+        - "\"U-ZPRO-D-400-B CW\" Zurich Pro Plus Declarations"
+        - "\"U-ZPRO-467-A CW\" Zurich Pro Plus Declarations"
+        - "\"U-ZPRO-521-B CW\" Exclusions PDF"
+        - "site:serff.com Zurich American Insurance Company professional liability Pro Plus"
+        - "site:psc.ky.gov Zurich Pro Plus PDF"
+        - "site:henrico.gov U-ZPRO-D-400-B CW"
+      next_best_sources:
+        - "https://www.oid.ok.gov/wp-content/uploads/2019/11/071017_MarchMonthlyReport.pdf"
+        - "https://www.oid.ok.gov/wp-content/uploads/2019/11/120513_OctMonthlyReport.pdf"
+        - "https://henrico.gov/pdfs/purchasing/contracts/2326B/Contract%20Extract%202326B.pdf"
+    - item: "Trigger (claims-made vs claims-made-and-reported) and reporting/notice requirements for the Technology & Cyber coverage parts."
+      searched:
+        - "Zurich Pro Plus claims-made claims-made and reported Technology & Cyber"

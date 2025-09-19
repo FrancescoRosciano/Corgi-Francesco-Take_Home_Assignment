@@ -1,0 +1,15 @@
+{
+  "carrier": "Berkley Technology Underwriters",
+  "program": "Technology Insurance",
+  "paper": "Not specified",
+  "states_available": "US and worldwide",
+  "form_codes_and_edition": "Not specified",
+  "specimen_pdf_link": "Not found — specimen wording not public; request via BTU underwriting",
+  "product_page_link": "https://www.berkley.com/business-insurance/technology",
+  "min_max_limit": "Not specified",
+  "target_segments": "Technology firms with exposure in US and worldwide, federal government contractors",
+  "notable_features": "Technology Errors and Omissions Liability, Network Security and Data Privacy Liability, Electronic Media Liability, Global Coverages, Contingent Auto Liability",
+  "last_verified_date": "September 2025",
+  "pdf_files": [],
+  "source_csv_row": 22
+}

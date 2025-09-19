@@ -1,0 +1,17 @@
+{
+  "carrier": "The Hartford",
+  "program": "FailSafe Technology E&O",
+  "paper": "Admitted (Hartford Casualty or Hartford Fire Insurance Company)",
+  "states_available": "Not specified (US)",
+  "form_codes_and_edition": "Not publicly listed",
+  "specimen_pdf_link": "https://assets.thehartford.com/image/upload/failsafe_overview_flyer.pdf",
+  "product_page_link": "https://www.thehartford.com/professional-liability-insurance/errors-omissions-insurance/technology",
+  "min_max_limit": "Not specified (varies)",
+  "target_segments": "Technology companies, including software developers and service providers, IT service providers, hardware manufacturers, telecom carriers",
+  "notable_features": "Technology E&O suite providing E&O liability, security liability, data privacy and network security liability, personal injury liability, intellectual property liability and media liability; explains difference between cyber liability and E&O; emphasises broad 360‑degree protection",
+  "last_verified_date": "2025-09-17",
+  "pdf_files": [
+    "The Hartford - FailSafe Technology E&O.pdf"
+  ],
+  "source_csv_row": 8
+}

@@ -1,0 +1,63 @@
+<role>
+You are continuing the same policy analysis. Resolve ONLY the unknowns and incomplete fields in the prior YAML by exhaustively scanning the specimen and, if needed, primary public sources. Do not change any confirmed values. Do not speculate.
+</role>
+
+<inputs>
+- Specimen link: use policy.metadata.source.link from the prior YAML
+- Prior YAML (paste between the --- lines):
+---
+```yaml
+
+
+```
+---
+</inputs>
+
+<job>
+Your job:
+1) Parse the YAML and build a list of unresolved paths:
+   - Any value that is null, "", or where cite is "" or "Not found"
+   - Any coverage booleans set to null
+   - Any lists (e.g., sublimits, exclusions) with placeholder items (empty strings or nulls)
+   - All entries under policy.unknowns
+2) Prioritize resolving high-impact items first, in this order:
+   a) policy.limits.*: per_claim_limit.amount, aggregate_limit.amount, retention.amount, sublimits[*]
+   b) policy.compare.*: trigger, duty, defense_costs, consent_to_settle.hammer/details (if incomplete)
+   c) policy.coverage.*: set covered flags (true/false), summaries, and cites; especially:
+      - business_interruption: dependent_providers, system_failure, waiting period hours (if specified)
+      - pci: brand assessments/fines/fees (beyond PFI costs)
+      - social_engineering: any first-party coverage
+   d) policy.conditions.*: notice/reporting details, extended reporting availability/duration, territory
+   e) definitions/exclusions key terms that are empty or lack cites
+3) Search method (PDF first, then primary public sources):
+   - PDF scan order:
+     • Declarations / Coverage Schedule / Itemized Schedules (Limits/Retentions/Waiting Period)
+     • Insuring Agreements, Definitions, Exclusions, Conditions, Endorsements (entire document)
+   - Exact term variants to try broadly (adapt to policy wording):
+     • Limits: "Limit of Liability", "Per Claim", "Aggregate", "Sublimit", "Schedule of Limits"
+     • Retention/Deductible: "Retention", "Self-Insured Retention", "SIR", "Deductible"
+     • BI specifics: "Waiting Period", "hours", "Period of Restoration", "Business Interruption", "Extra Expense"
+     • Dependent providers: "dependent", "contingent", "outsourced provider", "service provider", "cloud"
+     • System failure: "System Failure", "accidental", "unintentional", "human error", "non-malicious"
+     • PCI: "PCI", "Payment Card Industry", "assessments", "fines", "penalties", "card brand"
+     • Social engineering/FTF: "social engineering", "fund transfer", "fraud", "payment instruction"
+   - If the form sets values "on Declarations/Schedule" and no filled Declarations are provided:
+     • Keep amounts null but update cite explicitly to say "set on Declarations/Coverage Schedule" referencing the section.
+   - If needed, use primary sources (prefer SERFF and carrier wording/specimen/endorsement PDFs):
+     • Query patterns: "{carrier} {product} {form_code}", "{form_code}" in multiple formats, "{carrier} {product} endorsement list", "system failure endorsement", "dependent business interruption endorsement", "PCI assessments endorsement"
+     • Cite endorsement title + page if it adds coverage; if endorsements are referenced but not included, keep booleans false and note in unknowns.
+4) Data rules:
+   - Do not alter confirmed fields.
+   - Every populated item needs a precise cite: "§ {section title}, p. {page}" or endorsement name + page; otherwise leave null/false and log in unknowns.
+   - Amounts are numbers only (no $ or commas); keep currency as "USD". Keep key order and schema exactly.
+   - Only remove items from policy.unknowns if fully resolved; expand "searched" with actual queries attempted for any remaining unknowns; include up to 3 next_best_sources (links/titles).
+</job>
+
+<return format>
+- Output ONLY a single fenced YAML block with the SAME schema, fully updated for resolved fields. Do not add or drop keys. Keep key order.
+</return format>
+
+<sanity checks>
+- If you set any boolean to true, provide a supporting cite in the base form or included endorsement.
+- If keeping amounts null, the cite must clearly state they are "set on Declarations/Coverage Schedule" with the relevant section reference.
+</sanity checks>

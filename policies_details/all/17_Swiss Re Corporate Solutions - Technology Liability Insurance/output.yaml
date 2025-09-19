@@ -1,0 +1,160 @@
+policy:
+  metadata:
+    carrier: "Swiss Re International SE (Australia Branch)"
+    product: "Technology Liability — Insurance Policy"
+    form_code: null
+    edition_date: "2024-08"
+    jurisdiction: "AU"
+    source:
+      link: "https://corporatesolutions.swissre.com/dam/jcr:39151bac-841e-49df-b4ed-e12525243a8a/swiss-re-corporate-solutions-technology-liability-insurance-policy-wording2024.pdf"
+      type: "carrier_pdf"
+      citation: "p. 1"
+
+  compare:
+    trigger: "unclear"
+    duty: "hybrid"
+    defense_costs: "mixed"
+    consent_to_settle:
+      required: true
+      hammer: "hard_100"
+      details: "If the insured disagrees with Senior Counsel on reasonableness of settlement and continues the defence, the insurer’s liability is capped at the amount for which the claim could have been settled plus costs incurred up to the election date."
+      cite: "§ 5.6 Right to Contest, p. 22"
+
+  limits:
+    per_claim_limit:
+      amount: null
+      currency: "AUD"
+      cite: "§ Schedule (Section 1 and 2 limits shown on Schedule/Declarations), p. 6–7"
+    aggregate_limit:
+      amount: null
+      currency: "AUD"
+      cite: "§ 6.1 Limit of Liability (Section 1 aggregate; Section 2 products aggregate), p. 22–23"
+    retention:
+      amount: null
+      currency: "AUD"
+      applies_to: "each_claim"
+      cite: "§ Schedule (Retention shown on Schedule/Declarations), p. 6–7"
+    sublimits:
+      - name: "Court and Inquiry Attendance Costs"
+        amount: null
+        currency: "AUD"
+        applies_to: "aggregate"
+        cite: "§ Schedule (Sub-limits list) / § 1.6 Court and Inquiry Attendance Costs, p. 6–7, 11"
+      - name: "Criminal Prosecutions (defence costs)"
+        amount: null
+        currency: "AUD"
+        applies_to: "aggregate"
+        cite: "§ 1.7 Criminal Prosecution, p. 11"
+      - name: "Inquiry Costs"
+        amount: null
+        currency: "AUD"
+        applies_to: "aggregate"
+        cite: "§ 1.12 Inquiry Costs, p. 12"
+      - name: "Intellectual Property"
+        amount: null
+        currency: "AUD"
+        applies_to: "aggregate"
+        cite: "§ 1.13 Intellectual Property, p. 11–12"
+      - name: "Loss Mitigation"
+        amount: null
+        currency: "AUD"
+        applies_to: "aggregate"
+        cite: "§ 1.14 Loss Mitigation, p. 11–12"
+      - name: "Public Relations Expenses"
+        amount: null
+        currency: "AUD"
+        applies_to: "aggregate"
+        cite: "§ 3.5 Public Relations Expenses, p. 19"
+      - name: "Reputation Protection Expenses"
+        amount: null
+        currency: "AUD"
+        applies_to: "aggregate"
+        cite: "§ 3.7 Reputation Protection Expenses, p. 20"
+
+  coverage:
+    tech_services_eo: { covered: true, summary: "Civil liability for claims first made and notified during the period arising from the Provision of Technology Services.", cite: "§ 1.1 Civil Liability, p. 9" }
+    media_liability: { covered: true, summary: "Defamation under Professional Liability (unintentional libel/slander) and Advertising Liability under Public & Technology Products Liability.", cite: "§ 1.8 Defamation, p. 10–11" }
+    ip_infringement: { covered: true, summary: "Unintentional IP infringement in Provision of Technology Services; excludes patents and trade secrets.", cite: "§ 1.13 Intellectual Property, p. 11–12" }
+    privacy: { covered: false, summary: "Claims for loss or disclosure of information are excluded; PCI fines also excluded from penalties extension.", cite: "§ 4.3 Disclosure of Information, p. 20" }
+    network_security: { covered: false, summary: "No first-party network security cover; third-party civil liability from a Cyber Event is available under Section 1 by extension.", cite: "§ 1.16 Professional Liability for Cyber Events, p. 11–12" }
+    business_interruption:
+      covered: false
+      dependent_providers: false
+      system_failure: false
+      cite: "§ 1.25 Insured’s Own Loss (excludes business interruption and first-party loss), p. 13; § 4.5 Infrastructure Failure (ISP/cloud outages outside insured’s control), p. 20"
+    regulatory: { covered: false, summary: "Regulatory actions for breaches of data protection/privacy laws are excluded.", cite: "§ 1.30 Regulatory Action for a Cyber Event, p. 13" }
+    pci: { covered: false, summary: "PCI fines and penalties expressly excluded from contractual penalties extension.", cite: "§ 1.5 Contractual Penalties (last paragraph), p. 10–11" }
+    breach_response: { covered: false, summary: "No first-party breach response, notification, or credit monitoring costs.", cite: "§ 1.25 Insured’s Own Loss; § 1.16 provisos, p. 11–13" }
+    cyber_extortion: { covered: false, summary: "No extortion/ransom payments cover.", cite: "§ 1.25 Insured’s Own Loss (includes extortion/ransom), p. 13" }
+    social_engineering: { covered: false, summary: "No social engineering or funds transfer fraud cover (first-party losses excluded).", cite: "§ 1.25 Insured’s Own Loss, p. 13" }
+    contractual_liability_carveback: { exists: true, summary: "Contract exclusion carves back unintentional failure to provide Technology Services to a reasonable, industry-standard level; liability assumed under contract excluded except to the extent it would attach at law absent the contract.", cite: "§ 1.21 Contract / § 1.20(d) Commercial and Financial Risks, p. 12–13" }
+
+  exclusions:
+    - label: "Disclosure of Information"
+      effect: "Excludes claims arising from loss or disclosure of client/employee/personal information (electronic or otherwise)."
+      carvebacks: "None stated."
+      cite: "§ 4.3 Disclosure of Information, p. 20"
+    - label: "Infrastructure Failure"
+      effect: "Excludes power outages, telecom/network failures, and ISP/cloud outages outside insured’s control."
+      carvebacks: "None stated."
+      cite: "§ 4.5 Infrastructure Failure, p. 20"
+    - label: "Contract"
+      effect: "Excludes liability arising from a contract; carve-back for unintentional failure to provide Technology Services to a reasonable, industry standard."
+      carvebacks: "Unintentional failure to provide services to a reasonable standard."
+      cite: "§ 1.21 Contract, p. 13"
+    - label: "Commercial and Financial Risks"
+      effect: "Excludes insolvency, IP breach, fee refunds, and liability assumed under contract (unless it would attach absent the contract)."
+      carvebacks: "Liability that would attach in absence of contract."
+      cite: "§ 1.20 Commercial and Financial Risks, p. 12"
+    - label: "Delay and Overrun"
+      effect: "Excludes delays, milestones/timeframe failures, and cost overruns regardless of cause."
+      carvebacks: "None stated."
+      cite: "§ 1.22 Delay and Overrun, p. 13"
+    - label: "Inaccurate Prices, Costs or Estimates"
+      effect: "Excludes claims arising from pricing/estimate errors."
+      carvebacks: "None stated."
+      cite: "§ 1.23 Inaccurate Prices, Costs or Estimates, p. 14"
+    - label: "Personal Injury/Property Damage/Advertising Liability (under Section 1)"
+      effect: "Bodily injury, property damage, and advertising liability are excluded under Professional Liability."
+      carvebacks: "Handled under Section 2 coverage."
+      cite: "§ 1.27 Personal Injury, Property Damage and Advertising Liability, p. 14"
+    - label: "Regulatory Action for a Cyber Event"
+      effect: "Excludes regulatory investigations or actions for breaches of data protection/privacy laws."
+      carvebacks: "None stated."
+      cite: "§ 1.30 Regulatory Action for a Cyber Event, p. 13"
+    - label: "Electronic Data (Section 2)"
+      effect: "Excludes claims stemming from electronic data communication/publication and certain privacy-law breaches under GL."
+      carvebacks: "Limited carve-back for specific advertising liability."
+      cite: "§ 2.7 Electronic Data, p. 16"
+    - label: "Information Technology Hazards (Section 2)"
+      effect: "Excludes PI/PD/Advertising Liability from internet operations, privacy-law breaches, and damage to data/programs."
+      carvebacks: "Printed safety/info materials carve-back."
+      cite: "§ 2.11 Information Technology Hazards …, p. 17"
+    - label: "Professional Liability (Section 2)"
+      effect: "Professional advice/services excluded under GL section."
+      carvebacks: "First-aid medical services exception."
+      cite: "§ 2.16 Professional Liability, p. 18"
+
+  definitions:
+    professional_services: { text: "Not found in specimen; policy uses 'Provision of Professional Services' term in exclusions without a standalone definition.", cite: "Not found" }
+    technology_services: { text: "Information technology services performed for third parties by or on behalf of the insured for a fee under contract (e.g., design, development, installation, maintenance, hosting, SaaS, cloud, cybersecurity, etc.).", cite: "§ 7.36 Provision of Technology Services, p. 30" }
+    wrongful_act: { text: "Not defined; policy uses 'Civil Liability' instead of 'Wrongful Act'.", cite: "Not found" }
+
+  conditions:
+    notice_reporting: { summary: "Claims, Inquiries, Occurrences must be notified as soon as reasonably practicable with specified detail; Sections 1 and 3 are claims-made-and-notified.", cite: "§ 5.2 Reporting and Notice, p. 21; § Claims Made and Notified Policy, p. 1" }
+    extended_reporting: { available: true, duration: 90, cite: "§ 1.10 Extended Reporting Period, p. 11" }
+    territory: { summary: "Section 1 jurisdiction per Item 9 of Schedule; Section 2 territorial limits per Schedule; default specimen shows Worldwide excluding North America; Australian governing law.", cite: "§ 6.13 Jurisdictional Cover and Territorial Limits, p. 25; § Schedule Item 9, p. 6–7; § 6.14 Governing Law, p. 25" }
+
+  unknowns:
+    - item: "Exact per-claim and aggregate limits (amounts) and all sub-limit values"
+      searched: ["site:corporatesolutions.swissre.com \"Technology Liability\" Insurance Policy schedule limits", "Swiss Re Corporate Solutions Technology Liability Insurance Policy (08-24) schedule retention Australia PDF"]
+      next_best_sources: ["Technology Liability — Factsheet (2024) https://corporatesolutions.swissre.com/dam/jcr:9a4e2d93-80ee-400a-8995-7a3117dd96eb/swiss-re-technology-liability-factsheet-2024.pdf", "Technology Liability — Proposal Form (08-24) https://corporatesolutions.swissre.com/dam/jcr:44353121-0140-4733-a7ed-47d4b14e262a/swiss-re-corporate-solutions-technology-liability-proposal-form-2024.pdf"]
+    - item: "Retention amount(s) for Sections 1 and 2"
+      searched: ["site:corporatesolutions.swissre.com \"Technology Liability\" schedule retention", "Swiss Re Technology Liability schedule Item 8 retention AUD"]
+      next_best_sources: ["Technology Liability — Policy Wording (Schedule placeholders) https://corporatesolutions.swissre.com/dam/jcr:39151bac-841e-49df-b4ed-e12525243a8a/swiss-re-corporate-solutions-technology-liability-insurance-policy-wording2024.pdf", "Technology Liability — Proposal Form (08-24) https://corporatesolutions.swissre.com/dam/jcr:44353121-0140-4733-a7ed-47d4b14e262a/swiss-re-corporate-solutions-technology-liability-proposal-form-2024.pdf"]
+    - item: "Definition of 'Provision of Professional Services' or 'Professional Services'"
+      searched: ["site:corporatesolutions.swissre.com \"Provision of Professional Services\"", "\"Provision of Professional Services\" \"Technology Liability\" Australia policy"]
+      next_best_sources: ["Technology Liability — Policy Wording (Definitions section scanned) https://corporatesolutions.swissre.com/dam/jcr:39151bac-841e-49df-b4ed-e12525243a8a/swiss-re-corporate-solutions-technology-liability-insurance-policy-wording2024.pdf", "Professional Indemnity Policy (AU) — wording uses 'Professional Services' term https://corporatesolutions.swissre.com/dam/jcr:5fd937dc-d76c-4d2a-80dd-793bef581a1e/professional-indemnity-policy.pdf"]
+    - item: "Whether any optional endorsements alter cyber/privacy exclusions (e.g., adding first-party breach response or BI)"
+      searched: ["site:corporatesolutions.swissre.com Technology Liability optional extension breach response", "site:corporatesolutions.swissre.com \"Technology Liability\" cyber event extension"]
+      next_best_sources: ["Technology Liability — Factsheet (Available Endorsements) https://corporatesolutions.swissre.com/dam/jcr:9a4e2d93-80ee-400a-8995-7a3117dd96eb/swiss-re-technology-liability-factsheet-2024.pdf", "Swiss Re ANZ Financial & Professional Liability page (downloads) https://corporatesolutions.swissre.com/australia-newzealand/insurance-solutions/financial-professional-liability.html"]

@@ -1,0 +1,17 @@
+{
+  "carrier": "AIG",
+  "program": "Specialty Risk Protector (Professional Liability & Cyber)",
+  "paper": "Likely non‑admitted (AIG Specialty Insurance Co.)",
+  "states_available": "Not specified (US & global)",
+  "form_codes_and_edition": "Not publicly listed",
+  "specimen_pdf_link": "https://www.aig.com/content/dam/aig/america-canada/us/documents/business/management-liability/aig-specialty-risk-protector-brochure.pdf",
+  "product_ page_link": "https://www.aig.com/home/risk-solutions/business/management-and-professional-liability/professional-liability",
+  "min_max_limit": "Not specified (modular)",
+  "target_segments": "Businesses seeking integrated professional liability and cyber modules, including technology companies, technology services and products providers",
+  "notable_features": "Integrated modules for security & privacy, event management, cyber extortion, network business interruption; professional services E&O, media liability, employed lawyers E&O and ReputationGuard modules; built‑in data‑privacy regulatory coverage; expanded bricking and extortion triggers; duty‑to‑defend, pay‑on‑behalf basis; tailored professional services definitions including technology services; extends to economic losses, flexibility to settle claims within retention without insurer consent",
+  "last_verified_date": "2025-09-17",
+  "pdf_files": [
+    "AIG - Specialty Risk Protector (Professional Liability & Cyber).pdf"
+  ],
+  "source_csv_row": 12
+}

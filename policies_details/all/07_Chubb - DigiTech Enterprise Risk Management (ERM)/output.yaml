@@ -1,0 +1,174 @@
+policy:
+  metadata:
+    carrier: "ACE American Insurance Company (Chubb)"
+    product: "DigiTech Enterprise Risk Management (DigiTech ERM)"
+    form_code: null
+    edition_date: "2019-02"
+    jurisdiction: null
+    source:
+      link: "https://irp.cdn-website.com/c9a26f11/files/uploaded/23-24%20E-O%20Policy%20%28Chubb%29.pdf"
+      type: "other"
+      citation: "PF-50822 (02/19) policy & endorsements; Declarations PF-50821 (02/19), p. 1–3"
+
+  compare:
+    trigger: "claims_made_and_reported"
+    duty: "duty_to_defend"
+    defense_costs: "inside_limits"
+    consent_to_settle:
+      required: true
+      hammer: "soft_80"
+      details: "If the Named Insured refuses a settlement recommended by the Insurer, the Insurer pays 80% of subsequent covered Damages and Claims Expenses; Insured bears 20% uninsured."
+      cite: "§ IX.D Defense and Settlement, p. 22"
+
+  limits:
+    per_claim_limit:
+      amount: 1000000
+      currency: "USD"
+      cite: "Declarations – Item 4.P (Professional Liability – Each Claim Limit), p. 1"
+    aggregate_limit:
+      amount: 1000000
+      currency: "USD"
+      cite: "Declarations – Item 3 Maximum Policy Limits (Aggregate Limit of Insurance), p. 1"
+    retention:
+      amount: 1000
+      currency: "USD"
+      applies_to: "each_claim"
+      cite: "Declarations – Item 4.P (Professional Liability – Each Claim Retention), p. 1"
+    sublimits:
+      - name: "Payment Card Loss"
+        amount: null
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "Declarations – Item 4.E.1 Payment Card Loss (set on Declarations/Coverage Schedule), p. 2"
+
+  coverage:
+    tech_services_eo: 
+      covered: true
+      summary: "Professional Liability for errors in rendering Professional Services, including Professional Technology Services (e.g., software design, hosting, data processing)."
+      cite: "§ II. Definitions – Professional Incident; Professional Services; Professional Technology Services, p. 11"
+    media_liability: 
+      covered: true
+      summary: "Claims for Media Incidents (online/print/social media) including copyright/trademark, defamation, privacy/publicity torts, deep linking/framing."
+      cite: "§ I.F Electronic, Social and Printed Media Liability (intro); § II. Definitions – Media Incident, p. 8–9"
+    ip_infringement: 
+      covered: true
+      summary: "Trademark/copyright claims covered under Media Liability; broader IP otherwise excluded unless modified by endorsement."
+      cite: "§ II. Definitions – Media Incident (items a–b), p. 9; § III.A.13 Intellectual Property and carve-backs, p. 15"
+    privacy: 
+      covered: true
+      summary: "Claims arising from violations of Privacy or Cyber Laws and disclosure of Protected Information."
+      cite: "§ I.E Cyber, Privacy and Network Security Liability (intro), p. 2; § II. Definitions – Protected Information; Privacy or Cyber Laws, p. 10–11"
+    network_security: 
+      covered: true
+      summary: "Claims from Network Security Failure; first-party response, data recovery, extortion also addressed."
+      cite: "§ I.E Cyber, Privacy and Network Security Liability (intro), p. 2; § II. Definitions – Network Security Failure, p. 9"
+    business_interruption:
+      covered: true
+      dependent_providers: true
+      system_failure: false
+      cite: "§ I.B Business Interruption & Extra Expense (intro), p. 2; § II. Definitions – Interruption in Service (must be caused by a Malicious Computer Act; B1/B2 incl. Shared Computer System), p. 25–26"
+    regulatory: 
+      covered: true
+      summary: "Regulatory Proceedings resulting from a Cyber Incident, including Regulatory Fines where insurable; Insurer has right (not duty) to defend unless endorsed."
+      cite: "§ II. Definitions – Regulatory Proceeding; Regulatory Fines, p. 11; § IX.B Defense of Regulatory Proceeding, p. 22"
+    pci: 
+      covered: true
+      summary: "Payment Card Loss (assessments/fines/chargebacks per PCI/EMV rules) included in Damages and under Insuring Agreement E."
+      cite: "§ II. Definitions – Payment Card Loss, p. 10; § II. Definitions – Damages (includes Payment Card Loss), p. 10"
+    breach_response: 
+      covered: true
+      summary: "Cyber Incident Response Fund: legal, forensics, PR, notification/call center, identity services; access to Chubb panel providers."
+      cite: "§ I.A Cyber Incident Response Fund (intro), p. 2; § II. Definitions – Cyber Incident Response Expenses, p. 4–6"
+    cyber_extortion: 
+      covered: true
+      summary: "Reimburses Extortion Expenses, including crypto ransom, due to a Network Extortion Threat."
+      cite: "§ I.D Network Extortion (intro), p. 2; § II. Definitions – Extortion Expenses; Network Extortion Threat, p. 8–9"
+    social_engineering: 
+      covered: false
+      summary: "Failure to safeguard funds under fraudulent instructions excluded under Professional Liability via endorsement."
+      cite: "Endorsement – Failure to Safeguard Funds Exclusion (PF-50943), p. 1"
+    contractual_liability_carveback: 
+      exists: true
+      summary: "Contract exclusion has carve-backs (e.g., Privacy Policy violations under A/E; Payment Card Loss under E; implied contract idea misappropriation under F)."
+      cite: "§ III.A.11 Contract (carve-backs b–e), p. 14–15"
+
+  exclusions:
+    - label: "Conduct"
+      effect: "Fraudulent/criminal/intentional acts; profit/advantage; final adjudication carve-back for defense costs until adjudicated."
+      carvebacks: "Defense until final adjudication; no imputation to other insureds (with Rogue Actor rule)."
+      cite: "§ III.A.1 Conduct, p. 13–14"
+    - label: "Prior Knowledge / Pending or Prior Proceedings / Prior Notice"
+      effect: "No coverage for known incidents, prior or pending matters, or matters noticed under another policy."
+      carvebacks: ""
+      cite: "§ III.A.2–4, p. 13–14"
+    - label: "Bodily Injury / Property Damage"
+      effect: "Excluded; limited carve-back for certain mental injury under E/F; PD excluded for P and A–F."
+      carvebacks: "Mental anguish carve-back under E/F."
+      cite: "§ III.A.5–6, p. 14"
+    - label: "Pollution"
+      effect: "Pollutants exclusion."
+      carvebacks: ""
+      cite: "§ III.A.7, p. 14"
+    - label: "Contract"
+      effect: "Liability under contract; liquidated damages beyond legal liability excluded."
+      carvebacks: "Privacy Policy violations (A/E); Payment Card Loss (E); implied contract idea misappropriation (F)."
+      cite: "§ III.A.11, p. 14–15"
+    - label: "Fees/Chargebacks"
+      effect: "Fees charged by Insured; various transaction/merchant fees excluded for A–F."
+      carvebacks: "Carve-back for Payment Card Loss under E."
+      cite: "§ III.A.12, p. 15"
+    - label: "Intellectual Property"
+      effect: "Broad IP exclusion."
+      carvebacks: "Theft of trade secrets (A–D) limited; Protected Information disclosure (E); copyright/trademark claims (F)."
+      cite: "§ III.A.13 and carve-backs, p. 15"
+    - label: "Antitrust / Unfair Trade Practices"
+      effect: "Excluded."
+      carvebacks: "Privacy/Cyber Law violation (E); Media Incident misrepresentation (F)."
+      cite: "§ III.A.14 and carve-backs, p. 15–16"
+    - label: "Consumer Protection Laws"
+      effect: "Excluded (e.g., FCRA/FDCPA/TILA)."
+      carvebacks: "Disclosure of Protected Information due to Network Security Failure under A/E."
+      cite: "§ III.A.15 and carve-back, p. 16"
+    - label: "Securities Law Violation"
+      effect: "Securities violations excluded."
+      carvebacks: ""
+      cite: "§ III.A.16, p. 16"
+    - label: "Personal Injury (Professional Liability)"
+      effect: "Personal Injury excluded from Insuring Agreement P via endorsement."
+      carvebacks: ""
+      cite: "Endorsement – Professional Liability Personal Injury Exclusion (PF-50918), p. 1"
+    - label: "Failure to Safeguard Funds (Professional Liability)"
+      effect: "Social engineering/funds transfer fraud excluded from P."
+      carvebacks: ""
+      cite: "Endorsement – Failure to Safeguard Funds Exclusion (PF-50943), p. 1"
+
+  definitions:
+    professional_services: 
+      text: "Services specified in Declarations Item 9, or Professional Technology Services, performed for others for a fee."
+      cite: "§ II. Definitions – Professional Services, p. 11"
+    technology_services: 
+      text: "Technology training/consulting; systems/network analysis/design/programming/integration; software design/distribution/hosting/servicing/installation/maintenance; website design/programming/maintenance; database design/data processing/mining/analysis/destruction."
+      cite: "§ II. Definitions – Professional Technology Services, p. 11"
+    wrongful_act: 
+      text: "Not used; policy uses 'Incident' taxonomy (Professional Incident/Cyber Incident/Media Incident) instead of 'Wrongful Act'."
+      cite: "§ II. Definitions – Incident, p. 24"
+
+  conditions:
+    notice_reporting: 
+      summary: "Written notice as soon as practicable but no later than 90 days after expiration (or end of ERP); potential claim reporting allowed."
+      cite: "§ VIII.B–C Notice, p. 20–21"
+    extended_reporting: 
+      available: true
+      duration: 12
+      cite: "Declarations – Item 7 Extended Reporting Period, p. 3"
+    territory: 
+      summary: "Worldwide (\"anywhere in the universe\") where legally permissible; amounts payable in USD; crypto accepted for extortion payments (valued per WSJ FX)."
+      cite: "§ XVI Territory and Valuation, p. 25"
+
+  unknowns:
+    - item: "Exact DigiTech ERM base form code and edition (PF-xxxxx) distinct from Professional ERM/Cyber ERM"
+      searched: ["\"Chubb DigiTech Enterprise Risk Management Policy\" \"PF-\"", "site:oid.ok.gov ACEH-130778312 forms DigiTech", "SERFF public portals for Chubb DigiTech ERM base form"]
+      next_best_sources: ["SERFF Filing Access – State portals (public form filings)", "Oklahoma DOI Filing Activity Report noting DigiTech ERM forms (ACEH-130778312)", "Chubb broker/wording library for DigiTech ERM specimen"]
+    - item: "Specimen limits, retentions, and any sublimits specific to DigiTech ERM"
+      searched: ["Declarations PF-50821 (02/19) Item 3–4 (limits/retentions) scanned", "Declarations – Item 4.E.1 Payment Card Loss sublimit", "Chubb DigiTech ERM specimen declarations"]
+      next_best_sources: ["SERFF policy forms & declarations for DigiTech ERM", "Chubb DigiTech ERM small business specimen/declarations", "State SERFF Filing Access portals (forms/schedules)"]

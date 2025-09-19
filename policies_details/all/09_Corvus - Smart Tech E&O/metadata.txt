@@ -1,0 +1,17 @@
+{
+  "carrier": "Corvus",
+  "program": "Smart Tech E&O",
+  "paper": "Surplus lines via Core Specialty (excess line)",
+  "states_available": "Not specified (US)",
+  "form_codes_and_edition": "Not publicly listed",
+  "specimen_pdf_link": "https://www.corvusinsurance.com/hubfs/Tech%20E-O/Corvus%20-%20Smart%20Tech%20EO%20specimen.pdf",
+  "product_page_link": "https://www.corvusinsurance.com/smart-tech-e-o-and-excess",
+  "min_max_limit": "Excess limit up to $5m for companies up to $500m revenue",
+  "target_segments": "Technology companies seeking excess E&O and cyber coverage",
+  "notable_features": "Smart Tech E&O program pairs technology E&O with cyber coverage; uses AI‑driven risk scans and predictive analytics; provides full suite of cyber coverages; capacity up to $5m; partners with carriers such as Core Specialty to provide underlying paper; combination of cyber insurance and tailored E&O coverage, includes all Smart Cyber Insurance policy coverage plus Technology and Professional Services Liability, eliminates finger-pointing between carriers",
+  "last_verified_date": "2025-09-17",
+  "pdf_files": [
+    "Corvus - Smart Tech E&O.pdf"
+  ],
+  "source_csv_row": 15
+}

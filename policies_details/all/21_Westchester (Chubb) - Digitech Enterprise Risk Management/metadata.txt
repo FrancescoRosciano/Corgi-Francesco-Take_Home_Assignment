@@ -1,0 +1,17 @@
+{
+  "carrier": "Westchester (Chubb)",
+  "program": "Digitech Enterprise Risk Management",
+  "paper": "Admitted (most states)",
+  "states_available": "Most states",
+  "form_codes_and_edition": "Not specified",
+  "specimen_pdf_link": "https://www.westchester.com/content/dam/chubb-sites/westchester/us-en/documents/westchester_2pageprofessionalriskproducts_013117.pdf",
+  "product_page_link": "https://www.westchester.com/en/products/small-business/professional-lines/digitech-enterprise-risk-management.html",
+  "min_max_limit": "Companies with revenues $10M+ for brokerage, up to $10M for small business",
+  "target_segments": "IT consulting firms, tech companies providing system integration, software design companies",
+  "notable_features": "Single form with Tech E&O and Cyber Liability, broadened definition of technology incident, software copyright infringement coverage, no exclusions for delays or failure to deliver",
+  "last_verified_date": "September 2025",
+  "pdf_files": [
+    "Westchester (Chubb) - Digitech Enterprise Risk Management.pdf"
+  ],
+  "source_csv_row": 26
+}

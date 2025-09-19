@@ -1,0 +1,137 @@
+policy:
+  metadata:
+    carrier: "Berkley National Insurance Company (marketed by Berkley Technology Underwriters)"
+    product: "Technology Errors & Omissions + Cyber Solutions — Level Three"
+    form_code: null
+    edition_date: null
+    jurisdiction: null
+    source:
+      link: "https://www.berkley-tech.com/sites/g/files/xkzibx211/files/2024-03/BTU_2023-E%26O-Cyber-Brochure.pdf"
+      type: "carrier_pdf"
+      citation: "Marketing brochure only, p. 1; no specimen provided publicly"
+  compare:
+    trigger: "unclear"
+    duty: "unclear"
+    defense_costs: "unclear"
+    consent_to_settle:
+      required: null
+      hammer: "unclear"
+      details: ""
+      cite: "Not found"
+  limits:
+    per_claim_limit:
+      amount: null
+      currency: "USD"
+      cite: "Not found"
+    aggregate_limit:
+      amount: null
+      currency: "USD"
+      cite: "Not found"
+    retention:
+      amount: null
+      currency: "USD"
+      applies_to: null
+      cite: "Not found"
+    sublimits: []
+  coverage:
+    tech_services_eo: { covered: null, summary: "", cite: "Not found" }
+    media_liability: { covered: null, summary: "", cite: "Not found" }
+    ip_infringement: { covered: null, summary: "", cite: "Not found" }
+    privacy: { covered: null, summary: "", cite: "Not found" }
+    network_security: { covered: null, summary: "", cite: "Not found" }
+    business_interruption:
+      covered: null
+      dependent_providers: null
+      system_failure: null
+      cite: "Not found"
+    regulatory: { covered: null, summary: "", cite: "Not found" }
+    pci: { covered: null, summary: "", cite: "Not found" }
+    breach_response: { covered: null, summary: "", cite: "Not found" }
+    cyber_extortion: { covered: null, summary: "", cite: "Not found" }
+    social_engineering: { covered: null, summary: "", cite: "Not found" }
+    contractual_liability_carveback: { exists: null, summary: "", cite: "Not found" }
+  exclusions: []
+  definitions:
+    professional_services: { text: "", cite: "Not found" }
+    technology_services: { text: "", cite: "Not found" }
+    wrongful_act: { text: "", cite: "Not found" }
+  conditions:
+    notice_reporting: { summary: "", cite: "Not found" }
+    extended_reporting: { available: null, duration: null, cite: "Not found" }
+    territory: { summary: "", cite: "Not found" }
+  unknowns:
+    - item: "Official specimen policy wording (form number and edition) for BTU ‘Level Three’ Technology E&O + Cyber"
+      searched:
+        - "Berkley Technology Underwriters specimen policy"
+        - "\"Level Three Errors or Omissions Coverage Form\""
+        - "BNIC-131085271 site:oid.ok.gov"
+        - "MRTN-129556907 site:oid.ok.gov"
+        - "Berkley National Insurance Company Technology Professional Liability form SERFF"
+        - "site:filingaccess.serff.com Berkley National Insurance Company Missouri Washington District of Columbia"
+      next_best_sources:
+        - "https://www.oid.ok.gov/wp-content/uploads/2019/11/101717_JulyMonthlyReport.pdf"
+        - "https://www.oid.ok.gov/wp-content/uploads/2019/11/090214_JuneMonthlyReport.pdf"
+        - "https://portals.naic.org/serff-filing-access"
+    - item: "Coverage trigger (claims-made vs. claims-made & reported), duty to defend vs. indemnify, and whether defense costs erode limits"
+      searched:
+        - "Berkley Technology Underwriters claims-made pure"
+        - "BTU duty to defend policy wording"
+        - "Berkley National technology professional liability specimen trigger defense within limits"
+      next_best_sources:
+        - "https://www.berkley-tech.com/coverages/technology-errors-omissions-and-cyber-solutions"
+        - "https://www.berkley-tech.com/sites/g/files/xkzibx211/files/2024-03/BTU_2023-E%26O-Cyber-Brochure.pdf"
+        - "https://portals.naic.org/serff-filing-access"
+    - item: "Consent to settle and hammer clause terms in the specimen (coinsurance %, exceptions)"
+      searched:
+        - "Berkley Technology Underwriters hammer clause 80/20"
+        - "BTU consent to settle specimen"
+        - "Berkley National consent to settle technology professional liability"
+      next_best_sources:
+        - "https://www.berkley-tech.com/sites/g/files/xkzibx211/files/2024-03/BTU_2023-E%26O-Cyber-Brochure.pdf"
+        - "https://www.berkley-tech.com/coverages/technology-errors-omissions-and-cyber-solutions"
+        - "https://portals.naic.org/serff-filing-access"
+    - item: "Full insuring agreements and carve-backs for contractual liability, breach of contract, failure to maintain, intentional acts, harmful code"
+      searched:
+        - "BTU contractual liability carveback policy wording"
+        - "BTU Level Three exclusions specimen"
+        - "Berkley National technology E&O exclusions specimen"
+      next_best_sources:
+        - "https://portals.naic.org/serff-filing-access"
+        - "https://www.oid.ok.gov/wp-content/uploads/2019/11/101717_JulyMonthlyReport.pdf"
+        - "https://www.berkley-tech.com/coverages/technology-errors-omissions-and-cyber-solutions"
+    - item: "Limits, sublimits, retention language and whether BI/regs/PCI are sublimited"
+      searched:
+        - "Berkley Technology Underwriters Technology E&O sublimit"
+        - "BTU network business income sublimit"
+        - "Berkley National technology E&O declarations retention"
+      next_best_sources:
+        - "https://portals.naic.org/serff-filing-access"
+        - "https://www.berkley-tech.com/sites/g/files/xkzibx211/files/2024-03/BTU_2023-E%26O-Cyber-Brochure.pdf"
+        - "https://www.berkley-tech.com/sites/g/files/xkzibx211/files/2024-03/BTU_Professional-Liability-App-FORM-11.2023%20%282%29.docx"
+    - item: "Definitions of Professional Services / Technology Services / Wrongful Act"
+      searched:
+        - "BTU definitions professional services Level Three"
+        - "Berkley National technology professional liability definitions"
+        - "Berkley Technology Underwriters wrongful act definition"
+      next_best_sources:
+        - "https://portals.naic.org/serff-filing-access"
+        - "https://www.oid.ok.gov/wp-content/uploads/2019/11/101717_JulyMonthlyReport.pdf"
+        - "https://www.berkley-tech.com/coverages/technology-errors-omissions-and-cyber-solutions"
+    - item: "Business interruption qualifiers (system failure, dependent/contingent providers) and cyber extortion terms"
+      searched:
+        - "BTU network business income contingent business interruption wording"
+        - "BTU system failure definition technology professional liability"
+        - "Berkley National cyber extortion wording specimen"
+      next_best_sources:
+        - "https://portals.naic.org/serff-filing-access"
+        - "https://www.berkley-tech.com/coverages/technology-errors-omissions-and-cyber-solutions"
+        - "https://www.berkley-tech.com/sites/g/files/xkzibx211/files/2024-03/BTU_2023-E%26O-Cyber-Brochure.pdf"
+    - item: "Reporting/notice, extended reporting period (ERP) availability and duration; territory/jurisdiction clauses"
+      searched:
+        - "BTU extended reporting period Level Three"
+        - "BTU territory jurisdiction wording technology E&O"
+        - "Berkley National notice of claim technology professional liability"
+      next_best_sources:
+        - "https://portals.naic.org/serff-filing-access"
+        - "https://www.oid.ok.gov/wp-content/uploads/2019/11/090214_JuneMonthlyReport.pdf"
+        - "https://www.berkley-tech.com/coverages/technology-errors-omissions-and-cyber-solutions"

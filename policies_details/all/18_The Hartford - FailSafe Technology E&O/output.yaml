@@ -1,0 +1,78 @@
+policy:
+  metadata:
+    carrier: "Hartford Fire Insurance Company"
+    product: "FailSafe GIGA (Technology Liability)"
+    form_code: null
+    edition_date: ""
+    jurisdiction: null
+    source:
+      link: "https://publicdocs.santa-ana.org/WebLink/1/doc/544490/Page20.aspx"
+      type: "other"
+      citation: "FS 00 H301 00 1016 endorsement, p. 1; FS 00 H311 00 1016 endorsement, p. 1 (see Page22)"
+  compare:
+    trigger: "claims_made"
+    duty: "unclear"
+    defense_costs: "inside_limits"
+    consent_to_settle:
+      required: null
+      hammer: "unclear"
+      details: "Brochures reference a 'Right to Reject Settlement' with a soft hammer; exact percentage and wording not confirmed in a specimen."
+      cite: "Not found"
+  limits:
+    per_claim_limit:
+      amount: null
+      currency: "USD"
+      cite: "Not found"
+    aggregate_limit:
+      amount: null
+      currency: "USD"
+      cite: "Not found"
+    retention:
+      amount: null
+      currency: "USD"
+      applies_to: "other"
+      cite: "Not found"
+    sublimits: []
+  coverage:
+    tech_services_eo: { covered: true, summary: "Application materials show FailSafe provides Professional/Technology Liability on a claims-first-made basis for tech services.", cite: "§ Application disclosure, p. 1" }
+    media_liability: { covered: null, summary: "", cite: "Not found" }
+    ip_infringement: { covered: null, summary: "", cite: "Not found" }
+    privacy: { covered: true, summary: "Cyber Security & Privacy Liability is referenced in the FailSafe application package.", cite: "§ Application disclosure, p. 1" }
+    network_security: { covered: true, summary: "Cyber Security liability is referenced in the FailSafe application package.", cite: "§ Application disclosure, p. 1" }
+    business_interruption:
+      covered: null
+      dependent_providers: null
+      system_failure: null
+      cite: "Not found"
+    regulatory: { covered: null, summary: "", cite: "Not found" }
+    pci: { covered: null, summary: "", cite: "Not found" }
+    breach_response: { covered: null, summary: "", cite: "Not found" }
+    cyber_extortion: { covered: null, summary: "", cite: "Not found" }
+    social_engineering: { covered: null, summary: "", cite: "Not found" }
+    contractual_liability_carveback: { exists: null, summary: "", cite: "Not found" }
+  exclusions:
+    - label: "Insured vs. insured"
+      effect: "Claims by any insured are excluded."
+      carvebacks: "Carve-backs where (i) the claimant is a client for ‘enterprise services’ performed by the Named Insured; or (ii) claims for failure to prevent identity theft or disclosure of nonpublic personal information; plus a scheduled additional insured client carve-back."
+      cite: "§ Section III — Exclusions (modified by endorsement FS 00 H301 00 1016), p. 1"
+  definitions:
+    professional_services: { text: "", cite: "Not found" }
+    technology_services: { text: "", cite: "Not found" }
+    wrongful_act: { text: "", cite: "Not found" }
+  conditions:
+    notice_reporting: { summary: "Claims-first-made per application disclosure; specific reporting wording not confirmed in specimen.", cite: "§ Application disclosure, p. 7" }
+    extended_reporting: { available: null, duration: null, cite: "Not found" }
+    territory: { summary: "", cite: "Not found" }
+  unknowns:
+    - item: "Base FailSafe GIGA policy form (form code and edition) with full insuring agreement, definitions (professional/technology services; wrongful act), conditions, and exclusions."
+      searched: ["\"FS 00 G003 00\"", "\"FailSafe GIGA Enterprise Liability Policy\" FS 00 G003 00", "SERFF Hartford FailSafe GIGA form", "site:publicdocs \"FailSafe\" \"FS 00 H301\"", "Hartford FailSafe specimen policy PDF"]
+      next_best_sources: ["https://sandiegounified.diligent.community/document/4db77af5-ea8f-4a73-ac6f-be7693f067d3/", "https://filingaccess.serff.com/sfa/home/CT", "https://www.thehartford.com/professional-liability-insurance/errors-omissions-insurance/technology"]
+    - item: "Consent-to-settle wording and any hammer clause percentages."
+      searched: ["Hartford FailSafe consent to settle specimen", "\"Right to Reject Settlement\" Hartford FailSafe", "\"soft hammer\" Hartford FailSafe", "SERFF Hartford FailSafe settlement language"]
+      next_best_sources: ["https://filingaccess.serff.com/sfa/home/MA", "https://filingaccess.serff.com/sfa/home/OH", "https://assets.thehartford.com/image/upload/failsafe_overview_flyer.pdf"]
+    - item: "Policy limits structure, common sub-limits, and retention terms applicable to GIGA."
+      searched: ["Hartford FailSafe GIGA limits per claim aggregate", "FailSafe GIGA retention each claim", "FailSafe schedule of limits Declarations Hartford", "site:publicdocs \"FailSafe GIGA\" certificate limits"]
+      next_best_sources: ["https://assets.thehartford.com/image/upload/failsafe_fact_sheet.pdf", "https://www.hfpinsurance.com/marketing/productguide.pdf", "https://www.hfpinsurance.com/tech/fs_giga.pdf"]
+    - item: "Affirmative cover for media liability, IP infringement, business interruption (incl. dependent providers), regulatory/PCl, breach response, cyber extortion, social engineering; exact sublimits/conditions."
+      searched: ["Hartford FailSafe media liability specimen", "\"FS 00 H368 00 1118\" (All Perils System Failure)", "\"FS 00 H370 00 0919\" Voluntary Shutdown", "\"FS 00 H033 00 0918\" Data Privacy Laws", "\"FS 00 H372 00 0919\" Return of Fees"]
+      next_best_sources: ["https://plaus.tech/cloudflare-supply-chain-attack-insurance/", "https://assets.thehartford.com/image/upload/small_failsafe_analyzer.pdf", "https://www.gbainsurance.com/sites/default/files/2016-06/Cyber%20-%20E%26O%20For%20Tech%20Businesses%20and%20related%20cyber%20coverage.pdf"]

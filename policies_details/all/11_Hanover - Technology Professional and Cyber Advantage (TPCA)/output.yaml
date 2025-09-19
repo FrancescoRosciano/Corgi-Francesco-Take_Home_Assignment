@@ -1,0 +1,94 @@
+policy:
+  metadata:
+    carrier: "The Hanover Insurance Company"
+    product: "Technology Professional and Cyber Advantage (TPCA)"
+    form_code: null
+    edition_date: null
+    jurisdiction: null
+    source:
+      link: "https://www.insurance.ca.gov/0250-insurers/0800-rate-filings/0100-rate-filing-lists/rate-filing-approvals/upload/Approval-Closed-List-YTD-12-31-24.xlsx"
+      type: "other"
+      citation: "CA DOI approval list shows 'TECHNOLOGY PROFESSIONAL AND CYBER ADVANTAGE' rate/form approvals in 2024; exact specimen not publicly posted. Not found"
+
+  compare:
+    trigger: "unclear"
+    duty: "duty_to_defend"
+    defense_costs: "unclear"
+    consent_to_settle:
+      required: true
+      hammer: "none"
+      details: "Marketing materials state consent to settle with no hammer; cannot verify wording without specimen."
+      cite: "Not found"
+
+  limits:
+    per_claim_limit:
+      amount: null
+      currency: "USD"
+      cite: "Not found"
+    aggregate_limit:
+      amount: null
+      currency: "USD"
+      cite: "Not found"
+    retention:
+      amount: null
+      currency: "USD"
+      applies_to: "each_claim"
+      cite: "Not found"
+    sublimits:
+      - name: "First-party cyber options (e.g., breach response, restoration, extortion, BI/EE)"
+        amount: null
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "Not found"
+
+  coverage:
+    tech_services_eo: { covered: null, summary: "E&O for errors, omissions, breach of warranty/representation, failure to perform.", cite: "Not found" }
+    media_liability: { covered: null, summary: "Defamation, disparagement and privacy/publicity torts.", cite: "Not found" }
+    ip_infringement: { covered: null, summary: "Marketing indicates IP coverage incl. copyright, trademark, trade dress; content definition extends to software/code.", cite: "Not found" }
+    privacy: { covered: null, summary: "Liability for failure to protect personal/confidential info and breach notification duties.", cite: "Not found" }
+    network_security: { covered: null, summary: "Unauthorized access, malware/virus, code tampering, failure to provide access.", cite: "Not found" }
+    business_interruption:
+      covered: null
+      dependent_providers: null
+      system_failure: null
+      cite: "Not found"
+    regulatory: { covered: null, summary: "Fines/penalties and regulatory defense (where insurable by law).", cite: "Not found" }
+    pci: { covered: null, summary: "Payment Card expense listed as optional endorsement.", cite: "Not found" }
+    breach_response: { covered: null, summary: "Security breach notification and remediation; PR; rewards.", cite: "Not found" }
+    cyber_extortion: { covered: null, summary: "Extortion threat response costs.", cite: "Not found" }
+    social_engineering: { covered: null, summary: "Social engineering listed as optional endorsement.", cite: "Not found" }
+    contractual_liability_carveback: { exists: null, summary: "", cite: "Not found" }
+
+  exclusions:
+    - label: "War and military action"
+      effect: "Excluded; separate endorsement references a carve-back for cyber terrorism in some states."
+      carvebacks: "Amendment of War and Military Action Exclusion – TPCA (form referenced in LA rate bulletin)."
+      cite: "Not found"
+
+  definitions:
+    professional_services: { text: "", cite: "Not found" }
+    technology_services: { text: "", cite: "Not found" }
+    wrongful_act: { text: "", cite: "Not found" }
+
+  conditions:
+    notice_reporting: { summary: "Marketing notes claim notice limited to a designated authorized person.", cite: "Not found" }
+    extended_reporting: { available: null, duration: null, cite: "Not found" }
+    territory: { summary: "Marketing states universal territory unless prohibited by U.S. law.", cite: "Not found" }
+
+  unknowns:
+    - item: "Official TPCA specimen policy (form number and edition), with section/page structure"
+      searched:
+        - "site:insurance.ca.gov \"Technology Professional & Cyber Advantage\" HNVR-G134549632"
+        - "site:filingaccess.serff.com Hanover Technology Professional and Cyber Advantage"
+        - "site:hanover.com \"Policy forms library\" Technology Professional and Cyber Advantage"
+        - "\"Technology Professional and Cyber Advantage\" policy form PDF"
+        - "Hanover TPCA specimen form code"
+        - "Hanover Technology Professional Advantage Plus specimen"
+        - "Hanover TPCA Declarations limits retention schedule"
+        - "Hanover TPCA business interruption waiting period system failure dependent providers"
+        - "Hanover TPCA PCI assessments coverage form"
+        - "Hanover TPCA consent to settle hammer clause"
+      next_best_sources:
+        - "https://www.insurance.ca.gov/0250-insurers/0800-rate-filings/0100-rate-filing-lists/public-notices/upload/PN060625.xlsx"
+        - "https://filingaccess.serff.com/sfa/home/NY"
+        - "https://www.hanover.com/agents/agent-solutions/commercial-lines/policy-forms-library"

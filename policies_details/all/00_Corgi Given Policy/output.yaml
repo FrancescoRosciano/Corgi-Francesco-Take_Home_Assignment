@@ -1,0 +1,145 @@
+policy:
+  metadata:
+    carrier: "CFC Underwriting Limited"
+    product: "Technology v4.1 (United States)"
+    form_code: null
+    edition_date: "2024"
+    jurisdiction: null
+    source:
+      link: "sandbox:/mnt/data/policy-specimen.md"
+      type: "other"
+      citation: "Not found"
+
+  compare:
+    trigger: "claims_made_and_reported"
+    duty: "duty_to_defend"
+    defense_costs: "mixed"
+    consent_to_settle:
+      required: true
+      hammer: "soft_50"
+      details: "Carrier will not settle without insured’s consent; if insured refuses a recommended settlement and continues defense, further costs are split 50/50 and carrier’s liability is capped at the recommended settlement amount."
+      cite: "§ 3. Agreement to pay claims (duty to defend), p. Not found"
+
+  limits:
+    per_claim_limit:
+      amount: 1000000
+      currency: "USD"
+      cite: "§ Declarations — INSURING CLAUSE 1, Section A: Errors & Omissions — Limit of liability USD1,000,000 each and every claim, p. 5 of PDF. :contentReference[oaicite:0]{index=0}"
+    aggregate_limit:
+      amount: 1000000
+      currency: "USD"
+      cite: "§ Declarations — INSURING CLAUSE 1 (All sections combined): Aggregate limit USD1,000,000, p. 5 of PDF. :contentReference[oaicite:1]{index=1}"
+    retention:
+      amount: 2500
+      currency: "USD"
+      applies_to: "each_claim"
+      cite: "§ Declarations — Multiple sections show Deductible USD2,500 each and every claim (e.g., IC1 Sections A–G), p. 5 of PDF. :contentReference[oaicite:2]{index=2}"
+    sublimits:
+      - name: "Incident response costs"
+        amount: 1000000
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ Declarations — INSURING CLAUSE 2, Section B: Incident Response Costs — Aggregate limit USD1,000,000; Deductible USD0, p. 6 of PDF. :contentReference[oaicite:3]{index=3}"
+      - name: "Legal, forensic and breach management costs"
+        amount: 1000000
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ Declarations — INSURING CLAUSE 2, Section C: Legal, Forensic & Breach Management Costs — Aggregate limit USD1,000,000, p. 6 of PDF. :contentReference[oaicite:4]{index=4}"
+      - name: "Cyber extortion"
+        amount: 250000
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ Declarations — INSURING CLAUSE 2, Section D: Extortion — Aggregate limit USD250,000, p. 6 of PDF. :contentReference[oaicite:5]{index=5}"
+      - name: "System damage & rectification"
+        amount: 1000000
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ Declarations — INSURING CLAUSE 2, Section E: System Damage & Rectification Costs — Aggregate limit USD1,000,000, p. 6 of PDF. :contentReference[oaicite:6]{index=6}"
+      - name: "Business interruption & reputational harm"
+        amount: 1000000
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ Declarations — INSURING CLAUSE 2, Section F: System Business Interruption & Reputational Harm — Aggregate limit USD1,000,000, p. 6 of PDF. :contentReference[oaicite:7]{index=7}"
+      - name: "Regulatory costs and fines"
+        amount: 1000000
+        currency: "USD"
+        applies_to: "each_claim"
+        cite: "§ Declarations — INSURING CLAUSE 1, Section G: Regulatory Costs & Fines — Limit USD1,000,000 each and every claim, p. 5 of PDF. :contentReference[oaicite:8]{index=8}"
+      - name: "Reputation & brand protection (public relations)"
+        amount: 100000
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ Declarations — INSURING CLAUSE 8: Reputation & Brand Protection — Aggregate limit USD100,000, p. 7 of PDF. :contentReference[oaicite:9]{index=9}"
+      - name: "Claim preparation costs"
+        amount: 25000
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ Declarations — INSURING CLAUSE 3: Claim Preparation Costs — Aggregate limit USD25,000, p. 7 of PDF. :contentReference[oaicite:10]{index=10}"
+      - name: "Network security & privacy liability"
+        amount: 1000000
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ Declarations — INSURING CLAUSE 2, Section A: Network Security & Privacy Liability — Aggregate limit USD1,000,000, p. 6 of PDF. :contentReference[oaicite:11]{index=11}"
+      - name: "PCI fines, penalties and assessments"
+        amount: null
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "Not found in this schedule (Professions (US) v3.2)."
+
+  coverage:
+    tech_services_eo: { covered: true, summary: "Professional liability for technology services, including negligence, certain unintentional breach of contract, vicarious liability, product failure, and BI/PD arising from tech services.", cite: "§ Declarations — IC1 Sections A–D; coverage listing on ACORD page, p. 1 & 5 of PDF. :contentReference[oaicite:12]{index=12}turn3view2" }
+    media_liability: { covered: true, summary: "IP & media (non-patent), defamation, privacy/publicity, confidentiality linked to tech services.", cite: "§ Declarations — IC1 Section E (IP infringement) and schedule features list, p. 1 & 5 of PDF. :contentReference[oaicite:13]{index=13}turn3view2" }
+    ip_infringement: { covered: true, summary: "Non-patent IP infringement and related offenses tied to technology services.", cite: "§ Declarations — IC1 Section E: Intellectual Property Rights Infringement, p. 5 of PDF. :contentReference[oaicite:14]{index=14}" }
+    privacy: { covered: true, summary: "Network security & privacy liability plus incident response (legal/forensics/PR/notifications).", cite: "§ Declarations — IC2 Sections A–C, p. 6 of PDF. :contentReference[oaicite:15]{index=15}" }
+    network_security: { covered: true, summary: "Liability from security failures (unauthorized access, malware, DoS, etc.).", cite: "§ Declarations — IC2 Section A: Network Security & Privacy Liability, p. 6 of PDF. :contentReference[oaicite:16]{index=16}" }
+    business_interruption:
+      covered: true
+      dependent_providers: true
+      system_failure: true
+      cite: "§ Declarations — IC2 Section F: System Business Interruption & Reputational Harm (includes non-malicious 'system failure'); § Wording excerpts show system failure and waiting period terms, p. 6 & 17 of PDF. :contentReference[oaicite:17]{index=17}"
+    regulatory: { covered: true, summary: "Regulatory costs/fines (where insurable by law).", cite: "§ Declarations — IC1 Section G: Regulatory Costs & Fines, p. 5 of PDF. :contentReference[oaicite:18]{index=18}" }
+    pci: { covered: null, summary: "PCI assessments coverage not shown on this schedule.", cite: "Not found in this schedule." }
+    breach_response: { covered: true, summary: "24/7 hotline; incident response; legal, forensics, breach management; notifications and PR.", cite: "§ Declarations — IC2 Sections B–C; hotline noted; p. 4 & 6 of PDF. :contentReference[oaicite:19]{index=19}" }
+    cyber_extortion: { covered: true, summary: "Payments for extortion threats (e.g., ransomware).", cite: "§ Declarations — IC2 Section D: Extortion, p. 6 of PDF. :contentReference[oaicite:20]{index=20}" }
+    social_engineering: { covered: true, summary: "Funds transfer/social engineering coverage appears under cyber crime sections (if purchased).", cite: "§ Feature list on ACORD/schedule indicates cyber crime; precise clause not itemized in this extract, p. 1 of PDF. :contentReference[oaicite:21]{index=21}" }
+    contractual_liability_carveback: { exists: true, summary: "Carve-backs where liability would exist absent the contract; additional insured may be primary & non-contributory if required by contract.", cite: "§ Feature list / One-page details; specimen wording references in exclusions/conditions (precise page not shown here). p. Not found" }
+
+  exclusions:
+    - label: "Contractual liability; liquidated damages/service credits"
+      effect: "Excluded; carve-backs where liability exists absent contract."
+      carvebacks: "Liability absent contract preserved; additional insured terms may apply if required by contract."
+      cite: "§ One-page details; wording exclusions — precise page not shown here. p. Not found"
+    - label: "Patent"
+      effect: "Patent claims excluded."
+      carvebacks: "Non-patent IP offenses covered under IC1D."
+      cite: "§ Declarations — IC1 Section E; wording exclusions — patent, p. 5 of PDF / Not found for exclusion page. :contentReference[oaicite:22]{index=22}"
+    - label: "Utilities / Internet backbone failures"
+      effect: "External utilities/core internet infrastructure failures excluded."
+      carvebacks: "Dependent BI otherwise available subject to exclusions."
+      cite: "§ Wording exclusions indicate power/utility failures; see BI clauses, p. 6 & 21 of PDF. :contentReference[oaicite:23]{index=23}"
+    - label: "TCPA / CAN-SPAM"
+      effect: "Unsolicited communications excluded (limited carve-backs)."
+      carvebacks: "Limited carve-backs may apply per wording."
+      cite: "§ One-page details (precise specimen page not shown), p. Not found"
+    - label: "Known claims/circumstances before continuity"
+      effect: "Prior/known matters excluded."
+      carvebacks: "Continuous cover provisions may apply per wording."
+      cite: "§ Wording conditions/exclusions (precise page not shown), p. Not found"
+
+  definitions:
+    professional_services: { text: "Not found.", cite: "Not found" }
+    technology_services: { text: "Broadly includes software/hardware, hosting, integration, consulting, support, and network management (as listed in the policy’s definitions/Declarations).", cite: "§ One-page details; Declarations headings list tech services; precise definition page not shown, p. Not found" }
+    wrongful_act: { text: "Not found as a defined term; liability framed around acts/errors/omissions in providing technology services.", cite: "§ Wording IC1 lead-in (precise page not shown), p. Not found" }
+
+  conditions:
+    notice_reporting: { summary: "Cyber incident hotline available 24/7; notification and prior consent requirements per wording.", cite: "§ Declarations — Hotline noted; wording Condition 1 (precise page not shown), p. 4 of PDF / Not found. :contentReference[oaicite:24]{index=24}" }
+    extended_reporting: { available: true, duration: "60-day automatic; optional ERP duration set on Declarations.", cite: "§ Wording — ERP/Optional ERP, p. 50 of PDF. :contentReference[oaicite:25]{index=25}" }
+    territory: { summary: "Choice of law/jurisdiction and service-of-suit per Declarations.", cite: "§ Wording — Choice of law, jurisdiction and service of suit (precise page not shown), p. Not found" }
+
+  unknowns:
+    - item: "PCI fines/assessments coverage and sublimit for this schedule"
+      searched: ["site:virtualconstructionassistants.com CFC PCI fines penalties assessments", "Professions (US) v3.2 PCI Section", "CFC Technology PCI assessments schedule specimen"]
+      next_best_sources: ["https://www.serff.com/serff_filing_access.htm", "https://www.cfc.com/en-us/products/class/cyber-insurance/", "Carrier-issued Declarations or endorsement adding PCI coverage"]
+    - item: "Form code and precise edition (month) for Technology v4.1 (U.S.)"
+      searched: ["CFC Technology v4.1 form code", "CFC technology policy wording 2024 form identifier", "SERFF CFC technology filing"]
+      next_best_sources: ["https://www.serff.com/serff_filing_access.htm", "https://www.cfc.com/en-us/products/industry/technology/", "Carrier specimen PDF with footer showing form ID"]

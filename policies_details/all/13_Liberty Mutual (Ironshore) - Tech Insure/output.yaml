@@ -1,0 +1,123 @@
+policy:
+  metadata:
+    carrier: "Liberty Mutual (Ironshore)"
+    product: "Tech Insure (Technology Professional Liability)"
+    form_code: "LIU TECH INSURE (0512)"
+    edition_date: "2012-05"
+    jurisdiction: "US-NY"
+    source:
+      link: "https://www.businessriskpartners.com/wp-content/uploads/2015/05/TechnologyLiability_Data-Breach_Privacy_policy_sample.pdf"
+      type: "other"
+      citation: "§ Insuring Agreements header & footer 'LIU TECH INSURE (0512)', p. 1"
+
+  compare:
+    trigger: "claims_made_and_reported"
+    duty: "duty_to_defend"
+    defense_costs: "inside_limits"
+    consent_to_settle:
+      required: true
+      hammer: "soft_50"
+      details: "If the insured refuses a settlement the Company recommends and the claimant accepts, the Company’s liability is capped at the amount for which it would have been liable plus 50% of Claims Expenses and 50% of Damages in excess of the recommended settlement; the Company may withdraw from defense by tendering control to the insured."
+      cite: "§ III.D. Settlement—Consent/Hammer, p. 4"
+
+  limits:
+    per_claim_limit:
+      amount: null
+      currency: "USD"
+      cite: "§ D. Limits of Liability (set on Declarations Item 4), p. 15"
+    aggregate_limit:
+      amount: null
+      currency: "USD"
+      cite: "§ D. Limits of Liability (aggregate limit set on Declarations Item 4), p. 15"
+    retention:
+      amount: null
+      currency: "USD"
+      applies_to: "each_claim"
+      cite: "§ E. Deductible (applies to each Claim/Interrelated Matter; amount set on Declarations Item 4), p. 15"
+    sublimits:
+      - name: "Disciplinary/Regulatory Fines & Penalties"
+        amount: null
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ I.E. Disciplinary or Regulatory Proceedings, Fines and Penalties (sublimit stated on Declarations), p. 2"
+      - name: "Notification Costs"
+        amount: null
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ I.F. Notification Costs (sublimit(s) stated on Declarations), p. 2"
+      - name: "Computer Forensic Costs (part of Notification Costs)"
+        amount: null
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ IV.3 & § I.F. (part of Notification Costs sublimit), p. 5 & p. 2"
+      - name: "Crisis Management Expenses"
+        amount: null
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ I.G. Crisis Management Expenses (sublimit stated on Declarations), p. 3"
+      - name: "Network Extortion Costs"
+        amount: null
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ I.H. Network Extortion (sublimit stated on Declarations), p. 3"
+      - name: "Network Business Interruption"
+        amount: null
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ I.I. Network Business Interruption (sublimit & Waiting Period on Declarations), p. 3"
+      - name: "Network Asset Damage"
+        amount: null
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ I.J. Network Asset Damage (sublimit stated on Declarations), p. 3"
+      - name: "Pre-Claim Assistance"
+        amount: 20000
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ II.A. Supplemental Payments—Pre-Claim Assistance (aggregate cap), p. 3"
+      - name: "Reimbursement of Daily Expenses (per day cap 500)"
+        amount: 10000
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ II.B. Supplemental Payments—Reimbursement of Daily Expenses (up to 500/day; 10,000 per Policy Period), p. 3"
+
+  coverage:
+    tech_services_eo: { covered: true, summary: "Damages and Claims Expenses for Claims first made and reported arising out of a Technology Wrongful Act by the Insured, subject to Retroactive and Knowledge Dates.", cite: "§ I.D. Technology Professional Liability; § IV.37 Technology Wrongful Act, pp. 1 & 10" }
+    media_liability: { covered: true, summary: "Damages and Claims Expenses for Claims arising out of Media Injury from the Insured’s Media Content.", cite: "§ I.B. Media Liability; § IV.22 Media Injury, pp. 1 & 8" }
+    ip_infringement: { covered: true, summary: "IP infringement (e.g., copyright, trademark, trade dress) included within Media Injury and Technology Wrongful Act.", cite: "§ IV.22(a) Media Injury; § IV.37(c) Technology Wrongful Act, pp. 8 & 10" }
+    privacy: { covered: true, summary: "Data Breach Liability for Privacy Breach/Unauthorized Access, including failure to meet privacy/security obligations.", cite: "§ I.A. Data Breach Liability; § IV.29 Privacy Breach, p. 1 & p. 9" }
+    network_security: { covered: true, summary: "Third-party liability for Unauthorized Access/failure to prevent it; plus first-party network protections elsewhere in the form.", cite: "§ I.A. Data Breach Liability; § IV.38 Unauthorized Access, pp. 1 & 10" }
+    business_interruption:
+      covered: true
+      dependent_providers: false
+      system_failure: false
+      cite: "§ I.I. Network Business Interruption (triggered by Malicious Attack to Insured’s systems; no dependent provider or non-malicious system failure coverage), p. 3"
+    regulatory: { covered: true, summary: "Coverage for Disciplinary or Regulatory Proceedings, including defined Regulatory Fines, subject to a sublimit.", cite: "§ I.E.; § IV.31 Regulatory Fines; § IV.7(d) Damages carve-in for Regulatory Fines, pp. 2 & 9 & 6" }
+    pci: { covered: false, summary: "Payment card brand assessments/fines and related contractual indemnity for PCI DSS are excluded from Damages.", cite: "§ IV.7(d) Damages—what Damages do not include, p. 6" }
+    breach_response: { covered: true, summary: "Notification Costs (forensics, legal, notification, call center, credit monitoring); Company pays 90% if panel First Responder/provider is used; sublimit per Policy Period.", cite: "§ I.F.(1)–(7) & coinsurance paragraph, p. 2" }
+    cyber_extortion: { covered: true, summary: "Network Extortion Costs for credible ransom/extortion threats against website, systems, or data disclosure; conditions apply; sublimit per Policy Period.", cite: "§ I.H. Network Extortion, p. 3" }
+    social_engineering: { covered: false, summary: "No specific coverage for fraudulent instructions/funds transfer; Damages exclude financial trading losses or transfers of monies.", cite: "§ IV.7(g) Damages—exclusions from Damages, p. 6" }
+    contractual_liability_carveback: { exists: true, summary: "Contract exclusion carves back: liability the Insured would have absent contract; NDA-related Privacy Breach; and warranty/guarantee breach as specifically defined in Technology Wrongful Act (e.g., specs/non-conformance).", cite: "§ V.10(a)–(c) Contract exclusion carve-backs; § IV.37(f) Technology Wrongful Act, pp. 11 & 10" }
+
+  exclusions: []
+
+  definitions:
+    professional_services: { text: "Professional Services Wrongful Act means any act, error, omission, etc., due to the rendering of or failure to render the Professional Services specified in Item 7 of the Declarations.", cite: "§ IV.30 Professional Services Wrongful Act, p. 9" }
+    technology_services: { text: "Computer/telecommunications/information systems services (e.g., data management/processing/hosting, software development/integration, installation, network management, website design) provided by the Insured for others; excludes Technology Products.", cite: "§ IV.36 Technology Services, p. 10" }
+    wrongful_act: { text: "Technology Wrongful Act means acts/errors/omissions in rendering/failing to render Technology Services (or due to failure of Technology Products), including IP infringement, Unauthorized Access due to failure to render, and specified breach-of-contract scenarios (e.g., not meeting specs/fitness/safety).", cite: "§ IV.37 Technology Wrongful Act, p. 10" }
+
+  conditions:
+    notice_reporting: { summary: "Condition precedent: Senior Executives must give written notice within 60 days of knowledge and no later than 30 days after expiration (or during ERP). Circumstances reporting permitted and deemed a Claim for BI/Extra Expense insuring agreements.", cite: "§ VI.A Notice; § VI.B Reporting of Acts That May Give Rise to a Claim/Loss, p. 14" }
+    extended_reporting: { available: true, duration: 36, cite: "§ VI.H Extended Reporting Period: options of 1/2/3 years at 100%/150%/200% of annual premium, p. 15" }
+    territory: { summary: "Worldwide coverage.", cite: "§ III.A Territory, p. 4" }
+
+  unknowns:
+    - item: "Official Ironshore-labeled Tech Insure specimen policy wording and any successor form code/edition post-acquisition"
+      searched:
+        - "Ironshore Tech Insure specimen policy PDF"
+        - "Ironshore Specialty technology professional liability policy form SERFF"
+        - "Liberty Mutual Ironshore Technology Professional Liability specimen"
+      next_best_sources:
+        - "https://business.libertymutual.com/ironshore/professional-liability-solutions/"
+        - "https://portals.naic.org/serff-filing-access"
+        - "https://filingaccess.serff.com/sfa/home/NY"

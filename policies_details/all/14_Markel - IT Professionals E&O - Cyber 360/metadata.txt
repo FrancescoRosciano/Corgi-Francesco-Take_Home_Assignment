@@ -1,0 +1,17 @@
+{
+  "carrier": "Markel",
+  "program": "IT Professionals E&O / Cyber 360",
+  "paper": "Admitted or Lloyd's paper (Comtech) depending on jurisdiction",
+  "states_available": "Not specified (global)",
+  "form_codes_and_edition": "Not publicly listed",
+  "specimen_pdf_link": "https://content.markel.com/api/public/content/signed-miicl-stats-2023-final",
+  "product_page_link": "https://www.markel.com/us/commercial/professional-and-management-liability/errors-and-omissions/it-professionals",
+  "min_max_limit": "Line sizes up to $20M on company or Lloyd's paper",
+  "target_segments": "IT professionals, software/SaaS providers, hardware manufacturers, consultants and media companies, financial services, retail, manufacturing, technology, healthcare",
+  "notable_features": "Broad professional liability coverage for software, hardware and consulting services; includes risk management services (NetDiligence portal); offers combined professional indemnity, general liability and cyber coverage; covers privacy/data breach, IP infringement, libel/slander; flexible primary or excess placements; worldwide reach; technology professional liability covers errors, omissions, or misrepresentations in technology services, customizable cyber insurance policy",
+  "last_verified_date": "2025-09-17",
+  "pdf_files": [
+    "Markel - IT Professionals E&O - Cyber 360.pdf"
+  ],
+  "source_csv_row": 11
+}

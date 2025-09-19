@@ -1,0 +1,15 @@
+{
+  "carrier": "Nationwide E-Risk Services",
+  "program": "Cyber and Professional Services (CAPS)",
+  "paper": "Admitted (46 states)",
+  "states_available": "Admitted in 46 states",
+  "form_codes_and_edition": "Not specified",
+  "specimen_pdf_link": "Not found — specimen wording agent-gated; request via Nationwide E-Risk",
+  "product_page_link": "https://www.nationwide.com/excessandsurplus/e-risk/products/cyber-and-professional-services/",
+  "min_max_limit": "Up to $100M in revenue",
+  "target_segments": "Professional services, technology companies",
+  "notable_features": "Professional and media services liability, cyber information breaches, HIPAA fines up to $2M, technology fraud theft loss, system failure coverage",
+  "last_verified_date": "September 2025",
+  "pdf_files": [],
+  "source_csv_row": 21
+}

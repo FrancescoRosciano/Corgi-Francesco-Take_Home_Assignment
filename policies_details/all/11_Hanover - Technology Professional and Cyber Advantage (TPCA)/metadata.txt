@@ -1,0 +1,17 @@
+{
+  "carrier": "Hanover",
+  "program": "Technology Professional and Cyber Advantage (TPCA)",
+  "paper": "Likely admitted (Hanover Insurance Company)",
+  "states_available": "Not specified (US)",
+  "form_codes_and_edition": "Document 114‑10155 (8/22)",
+  "specimen_pdf_link": "https://lakeside-insurance.com/wp-content/uploads/2023/08/TPCA-Coverage-Guide-114-10155.pdf",
+  "product_page_link": "https://www.businessinsurance.com/hanover-unveils-eo-cyber-product/",
+  "min_max_limit": "$25M for tech professional/third-party cyber, $10M for first-party cyber (includes unlimited extended reporting)",
+  "target_segments": "Enterprise technology companies requiring broad E&O and cyber cover",
+  "notable_features": "Claims‑made coverage with enterprise‑wide definition; universal territory; limited notice requirement; pre‑claim assistance; duty‑to‑defend including injunctive relief; coverage for punitive damages; no contractual liability exclusion or hammer clause; covers damage to data and physical property, mental anguish, recall/withdrawal; automatic additional insureds; non‑binding arbitration reduces retention; unlimited extended reporting period; optional first‑party cyber coverage (breach costs, data restoration, cyber extortion, business income, contingent income, funds transfer fraud, reputational harm, system failure, social engineering, hardware replacement, system remediation, utility fraud, invoice manipulation); integrated E&O, cyber and privacy security liability, personal injury liability, media and content liability",
+  "last_verified_date": "2025-09-17",
+  "pdf_files": [
+    "Hanover - Technology Professional and Cyber Advantage (TPCA).pdf"
+  ],
+  "source_csv_row": 10
+}

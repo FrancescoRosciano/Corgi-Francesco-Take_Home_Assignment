@@ -1,0 +1,201 @@
+policy:
+  metadata:
+    carrier: ""
+    product: "Plus Policy — Technology E&O and Cyber Insurance Coverage Part"
+    form_code: "EMB-001-T-0523-CYBP"
+    edition_date: "2023-05"
+    jurisdiction: null
+    source:
+      link: "https://access.embroker.com/wp-content/uploads/2023/05/ESP-Plus-Tech-EO-Cyber-Form-5.29.pdf"
+      type: "carrier_pdf"
+      citation: "p. 1"
+
+  compare:
+    trigger: "claims_made_and_reported"
+    duty: "duty_to_defend"
+    defense_costs: "inside_limits"
+    consent_to_settle:
+      required: true
+      hammer: "none"
+      details: "Insurer has the right and duty to defend covered Claims; no settlement without the Insured’s consent (not to be unreasonably withheld). No penalty clause if consent is withheld."
+      cite: "§ VIII.A–B (Defense of Claims / Settlement), p. 6 (General Terms & Conditions EMB-001-T-23.5-GTC)"
+
+  limits:
+    per_claim_limit:
+      amount: null
+      currency: "USD"
+      cite: "§ III.C (Coverage Limits of Liability — set on Declarations), p. 4 (General Terms & Conditions)"
+    aggregate_limit:
+      amount: null
+      currency: "USD"
+      cite: "§ III.A–B (Policy & Coverage Part Aggregate Limits — set on Declarations), p. 3–4 (General Terms & Conditions)"
+    retention:
+      amount: null
+      currency: "USD"
+      applies_to: "each_claim"
+      cite: "§ V.A–B (Retentions — amounts set on Declarations), p. 4–5 (General Terms & Conditions)"
+    sublimits:
+      - name: "Reputational Harm (30 days after Adverse Media Report or Privacy Breach)"
+        amount: 1000000
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ 5. Privacy Breach, Forensics Expenses, and Reputational Harm (subject to $1,000,000 sublimit), p. 1–2 (Coverage Part)"
+      - name: "Bricking (hardware replacement/repair)"
+        amount: 500000
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ 7.d. System Damage, Bricking, and Betterment (subject to $500,000 sublimit), p. 2 (Coverage Part)"
+      - name: "Betterment (security improvements recommended by outside experts)"
+        amount: 100000
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ 7.d.i. System Damage, Bricking, and Betterment (subject to $100,000 sublimit), p. 2 (Coverage Part)"
+
+  coverage:
+    tech_services_eo: { covered: true, summary: "Damages and Defense Costs for Technology Professional Services Wrongful Acts, including certain liability assumed in an Indemnity Contract.", cite: "§ 1. Technology and Media Errors and Omissions, p. 1; § S. Indemnity Contract, p. 11 (Coverage Part)" }
+    media_liability: { covered: true, summary: "Media Professional Services Wrongful Acts (defamation, privacy offenses, and IP infringement other than patents).", cite: "§ 1. Technology and Media Errors and Omissions, p. 1; § Z. Media Professional Services Wrongful Act (1–6), p. 12–13 (Coverage Part)" }
+    ip_infringement: { covered: true, summary: "Infringement of intellectual property other than patents under Media Professional Services Wrongful Acts; similar IP element also listed under Technology Professional Services Wrongful Act.", cite: "§ Z.5 (Media Professional Services Wrongful Act), p. 12–13; § PP.6 (Technology Professional Services Wrongful Act), p. 16 (Coverage Part)" }
+    privacy: { covered: true, summary: "Liability from a Privacy Breach, including violations of data protection laws, loss or unauthorized disclosure of third-party data.", cite: "§ 4. Network Security and Privacy Liability, p. 1; § EE. Privacy Breach, p. 13–14 (Coverage Part)" }
+    network_security: { covered: true, summary: "Liability for Network Security Events (e.g., malware transmission, data destruction, power failure if under insured/IT provider’s control).", cite: "§ 4. Network Security and Privacy Liability, p. 1; § BB.4–5 (Network Security Event), p. 13 (Coverage Part)" }
+    business_interruption:
+      covered: true
+      dependent_providers: true
+      system_failure: true
+      cite: "§ 12. Business Interruption & Extra Expenses and System Failure; § 13. Dependent Business Interruption & Extra Expenses and Dependent System Failure (Waiting Period set on Declarations), p. 3; § VV. Waiting Period, p. 17 (Coverage Part)"
+    regulatory: { covered: true, summary: "Regulatory Actions are included within ‘Claim’; Fines and Penalties covered where insurable by law.", cite: "§ D. Claim (includes Regulatory Action), p. 8; § HH. Regulatory Action, p. 14; § Q. Fines and Penalties, p. 11 (Coverage Part)" }
+    pci: { covered: true, summary: "Payment Card Industry/Card Brand fines, assessments, and card reissuance costs for a Network Security Event or PCI DSS non-compliance in respect of such event.", cite: "§ 6. Payment Card Industry and Card Brand Fines, Assessments or Charges, p. 1–2 (Coverage Part)" }
+    breach_response: { covered: true, summary: "Privacy breach & forensics expenses (forensics, legal advice, notification, call center, credit/identity monitoring, data restoration, PR).", cite: "§ 5. Privacy Breach, Forensics Expenses, and Reputational Harm; § FF. Privacy Breach And Forensics Expenses (a–g), p. 1–2, 14–15 (Coverage Part)" }
+    cyber_extortion: { covered: true, summary: "Extortion Costs to terminate/prevent a Cyber Threat, including negotiation/investigation costs.", cite: "§ 10. Cyber Extortion, p. 2; § P. Extortion Costs, p. 10–11 (Coverage Part)" }
+    social_engineering: { covered: true, summary: "Social Engineering Events and Funds Transfer Fraud covered above the greater of $25,000 or the policy Retention.", cite: "§ 9. Social Engineering and Funds Transfer Fraud, p. 2 (Coverage Part)" }
+    contractual_liability_carveback: { exists: true, summary: "E&O insuring agreement includes liability assumed in an Indemnity Contract; additional insureds extension where required by contract.", cite: "§ 1. Technology and Media E&O (Indemnity Contract), p. 1; § III.A Additional Insureds (Conditions), p. 6–7 (Coverage Part)" }
+
+  exclusions:
+    - label: "Prior Notice"
+      effect: "Pre-policy matters noticed under another policy."
+      carvebacks: ""
+      cite: "§ II.A (Exclusions), p. 3"
+    - label: "Prior Knowledge"
+      effect: "Circumstances known to the Control Group before inception."
+      carvebacks: ""
+      cite: "§ II.B (Exclusions), p. 3"
+    - label: "Insured vs. Insured"
+      effect: "Claims by owners >50% or controlling interests."
+      carvebacks: "Does not apply to Claims brought by Insureds for a Privacy Breach."
+      cite: "§ II.C (Exclusions), p. 3–4"
+    - label: "D&O / Corporate information"
+      effect: "Claims in capacity as director/officer or about corporate financial statements."
+      carvebacks: ""
+      cite: "§ II.D (Exclusions), p. 4"
+    - label: "Dishonesty/Fraud (final adjudication)"
+      effect: "Deliberate dishonest/criminal acts excluded after non-appealable adjudication; defense until adjudication."
+      carvebacks: "Defense Costs until final adjudication; only applies to the Insured found to have committed the conduct."
+      cite: "§ II.E (Exclusions), p. 4"
+    - label: "Employment practices / ERISA"
+      effect: "Employment-related liability and ERISA excluded."
+      carvebacks: "Employee data-privacy obligations under laws like HIPAA/GLBA/Cal. Civ. Code 1798.82 preserved."
+      cite: "§ II.F (Exclusions), p. 4"
+    - label: "Acts of God / natural perils"
+      effect: "Catastrophe perils (e.g., flood, earthquake) excluded."
+      carvebacks: ""
+      cite: "§ II.G (Exclusions), p. 4"
+    - label: "Inaccurate pricing of goods (E&O)"
+      effect: "Price description errors excluded for IA1."
+      carvebacks: ""
+      cite: "§ II.H (Exclusions), p. 4"
+    - label: "Patent infringement"
+      effect: "Patent claims excluded."
+      carvebacks: ""
+      cite: "§ II.I (Exclusions), p. 4"
+    - label: "Bankruptcy/insolvency"
+      effect: "Loss arising from your insolvency excluded."
+      carvebacks: ""
+      cite: "§ II.J (Exclusions), p. 4"
+    - label: "Infrastructure outage"
+      effect: "Power/telecom/satellite outages excluded unless under insured’s direct control."
+      carvebacks: "Carve-backs for Tech/Media services proximate cause; Dependent BI coverage applies when the provider’s infrastructure is under its direct control."
+      cite: "§ II.K (Exclusions), p. 4–5"
+    - label: "Regulatory fines (general)"
+      effect: "Fines/penalties excluded unless insurable by law."
+      carvebacks: ""
+      cite: "§ II.L (Exclusions), p. 5"
+    - label: "RICO"
+      effect: "RICO violations excluded."
+      carvebacks: ""
+      cite: "§ II.M (Exclusions), p. 5"
+    - label: "Securities law"
+      effect: "Securities violations excluded."
+      carvebacks: "ERISA paragraph carve-out not applicable to IA 4 or 10 (as stated)."
+      cite: "§ II.N (Exclusions), p. 5"
+    - label: "Theft of your Money/Securities"
+      effect: "Excluded except as covered under Social Engineering/Funds Transfer Fraud."
+      carvebacks: "Coverage under Insuring Agreement 9."
+      cite: "§ II.O (Exclusions), p. 5"
+    - label: "Unfair trade practices / antitrust"
+      effect: "Excluded."
+      carvebacks: "Does not apply to Claims made as part of a Privacy Breach Claim under IA 4."
+      cite: "§ II.P (Exclusions), p. 5"
+    - label: "War/hostile actions"
+      effect: "Excluded."
+      carvebacks: "Does not apply to Cyber Terrorism."
+      cite: "§ II.Q (Exclusions), p. 5"
+    - label: "Unsolicited communications (TCPA/CAN-SPAM)"
+      effect: "Excluded."
+      carvebacks: ""
+      cite: "§ II.R (Exclusions), p. 5–6"
+    - label: "Other professional services"
+      effect: "Claims for services of specified licensed professions excluded (e.g., legal, medical, CPA, engineer)."
+      carvebacks: ""
+      cite: "§ II.T (Exclusions), p. 6"
+    - label: "Cost of contract / fees"
+      effect: "Disgorgement/contract amounts generally excluded."
+      carvebacks: "Carve-back for the portion of Damages that is the return of fees paid to the Insured."
+      cite: "§ II.U (Exclusions), p. 6"
+
+  definitions:
+    professional_services: { text: "Media Professional Services means the provision of digital, written or spoken publications in the course of Your Technology Professional Services; related wrongful acts include defamation, privacy offenses, and certain IP infringement (except patents).", cite: "§ X (Media Professional Services) & § Z (Media Professional Services Wrongful Act), p. 12–13 (Coverage Part)" }
+    technology_services: { text: "Technology Professional Services means services performed in connection with Your Technology Product (software, tech hardware/firmware, technology consulting), including related consulting, staffing, training and support.", cite: "§ NN (Technology Product), p. 15; § OO (Technology Professional Services), p. 15–16 (Coverage Part)" }
+    wrongful_act: { text: "Wrongful act means Media Professional Services Wrongful Act, Technology Professional Services Wrongful Act, and Network Security Event.", cite: "§ XX (Wrongful act), p. 17 (Coverage Part)" }
+
+  conditions:
+    notice_reporting: { summary: "Written notice of any Claim as soon as practicable but no later than 90 days after expiration; late notice not a coverage defense unless insurer materially prejudiced; relation-back for noticed circumstances.", cite: "§ IX.A–E (Claim and Potential Claim Notices), p. 6–7 (General Terms & Conditions)" }
+    extended_reporting: { available: true, duration: 90, cite: "§ VII.A–B (Extended Reporting Period), p. 5–6 (General Terms & Conditions)" }
+    territory: { summary: "Worldwide coverage; payments in USD; subject to sanctions/OFAC restrictions.", cite: "§ IV. Coverage Territory, p. 4 (General Terms & Conditions)" }
+
+  unknowns:
+    - item: "Carrier (insurer of record) named on the specimen Declarations"
+      searched:
+        - "ESP Plus General Terms and Conditions 5.29 PDF insurer"
+        - "EMB-001-T-0523-CYBP Declarations carrier name"
+        - "Embroker Plus Policy insurer of record"
+        - "Everspan Embroker Tech E&O SERFF"
+      next_best_sources:
+        - "SERFF Filing Access portal (state form filings)"
+        - "Embroker–Everspan partnership announcements (Oct 2024)"
+        - "Everspan Group — program insurer site"
+    - item: "Policy limits (Per-Claim/Coverage Limit, Coverage Part Aggregate, Policy Aggregate) — numeric amounts"
+      searched:
+        - "Limits of Liability set on Declarations site:access.embroker.com ESP Plus"
+        - "Embroker Plus Declarations page sample"
+        - "EMB-001-T-0523-CYBP schedule limits"
+      next_best_sources:
+        - "SERFF Filing Access — public form filings for Embroker/Everspan"
+        - "Policy Declarations page issued to the Named Insured"
+        - "Broker of record (Embroker) for specimen Declarations"
+    - item: "Retention amount(s) applicable (including any separate retention for SE/FTF or first-party coverages)"
+      searched:
+        - "Retention set forth in the Declarations General Terms V Retentions"
+        - "Embroker Plus retention schedule"
+        - "Social Engineering retention Embroker Plus"
+      next_best_sources:
+        - "SERFF Filing Access — filed Declarations/Rules for program"
+        - "Policy Declarations page (issued copy)"
+        - "Underwriting/broker guidance from Embroker"
+    - item: "Business Interruption Waiting Period hours (for Your system and Dependent providers)"
+      searched:
+        - "Waiting Period definition EMB-001-T-0523-CYBP"
+        - "Business Interruption Waiting Period hours Embroker Plus"
+        - "Coverage Part §12 §13 Waiting Period Declarations"
+      next_best_sources:
+        - "Policy Declarations page (Waiting Period entry)"
+        - "SERFF Filing Access — filed Declarations form for BI waiting period"
+        - "Embroker underwriting guidelines for Tech E&O/Cyber program"

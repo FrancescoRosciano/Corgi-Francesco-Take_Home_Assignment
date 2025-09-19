@@ -1,0 +1,134 @@
+policy:
+  metadata:
+    carrier: "AXA XL"
+    product: "CyberRiskConnect — Privacy, Security & Technology Insurance"
+    form_code: "TRD 050 0619"
+    edition_date: "2019-06"
+    jurisdiction: null
+    source:
+      link: "https://axaxl.com/-/media/axaxl/files/pdfs/insurance/cyber-north-america/cyberriskconnectpolicyform_axaxl_trd-050-0619.pdf"
+      type: "carrier_pdf"
+      citation: "p. 1"
+
+  compare:
+    trigger: "claims_made_and_reported"
+    duty: "duty_to_defend"
+    defense_costs: "inside_limits"
+    consent_to_settle:
+      required: true
+      hammer: "soft_70"
+      details: "Insurer may settle with insured’s consent (not unreasonably withheld). If insured refuses, duty to defend ends and insurer caps liability at proposed settlement + pre-recommendation claim expenses + 70% of post-recommendation damages and claim expenses."
+      cite: "§ II.B. Settlement, p. 5"
+
+  limits:
+    per_claim_limit:
+      amount: null
+      currency: "USD"
+      cite: "§ III.A Limit of Liability Option; limits stated in Item 3 on the Declarations (Coverage Schedule), p. 6"
+    aggregate_limit:
+      amount: null
+      currency: "USD"
+      cite: "§ III.A.1–2 Combined vs Separate Limits; aggregate limits stated in Item 3 on the Declarations (Coverage Schedule), p. 6–7"
+    retention:
+      amount: null
+      currency: "USD"
+      applies_to: "each_claim"
+      cite: "§ III.B Retentions; amounts stated in Item 3 on the Declarations; highest retention applies if multiple; BI payable only in excess of the Waiting Period, p. 6–7"
+    sublimits: []
+
+  coverage:
+    tech_services_eo: { covered: true, summary: "Damages and Claim Expenses for Third-Party claims alleging Technology or Professional Services Wrongful Acts (e.g., failure of tech/pro services; non-patent IP infringement; defamation from services).", cite: "§ I.A.1–2 Third Party Liability Coverages, p. 1; § IV.NN, IV.WW, IV.BB, p. 12–16" }
+    media_liability: { covered: true, summary: "Media Wrongful Acts (copyright/trademark, privacy/publicity torts, plagiarism, etc.).", cite: "§ I.A.3, p. 1; § IV.BB Media Wrongful Act, p. 12–13" }
+    ip_infringement: { covered: true, summary: "IP infringement covered except for patents and (separately) trade secrets per exclusions.", cite: "§ IV.NN/IV.WW definitions referencing Exclusions V.L & V.M, p. 14–16; § V.L–M, p. 19" }
+    privacy: { covered: true, summary: "Privacy & Cyber Security liability; Privacy Regulatory Defense, Awards & Fines (consumer redress amounts and privacy regulatory fines where insurable).", cite: "§ I.A.4–5, p. 1–2; § IV.PP Regulatory Damages, p. 15" }
+    network_security: { covered: true, summary: "Alleged failure to prevent a Cyber Security Breach (unauthorized access/use/denial of service, malware, etc.).", cite: "§ I.A.4, p. 1; § IV.J Cyber Security Breach, p. 8–9" }
+    business_interruption:
+      covered: true
+      dependent_providers: false
+      system_failure: false
+      cite: "§ I.B.1(a) Business Interruption & Extra Expenses (trigger is a cyber security breach), p. 2; § IV.DD Network (owned/operated/controlled/leased by Insured), p. 12; § IV.J Cyber Security Breach (attack-based), p. 8–9; § IV.AAA Waiting Period (hours set on Declarations), p. 16–17"
+    regulatory: { covered: true, summary: "Defense and insurable awards/fines from privacy regulatory actions.", cite: "§ I.A.5, p. 1–2; § IV.PP, p. 15" }
+    pci:
+      covered: false
+      summary: "Base form has no explicit PCI/Card Brand assessments or fines coverage; contractual obligations (e.g., card brand assessments) are excluded absent endorsement; generic breach response costs may still apply."
+      cite: "§ V.O Contractual, p. 19–20; § IV.N Data Breach Response and Crisis Management Costs (enumerated items do not include card brand assessments), p. 9–11"
+    breach_response: { covered: true, summary: "Data Breach Response & Crisis Management costs (panel or pre-approved vendors); continuous for 18 months from reported data breach.", cite: "§ I.C, p. 2; § IV.N.1–2 (breach response providers/costs), p. 9–11" }
+    cyber_extortion: { covered: true, summary: "Cyber-extortion payments and response costs for threats (including ransomware) to disrupt network, destroy/steal data, DDoS, etc.", cite: "§ I.B.3, p. 2; § IV.H–I, p. 8–9" }
+    social_engineering: { covered: false, summary: "No explicit Social Engineering/Fund Transfer Fraud first-party coverage in base form; ‘Damages’ excludes the monetary value of an electronic fund transfer or transaction.", cite: "§ IV.K ‘Damages do not include’ 8., p. 10" }
+    contractual_liability_carveback: { exists: true, summary: "Contractual exclusion does not apply to liability the insured would have in the absence of a contract and other specified carve-backs.", cite: "§ V.O Contractual Liability (carve-backs), p. 19–20" }
+
+  exclusions:
+    - label: "Deliberate Acts / Personal Profit"
+      effect: "Fraudulent/intentional acts or unlawful profit; defense until final adjudication; criminal proceedings excluded."
+      carvebacks: "Defense provided until final, non-appealable adjudication; non-imputation among natural person Insureds."
+      cite: "§ V.A, p. 17"
+    - label: "Bodily Injury/Property Damage"
+      effect: "BI/PD excluded."
+      carvebacks: "Mental anguish etc. covered if directly resulting from a Third-Party Wrongful Act; electronic data not ‘tangible property’."
+      cite: "§ V.B, p. 17–18"
+    - label: "Insured v. Insured"
+      effect: "Claims by/on behalf of an Insured excluded."
+      carvebacks: "Certain claims by employees/leased workers; privacy & security wrongful act claims."
+      cite: "§ V.D, p. 18"
+    - label: "Employment Practices"
+      effect: "EPL claims excluded."
+      carvebacks: "Does not apply to otherwise covered Privacy & Cyber Security claims."
+      cite: "§ V.E, p. 18"
+    - label: "Antitrust/Unfair Competition"
+      effect: "Competition, restraint of trade, etc. excluded."
+      carvebacks: "See form language for any limited carve-backs."
+      cite: "§ V.I, p. 18"
+    - label: "Consumer Protection / Deceptive Practices"
+      effect: "Certain consumer fraud/deception statutes excluded."
+      carvebacks: "As stated in form."
+      cite: "§ V.J, p. 19"
+    - label: "Unsolicited Communications"
+      effect: "TCPA/CAN-SPAM type claims excluded."
+      carvebacks: "BI and business interruption directly resulting from a cyber security breach remain covered per other grants."
+      cite: "§ V.K, p. 19–20"
+    - label: "Patent"
+      effect: "Patent infringement excluded."
+      carvebacks: "N/A (patents excluded even if other IP may be covered)."
+      cite: "§ V.L, p. 20"
+    - label: "Trade Secrets"
+      effect: "Trade secret misappropriation excluded."
+      carvebacks: "Carve-back for claims directly resulting from a cyber security breach under privacy coverage."
+      cite: "§ V.M, p. 20"
+    - label: "Pollution"
+      effect: "Pollutants excluded."
+      carvebacks: "As stated in form."
+      cite: "§ V.N, p. 20"
+    - label: "Infrastructure Failure"
+      effect: "External power/telecom/Internet outages outside insured’s control excluded."
+      carvebacks: ""
+      cite: "§ V.R, p. 20"
+    - label: "Governmental Orders"
+      effect: "Compelled disclosure/access orders excluded."
+      carvebacks: ""
+      cite: "§ V.S, p. 20"
+    - label: "Over-Redemption"
+      effect: "Excess coupons/prizes discounts excluded."
+      carvebacks: ""
+      cite: "§ V.T, p. 20"
+    - label: "Unauthorized Collection/Use"
+      effect: "Insured’s unlawful data collection/use excluded."
+      carvebacks: "Carve-back for acts of a rogue employee."
+      cite: "§ V.U, p. 20"
+
+  definitions:
+    professional_services: { text: "Services stated in Item 5 of the Declarations; includes failure of such services and certain related torts/IP exposures.", cite: "§ IV.MM Professional Services, p. 14–15" }
+    technology_services: { text: "IT/telecom and related services incl. managed services; SaaS, PaaS, IaaS; data processing/hosting; systems analysis, consulting, programming, installation, management, repair & maintenance; network design; Internet service.", cite: "§ IV.YY Technology Services, p. 16" }
+    wrongful_act: { text: "Any Technology Wrongful Act, Professional Services Wrongful Act, Media Wrongful Act, or Privacy & Security Wrongful Act.", cite: "§ IV.ZZ Third Party Wrongful Act, p. 16; § IV.WW/NN/BB/JJ, p. 12–16" }
+
+  conditions:
+    notice_reporting: { summary: "Claims and first-party incidents must be noticed as soon as practicable, but no later than end of policy period or ERP; notice-of-circumstance allowed (claims deemed made when noticed); hotline notice alone not sufficient.", cite: "§ VI.A–C & D, p. 21–22" }
+    extended_reporting: { available: true, duration: "Automatic 60 days; optional ERP up to 1, 2, 3, or 6 years (premium per schedule).", cite: "§ VIII.A–C, p. 24" }
+    territory: { summary: "Worldwide coverage (subject to sanctions/OFAC and policy terms).", cite: "§ IX.F Territory, p. 25–26" }
+
+  unknowns:
+    - item: "Per-claim and aggregate limits (values) and sublimits (values)"
+      searched: ["Item 3 Coverage Schedule", "Combined Limits", "Separate Limits", "Schedule of Limits", "Declarations page sample for TRD 050 0619"]
+      next_best_sources: ["Broker-issued Declarations Page (Item 3 Coverage Schedule)", "SERFF state filing for TRD 050 0619 (specimen + sample decs)", "Bound policy schedule from carrier"]
+    - item: "Retention amounts and Business Interruption Waiting Period (hours)"
+      searched: ["§ III.B Retentions", "Item 3 Declarations retention", "AAA Waiting Period definition", "Declarations waiting period hours"]
+      next_best_sources: ["Declarations Page (Item 3 Retentions/Waiting Period)", "Bound policy schedule", "SERFF filing with completed sample declarations"]

@@ -1,0 +1,17 @@
+{
+  "carrier": "At‑Bay",
+  "program": "Technology E&O (part of Active Cyber Insurance)",
+  "paper": "Surplus lines (non‑admitted)",
+  "states_available": "Not specified (US)",
+  "form_codes_and_edition": "Not publicly listed",
+  "specimen_pdf_link": "https://www.at-bay.com/wp-content/uploads/2023/09/AB-TEO-SAP_Technology-Cyber-Insurance-Short-Application-_ED.08.2023.pdf",
+  "product_page_link": "https://www.at-bay.com/insurance/tech-eo/",
+  "min_max_limit": "Up to $10m for companies up to $5B revenue",
+  "target_segments": "Software companies, IT consultants, fintechs and other tech‑enabled businesses (excluding gambling, cannabis or adult entertainment), hardware, service providers, technology consulting firms, value-added resellers, digital marketing firms",
+  "notable_features": "Expanded breach‑of‑contract coverage with no exclusions for warranties/guarantees or consequential damages; broad IP infringement coverage (trade secrets, cybersquatting, deep‑linking, source‑code license); coverage for service credits as damages, personal injury (defamation, malicious prosecution, wrongful eviction, false imprisonment); comprehensive negligence coverage (improper installations, coding errors, data processing flaws, failed implementations, network outages); contractual indemnity coverage; risk monitoring services and security analytics; service credits included in damages definition",
+  "last_verified_date": "2025-09-17",
+  "pdf_files": [
+    "At-Bay - Technology E&O (part of Active Cyber Insurance).pdf"
+  ],
+  "source_csv_row": 14
+}

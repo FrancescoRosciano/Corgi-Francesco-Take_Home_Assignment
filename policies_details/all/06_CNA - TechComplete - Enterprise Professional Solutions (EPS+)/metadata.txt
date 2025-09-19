@@ -1,0 +1,17 @@
+{
+  "carrier": "CNA",
+  "program": "TechComplete / Enterprise Professional Solutions (EPS+)",
+  "paper": "TechComplete (admitted); EPS+ (surplus lines)",
+  "states_available": "Not specified (US)",
+  "form_codes_and_edition": "TechComplete Admitted 06/11, Enterprise Professional Solutions (EPS+) Non Admitted 06/11",
+  "specimen_pdf_link": "https://www.cna.com/system/files/agentcenter/9ae05cc8-5d5f-4b16-a510-e909fc48da6f/TechSSTechCompleteAgents_CNA.pdf",
+  "product_page_link": "https://www.cna.com/industries/technology",
+  "min_max_limit": "Not specified",
+  "target_segments": "Cloud and SaaS providers, technology service providers, information technology, electronics manufacturing, telecom service providers",
+  "notable_features": "Coverage includes independent contractors as insureds; automatic inclusion of newly acquired subsidiaries; worldwide territory; automatic vicarious liability through contract; no exclusions for delay in delivery, support, maintenance or unauthorized access; coverage for deliberate acts by rogue employees; broad personal injury and media liability; network security & privacy injury not tied to professional services; privacy event expense, network extortion expense, business income (network dependency) and regulatory investigation expenses; Technology Errors & Omissions with Information Risk and Media Liability endorsements",
+  "last_verified_date": "2025-09-17",
+  "pdf_files": [
+    "CNA - TechComplete - Enterprise Professional Solutions (EPS+).pdf"
+  ],
+  "source_csv_row": 7
+}

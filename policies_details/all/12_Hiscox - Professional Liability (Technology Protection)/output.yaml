@@ -1,0 +1,172 @@
+policy:
+  metadata:
+    carrier: "Hiscox"
+    product: "Professional Liability – US Direct (Errors & Omissions)"
+    form_code: "DPL P001 CW"
+    edition_date: "2010-01"
+    jurisdiction: null
+    source:
+      link: "https://www.hiscox.com/shared-documents/pl-sample-policy-wording.pdf"
+      type: "carrier_pdf"
+      citation: "p. 1"
+
+  compare:
+    trigger: "claims_made_and_reported"
+    duty: "duty_to_defend"
+    defense_costs: "inside_limits"
+    consent_to_settle:
+      required: true
+      hammer: "hard_100"
+      details: "If the insured refuses a settlement recommended by the insurer, the insurer’s liability is limited to the amount for which the claim could have been settled plus claim expenses incurred up to the refusal date."
+      cite: "§ I.C.3 Settlement, p. 4"
+
+  limits:
+    per_claim_limit:
+      amount: null
+      currency: "USD"
+      cite: "§ IV.A.1 Limits of Liability (Item 3.A Declarations), p. 8"
+    aggregate_limit:
+      amount: null
+      currency: "USD"
+      cite: "§ IV.A.2 Limits of Liability (Item 3.B Declarations), p. 8"
+    retention:
+      amount: null
+      currency: "USD"
+      applies_to: "each_claim"
+      cite: "§ IV.B.1 Deductible, p. 8"
+    sublimits:
+      - name: "Supplemental Payments — per day"
+        amount: 250
+        currency: "USD"
+        applies_to: "each_claim"
+        cite: "§ IV.A.3 Limits of Liability, p. 8"
+      - name: "Supplemental Payments — per claim"
+        amount: 5000
+        currency: "USD"
+        applies_to: "each_claim"
+        cite: "§ IV.A.3 Limits of Liability, p. 8"
+      - name: "Punitive or exemplary damages (if insurable by law)"
+        amount: 250000
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ VI.E Damages (item 2), p. 12"
+
+  coverage:
+    tech_services_eo: { covered: true, summary: "Damages and Claim Expenses for Claims first made and reported during the Policy Period for Wrongful Acts in the performance of Professional Services (as scheduled by endorsement) on/after the Retroactive Date.", cite: "§ I.A Insuring Agreement, p. 3; § VI.O Professional Services, p. 13" }
+    media_liability: { covered: true, summary: "Personal Injury includes libel, slander, defamation, and disparagement; these fall within Wrongful Act. Advertising misrepresentation is excluded.", cite: "§ VI.L Personal Injury (item 4), p. 13; § VI.U Wrongful Act, p. 14; § III.N Exclusions, p. 7" }
+    ip_infringement: { covered: false, summary: "Claims alleging infringement of copyright, trademark, trade dress, service marks/names, title, slogan, patent, or theft of trade secret are excluded.", cite: "§ III.M Exclusions, p. 7" }
+    privacy: { covered: false, summary: "Claims alleging failure to protect non-public, personally identifiable information in the insured’s care, custody or control are excluded.", cite: "§ III.R Exclusions, p. 7" }
+    network_security: { covered: false, summary: "No affirmative network security coverage; failure to protect information is excluded.", cite: "§ III.R Exclusions, p. 7" }
+    business_interruption:
+      covered: false
+      dependent_providers: false
+      system_failure: false
+      cite: "Not found"
+    regulatory: { covered: false, summary: "Claims brought by government agencies or licensing bodies are excluded (except when acting as a client receiving Professional Services).", cite: "§ III.E Exclusions, p. 6" }
+    pci: { covered: false, summary: "Not addressed in this E&O specimen (PCI assessments appear only in separate cyber forms).", cite: "Not found" }
+    breach_response: { covered: false, summary: "No breach costs/forensics/notification coverage in this base E&O form.", cite: "Not found" }
+    cyber_extortion: { covered: false, summary: "No extortion coverage in this base E&O form.", cite: "Not found" }
+    social_engineering: { covered: false, summary: "No first-party social engineering or funds transfer fraud coverage in this base E&O form.", cite: "Not found" }
+    contractual_liability_carveback: { exists: true, summary: "Contractual liability is excluded except to the extent liability would have attached absent the contract (common-law liability carve-back).", cite: "§ III.J Exclusions, p. 6" }
+
+  exclusions:
+    - label: "Fraud/Intentional acts"
+      effect: "Excluded; defense costs advanced until final adjudication; PI intentional acts carve-back."
+      carvebacks: "Defense until final adjudication; does not apply to otherwise covered intentional acts causing Personal Injury."
+      cite: "§ III.A, p. 6"
+    - label: "Illegal profit/advantage"
+      effect: "Excluded."
+      carvebacks: ""
+      cite: "§ III.B, p. 6"
+    - label: "Employment practices (internal)"
+      effect: "Excluded for wrongful termination, retaliation, discrimination, harassment to employees/applicants."
+      carvebacks: ""
+      cite: "§ III.C, p. 6"
+    - label: "Prior acts/prior notice/prior knowledge"
+      effect: "Excluded for acts before Retroactive Date, previously noticed matters, or known acts likely to give rise to a Claim."
+      carvebacks: "Renewal continuity for materially identical coverage from same insurer."
+      cite: "§ III.D, p. 6"
+    - label: "Government or licensing body claims"
+      effect: "Excluded."
+      carvebacks: "Carve-back when acting as a client receiving Professional Services."
+      cite: "§ III.E, p. 6"
+    - label: "Insured vs. insured"
+      effect: "Excluded."
+      carvebacks: ""
+      cite: "§ III.F, p. 6"
+    - label: "Claims by controlling persons/entities"
+      effect: "Excluded for claims by those with Effective Control."
+      carvebacks: ""
+      cite: "§ III.G, p. 6"
+    - label: "Securities/ERISA/RICO"
+      effect: "Excluded violations of federal/state securities laws, RICO, ERISA."
+      carvebacks: ""
+      cite: "§ III.H, p. 6"
+    - label: "Workers’ comp/unemployment/disability benefits"
+      effect: "Excluded."
+      carvebacks: ""
+      cite: "§ III.I, p. 6"
+    - label: "Contractual liability"
+      effect: "Excluded liability assumed under contract."
+      carvebacks: "Carve-back for liability that would have attached absent the contract."
+      cite: "§ III.J, p. 6"
+    - label: "Bodily injury/property damage"
+      effect: "Excluded."
+      carvebacks: ""
+      cite: "§ III.K, p. 7"
+    - label: "Pollution"
+      effect: "Excluded (including testing/cleanup)."
+      carvebacks: ""
+      cite: "§ III.L, p. 7"
+    - label: "Intellectual property"
+      effect: "Excluded for IP infringement/trade secret theft."
+      carvebacks: ""
+      cite: "§ III.M, p. 7"
+    - label: "Advertising misrepresentation"
+      effect: "Excluded for false/deceptive advertising or misrepresentation of goods/services."
+      carvebacks: ""
+      cite: "§ III.N, p. 7"
+    - label: "Express warranties/guarantees"
+      effect: "Excluded."
+      carvebacks: ""
+      cite: "§ III.O, p. 7"
+    - label: "TCPA/CAN-SPAM/Do-Not-Call"
+      effect: "Excluded unsolicited communications law violations."
+      carvebacks: ""
+      cite: "§ III.P, p. 7"
+    - label: "Failure to procure insurance/bonds"
+      effect: "Excluded."
+      carvebacks: ""
+      cite: "§ III.Q, p. 7"
+    - label: "Failure to protect PII"
+      effect: "Excluded privacy/network security failures."
+      carvebacks: ""
+      cite: "§ III.R, p. 7"
+    - label: "Certain professional disciplines"
+      effect: "Excluded actuarial, medical, insurance agent/broker, legal, architect/engineer services."
+      carvebacks: ""
+      cite: "§ III.S, p. 7"
+
+  definitions:
+    professional_services: { text: "Only those services specified in Endorsement to this Policy as performed by or on behalf of an Organization for others for a fee or other compensation.", cite: "§ VI.O, p. 13" }
+    technology_services: { text: "", cite: "Not found" }
+    wrongful_act: { text: "Any actual or alleged breach of duty, negligent act, error, omission or Personal Injury committed by You in the performance of Your Professional Services.", cite: "§ VI.U, p. 14" }
+
+  conditions:
+    notice_reporting: { summary: "Notice of any Claim is a condition precedent; must be as soon as practicable and no later than the end of the Policy Period (or Optional ERP), or within 60 days after its end if the Claim was first made in the last 60 days. Potential Claims may be noticed during the Policy Period.", cite: "§ II.A.1, p. 4–5; § II.B, p. 5" }
+    extended_reporting: { available: true, duration: 3, cite: "§ II.C.3–4 Optional Extended Reporting Period, p. 5" }
+    territory: { summary: "Worldwide acts, but all actions/proceedings must be brought within the U.S., its territories/possessions, or Canada.", cite: "§ V.J Territory, p. 10" }
+
+  unknowns:
+    - item: "Declarations schedule (Each Claim / Aggregate limits and Deductible/Retention amounts)"
+      searched: ["Hiscox DPL P001 CW declarations page sample", "Hiscox Professional Liability US Direct specimen declarations", "site:serff.com Hiscox DPL P001 CW", "Hiscox declaration page insurance meaning"]
+      next_best_sources: ["SERFF Filing Access portal (state filings)", "https://www.hiscox.com/shared-documents/pl-sample-policy-wording.pdf", "https://www.hiscox.com/glossary/declaration-page-insurance"]
+    - item: "Endorsement listing of covered Professional Services (to confirm ‘technology’ scope)"
+      searched: ["Hiscox Professional Services endorsement DPL P001 CW", "Hiscox DPL P001 CW (05/13) specimen endorsement list", "site:serff.com Hiscox professional services endorsement"]
+      next_best_sources: ["SERFF Filing Access (state of issuance)", "https://www.hiscox.com/documents/partner-agent/dpd_endorsements/specimenforms/DPD_P001_-_PL_Form.pdf", "Policy schedule from actual issued policy"]
+    - item: "Affirmative IP, privacy/network security, breach costs, cyber business interruption, cyber extortion, social engineering terms under ‘Technology Protection’ package"
+      searched: ["Hiscox Technology Protection policy wording PDF 9896", "Hiscox Tech Privacy Cyber Protection Portfolio 9894 PDF", "Hiscox Cyber Coverage Part specimen PCI fines assessments"]
+      next_best_sources: ["https://www.hiscox.com/documents/brokers/tech/9896_us_technology_protection_factsheet.pdf", "https://www.hiscox.com/hiscoxbroker/shared-documents/9894_us_tech_privacy_cyber_protection_portfolio_factsheet.pdf", "https://www.hiscox.com/documents/brokers/cyber/CyberClear_Admitted_Cyber_Coverage_Part.pdf"]
+    - item: "PCI assessment coverage"
+      searched: ["Hiscox PCI coverage wording", "Hiscox cyber PCI fines and assessments wording", "Hiscox Privacy and Data Breach Protection PCI"]
+      next_best_sources: ["https://www.hiscox.com/documents/brokers/cyber/CyberClear_Admitted_Cyber_Coverage_Part.pdf", "https://www.vbas.com/CyberIns/Documents/9895_us_privacy_and_data_breach_protection_factsheet.pdf", "SERFF cyber/privacy coverage filings"]

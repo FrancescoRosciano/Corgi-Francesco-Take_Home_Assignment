@@ -1,0 +1,130 @@
+policy:
+  metadata:
+    carrier: "AIG Specialty Insurance Company"
+    product: "Specialty Risk Protector (CyberEdge & SPL)"
+    form_code: null
+    edition_date: "2013-12"
+    jurisdiction: null
+    source:
+      link: "https://www.aig.com/content/dam/aig/america-canada/us/documents/business/cyber/cyberedge-wording-sample-specimen-form.pdf"
+      type: "carrier_pdf"
+      citation: "pp. 1–46"
+
+  compare:
+    trigger: "claims_made_and_reported"
+    duty: "duty_to_defend"
+    defense_costs: "inside_limits"
+    consent_to_settle:
+      required: true
+      hammer: "soft_50"
+      details: "If the insured refuses a settlement the insurer recommends and the claimant will accept, the insurer’s liability is capped at the recommended settlement amount + Defense Costs incurred before refusal + 50% of Defense Costs incurred after refusal (with consent)."
+      cite: "§ Settlement, p. 2 (Security & Privacy); § Defense/Settlement, p. 65–66 (SPL)"
+
+  limits:
+    per_claim_limit:
+      amount: null
+      currency: "USD"
+      cite: "§ Definitions—Limit of Liability (‘Item 5 of the Declarations’), p. 1 (GTC)"
+    aggregate_limit:
+      amount: null
+      currency: "USD"
+      cite: "§ 4. Limit of Liability, p. 3 (GTC reference to Declarations)"
+    retention:
+      amount: null
+      currency: "USD"
+      applies_to: "each_claim"
+      cite: "§ 5. Retention, p. 5 (GTC)"
+    sublimits:
+      - name: "Regulatory Action"
+        amount: null
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ 4. Limit of Liability (Regulatory Action Sublimit), p. 64 (S&P)"
+      - name: "Outsource Provider network outage"
+        amount: 100000
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ 4. LIMIT OF LIABILITY — Outsource Provider Computer System, p. 25 (Network Interruption)"
+
+  coverage:
+    tech_services_eo: { covered: true, summary: "SPL (E&O) pays Loss for Claims alleging a Wrongful Act in the performance of Professional Services; duty to defend included.", cite: "§ Errors & Omissions Insuring Agreement / Defense, p. 65 (SPL)" }
+    media_liability: { covered: true, summary: "Media Content Coverage Section is claims-made & reported for media/content liability.", cite: "§ Media Content Coverage Section (Claims-Made & Reported), p. 14" }
+    ip_infringement: { covered: true, summary: "Media Content covers copyright, title, slogan, trademark, trade name, trade dress, service mark/name, domain name, deep-linking or framing (patent and trade secret are excluded).", cite: "§ 2. DEFINITIONS — “Wrongful Act” (1)–(2), p. 33 (Media Content)" }
+    privacy: { covered: true, summary: "Security & Privacy (third-party) covers Claims from Security Failure or Privacy Event, including Regulatory Actions.", cite: "§ Insuring Agreement, p. 2 (S&P)" }
+    network_security: { covered: true, summary: "Security Failure includes unauthorized access/use, DoS, malware; coverage triggered by Third Party Events.", cite: "§ Definitions—Security Failure, p. 4 (S&P)" }
+    business_interruption:
+      covered: true
+      dependent_providers: true
+      system_failure: false
+      cite: "§ Insuring Agreement (Waiting Hours Period & Remaining Retention defined), p. 23–24; § Outsource Provider sublimit, p. 25–26 (Network Interruption)"
+    regulatory: { covered: true, summary: "Regulatory Action is defined and subject to a sublimit noted in Declarations.", cite: "§ Definitions—Regulatory Action, p. 4 (S&P)" }
+    pci: { covered: true, summary: "Loss includes amounts payable in connection with a PCI-DSS Assessment; carrier also provides a PCI-DSS Assessment Coverage Endorsement with a stated sublimit set on the endorsement.", cite: "§ 2. DEFINITIONS—Loss includes PCI-DSS Assessment, p. 12 (S&P); PCI-DSS Assessment Coverage Endorsement (Sublimit), p. 43" }
+    breach_response: { covered: true, summary: "Event Management first-party costs following Security Failure/Privacy Event; proof of loss within 90 days.", cite: "§ Notice/Proof of Loss, p. 21 (Event Management)" }
+    cyber_extortion: { covered: true, summary: "First-party Loss from a Security Threat or Privacy Threat.", cite: "§ Insuring Agreement, p. 30 (Cyber Extortion)" }
+    social_engineering: { covered: false, summary: "Theft or transfer of money/securities is excluded under S&P.", cite: "§ Exclusions—theft/transfer of money or securities, p. 8 (S&P)" }
+    contractual_liability_carveback: { exists: true, summary: "Carve-backs: duty to prevent S/P events; liability absent contract; confidentiality/NDA (for Privacy Event); PCI obligations.", cite: "§ Exclusions—Contractual liability carve-backs, p. 7 (S&P)" }
+
+  exclusions:
+    - label: "Intellectual property (SPL)"
+      effect: "Claims arising out of IP infringement/misappropriation excluded (unless endorsed back)."
+      carvebacks: "Software/IP carve-back available by endorsement (not in base)."
+      cite: "§ Exclusions—IP, p. 68 (SPL)"
+    - label: "Patent (S&P)"
+      effect: "Patent infringement claims excluded."
+      carvebacks: ""
+      cite: "§ Exclusions—patent, p. 5 (S&P)"
+    - label: "Bodily injury / Property damage"
+      effect: "BI/PD excluded from cyber/E&O sections."
+      carvebacks: ""
+      cite: "§ Exclusions—BI/PD, p. 5 (S&P); p. 68 (SPL)"
+    - label: "Pollution"
+      effect: "Pollutants exclusions apply."
+      carvebacks: ""
+      cite: "§ Exclusions—Pollution, p. 5 (S&P); p. 68 (SPL)"
+    - label: "Fees, profit/advantage, equitable relief"
+      effect: "Return of fees, profits, fines/penalties, injunctive compliance costs are not Loss."
+      carvebacks: "Consumer redress fund amounts expressly included in Loss (S&P)."
+      cite: "§ Exclusions/Loss carve-outs, p. 6–7 (S&P)"
+    - label: "Insured vs Insured / affiliated entities"
+      effect: "Claims by/on behalf of Insureds or commonly controlled entities excluded (limited carve-backs)."
+      carvebacks: "Certain internal claim carve-backs (see S&P Insured definition exceptions)."
+      cite: "§ Exclusions—brought by/on behalf of Insureds, p. 6 (S&P)"
+    - label: "Prior/pending and prior notice"
+      effect: "Claims/events before retro date or previously noticed are excluded."
+      carvebacks: ""
+      cite: "§ Exclusions—prior notice/retro/continuity, p. 7–8 (S&P); p. 70 (SPL)"
+    - label: "War/acts of God & infrastructure outside control"
+      effect: "Wide force-majeure exclusions apply; limited carve-back when such events cause a Security Failure/Privacy Event."
+      carvebacks: "Carve-back for Security Failure/Privacy Event caused by certain infrastructure failures."
+      cite: "§ Exclusions—physical events/war/infrastructure, p. 5–6 (S&P)"
+    - label: "Theft/transfer of funds"
+      effect: "No coverage for theft/transfer from Insured or customer accounts."
+      carvebacks: ""
+      cite: "§ Exclusions—money/securities transfer, p. 8 (S&P)"
+
+  definitions:
+    professional_services: { text: "Means those services described and set forth by endorsement to the SPL Coverage Section.", cite: "§ Definitions—Professional Services, p. 67 (SPL)" }
+    technology_services: { text: "", cite: "Not found" }
+    wrongful_act: { text: "Any negligent act, error or omission, misstatement or misleading statement in an Insured’s performance of Professional Services for others, on or after the Retroactive Date and before the end of the Policy Period.", cite: "§ Definitions—Wrongful Act, p. 67 (SPL)" }
+
+  conditions:
+    notice_reporting: { summary: "Report Claims as soon as practicable; for claims-made & reported sections no later than 45 days after the Policy Period or by end of any Discovery Period; circumstance reporting allowed.", cite: "§ 6. Notice, p. 5–6 (GTC)" }
+    extended_reporting: { available: true, duration: "60-day automatic; Optional up to 3 years (100%/175%/200% premium)", cite: "§ 9. Discovery, p. 8 (GTC)" }
+    territory: { summary: "Worldwide where legally permissible.", cite: "§ Territory, p. 11 (GTC)" }
+
+  unknowns:
+    - item: "Per-claim limit amount"
+      searched: ["AIG Specialty Risk Protector declarations sample", "SERFF AIG Specialty Risk Protector Item 5 Declarations", "AIG CyberEdge Declarations specimen limits"]
+      next_best_sources: ["SERFF state filing portals for AIG Specialty Insurance Co. CyberEdge/SPL Declarations", "AIG broker specimen including completed Declarations", "AIG policy schedules for SRP"]
+    - item: "Aggregate limit amount"
+      searched: ["AIG SRP Declarations", "CyberEdge specimen declarations limits", "AIG Item 5 Limits ‘Specialty Risk Protector’"]
+      next_best_sources: ["SERFF form filings with full Declarations schedule", "AIG specimen with completed Declarations", "State rate/rule filing referencing limit structures"]
+    - item: "Retention amount(s) for each section"
+      searched: ["AIG SRP retention Item 6 Declarations", "Network Interruption Waiting Hours/Remaining Retention", "Security & Privacy retention schedule specimen"]
+      next_best_sources: ["SERFF filings; broker-issued specimen with Declarations", "AIG bound policy schedules", "State SERFF form list for 101024 (12/13)"]
+    - item: "PCI sublimit (if endorsement attached)"
+      searched: ["AIG PCI-DSS Assessment Coverage Endorsement sublimit amount", "CyberEdge PCI endorsement specimen amount bracket", "SERFF AIG PCI-DSS endorsement 115987 (12/13)"]
+      next_best_sources: ["PCI-DSS Assessment Coverage Endorsement with completed amount (policy schedule)", "SERFF filing for AIG Specialty—PCI-DSS Assessment Coverage Endorsement", "Carrier-issued quote/binder showing PCI sublimit"]
+    - item: "Definition of 'Technology Services' (if any in SPL)"
+      searched: ["AIG Specialty Risk Protector SPL definition Technology Services", "AIG SPL Professional Services definition 1010xx (12/13)", "AIG technology services definition E&O SPL form"]
+      next_best_sources: ["SERFF filings for SPL Coverage Section definitions", "AIG SPL specimen forms (full E&O section)", "Broker manuscripts/endorsements defining Professional/Technology Services"]

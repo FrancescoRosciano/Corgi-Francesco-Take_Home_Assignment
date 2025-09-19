@@ -1,0 +1,153 @@
+policy:
+  metadata:
+    carrier: "Beazley"
+    product: "MediaTech"
+    form_code: "F00731"
+    edition_date: "2019-02"
+    jurisdiction: null
+    source:
+      link: "https://www.beazley.com/globalassets/product-documents/policy-form/beazley-media-tech-policy-us.pdf"
+      type: "carrier_pdf"
+      citation: "§ Beazley MediaTech (cover & footer), p. 1 and p. 23"
+  compare:
+    trigger: "claims_made_and_reported"
+    duty: "hybrid"
+    defense_costs: "inside_limits"
+    consent_to_settle:
+      required: true
+      hammer: "soft_60"
+      details: "If the Insured refuses a settlement recommended by Underwriters, Beazley’s liability does not exceed the amount for which the Claim could have been settled plus 60% of Damages and Claims Expenses incurred thereafter."
+      cite: "§ Settlement of Claims, p. 22"
+  limits:
+    per_claim_limit:
+      amount: null
+      currency: "USD"
+      cite: "§ LIMIT OF LIABILITY AND COVERAGE, p. 19 (Declarations set numeric values)"
+    aggregate_limit:
+      amount: null
+      currency: "USD"
+      cite: "§ LIMIT OF LIABILITY AND COVERAGE, p. 19 (Declarations set numeric values)"
+    retention:
+      amount: null
+      currency: "USD"
+      applies_to: "each_claim"
+      cite: "§ RETENTIONS, p. 19 (Declarations set numeric values)"
+    sublimits:
+      - name: "Officer attendance (mediation/hearings/trial)"
+        amount: 100000
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ Defense of Claims, p. 22"
+      - name: "Proof-of-loss preparation (BI/DBL/Data Recovery)"
+        amount: 50000
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ Notice of Claim or Loss, p. 20"
+  coverage:
+    tech_services_eo: { covered: true, summary: "Coverage for Tech & Professional Services Wrongful Acts (negligent acts, errors, omissions, misstatements, misrepresentations, or unintentional breach of contract in performing Professional or Tech Services).", cite: "§ Media, Tech, Data & Network Liability (Tech & Professional Services Wrongful Act), p. 1" }
+    media_liability: { covered: true, summary: "Media Wrongful Acts (e.g., defamation, privacy, plagiarism, copyright/trademark/trade dress infringement, misappropriation of ideas, unfair competition when tied to IP).", cite: "§ Media Wrongful Act (enumerated offenses), p. 10–11" }
+    ip_infringement: { covered: true, summary: "Copyright/trade dress/trademark infringement under Media Wrongful Act and software copyright infringement under Tech Product Wrongful Act; patent infringement excluded.", cite: "§ Media Wrongful Act & Tech Product Wrongful Act, p. 11 & p. 14; § Patent & Misappropriation of Information (excludes patents), p. 16" }
+    privacy: { covered: true, summary: "Data & Network Wrongful Acts include Data Breach, Security Breach, failure to disclose, and Privacy Policy Violation; Breach Response costs also covered.", cite: "§ Data & Network Wrongful Act (definition), p. 6; § Breach Response (insuring agreement), p. 1–2" }
+    network_security: { covered: true, summary: "Liability for Security Breach and related failures; first-party Data Recovery, BI/DBL, and Cyber Extortion covered.", cite: "§ Media, Tech, Data & Network Liability (Data & Network Wrongful Act), p. 1; § First Party Data & Network Loss, p. 2" }
+    business_interruption:
+      covered: true
+      dependent_providers: true
+      system_failure: true
+      cite: "§ First Party Data & Network Loss (Business Interruption Loss; Dependent Business Loss; System Failure/Dependent System Failure), p. 2; § Waiting Period (set on Declarations), p. 15; § LIMIT OF LIABILITY AND COVERAGE (DBL part of BI limit), p. 19"
+    regulatory: { covered: true, summary: "Regulatory Defense & Penalties for Data Breach or Security Breach (Penalties and Claims Expenses).", cite: "§ Regulatory Defense & Penalties (insuring agreement), p. 1–2" }
+    pci: { covered: true, summary: "Payment Card Liabilities & Costs: PCI Fines, Expenses and Costs owed under a Merchant Services Agreement (indemnity basis).", cite: "§ Payment Card Liabilities & Costs (insuring agreement), p. 2; § Defense of Claims (PCI indemnity), p. 22" }
+    breach_response: { covered: true, summary: "Breach response services and costs (legal, forensics/PCI, notification, call center, credit/identity monitoring, PR/crisis).", cite: "§ Breach Response (and Breach Response Costs definition), p. 1–3" }
+    cyber_extortion: { covered: true, summary: "Cyber Extortion Loss from Extortion Threats (extortion payments and related expenses with prior consent).", cite: "§ First Party Data & Network Loss (Cyber Extortion Loss), p. 2; § Cyber Extortion Loss (definition), p. 5" }
+    social_engineering: { covered: true, summary: "eCrime insuring agreement covers Fraudulent Instruction, Funds Transfer Fraud, and Telephone Fraud.", cite: "§ eCrime (insuring agreement), p. 2; § Fraudulent Instruction/Funds Transfer Fraud/Telephone Fraud (definitions), p. 8–9 & p. 14" }
+    contractual_liability_carveback: { exists: true, summary: "Contractual exclusion does not apply to obligations to perform Professional or Tech Services; misappropriation of ideas under implied contract; or liability that exists absent contract.", cite: "§ Contractual (exclusion & carve-backs), p. 17" }
+  exclusions:
+    - label: "Bodily Injury or Property Damage"
+      effect: "Excludes BI/PD; electronic data is not tangible property."
+      carvebacks: ""
+      cite: "§ Bodily Injury or Property Damage, p. 15"
+    - label: "Deceptive Business Practices, Antitrust & Consumer Protection"
+      effect: "Excludes unfair/false/deceptive trade practices, antitrust, consumer protection claims."
+      carvebacks: "Does not apply to Breach Response; or to Data/Security Breach if no Control Group participation."
+      cite: "§ Deceptive Business Practices, Antitrust & Consumer Protection, p. 15"
+    - label: "Distribution of Information (spam/TCPA/recording/telemarketing)"
+      effect: "Excludes unsolicited comms, wiretapping, recording, telemarketing done by/on behalf of Insured."
+      carvebacks: "Defense costs allowed for unlawful audio/video recording allegations."
+      cite: "§ Distribution of Information, p. 15"
+    - label: "Prior Known Acts & Prior Noticed Claims"
+      effect: "Excludes acts known before Continuity Date and matters previously noticed."
+      carvebacks: ""
+      cite: "§ Prior Known Acts & Prior Noticed Claims, p. 15–16"
+    - label: "Racketeering, Benefit Plans, Employment & Discrimination"
+      effect: "Excludes RICO, ERISA/benefit plan issues, employment practices, and discrimination."
+      carvebacks: "Does not apply to Breach Response or to Data/Security Breach if no Control Group participation."
+      cite: "§ Racketeering, Benefit Plans, Employment Liability & Discrimination, p. 16"
+    - label: "Securities & Securities Laws"
+      effect: "Excludes ownership/sale of securities and violations of securities laws."
+      carvebacks: ""
+      cite: "§ Sale or Ownership of Securities & Violation of Securities Laws, p. 16"
+    - label: "Criminal, Intentional or Fraudulent Acts"
+      effect: "Excludes dishonest/fraudulent/malicious/intentional acts."
+      carvebacks: "Defense costs until final non-appealable adjudication; innocent insureds preserved; Control Group knowledge imputed to org."
+      cite: "§ Criminal, Intentional or Fraudulent Acts, p. 16"
+    - label: "Patent & Misappropriation of Information"
+      effect: "Excludes patent infringement; trade secret misappropriation related to Tech Products; misappropriation of Third Party Information for Data/Network acts by Insured or with Control Group knowledge."
+      carvebacks: ""
+      cite: "§ Patent & Misappropriation of Information, p. 16–17"
+    - label: "Governmental Actions"
+      effect: "Excludes Claims by government entities in regulatory/official capacity."
+      carvebacks: "Not applicable to Regulatory Defense & Penalties; exception for government as customer."
+      cite: "§ Governmental Actions, p. 17"
+    - label: "Other Insureds & Related Enterprises"
+      effect: "Excludes Claims by Insureds and related enterprises."
+      carvebacks: "Allows certain Data & Network Wrongful Act claims by non-Control Group individuals and Additional Insureds."
+      cite: "§ Other Insureds & Related Enterprises, p. 17"
+    - label: "Trading Losses & Loss of Money"
+      effect: "Excludes trading losses and loss/transfer/theft of monies/securities/tangible property."
+      carvebacks: "Carve-back for eCrime insuring agreement."
+      cite: "§ Trading Losses & Loss of Money, p. 17"
+    - label: "Contractual"
+      effect: "Excludes liability assumed by contract for parts 1 & 3 of liability insuring agreement."
+      carvebacks: "Obligation to perform Professional/Tech Services; misappropriation of ideas under implied contract; liability that exists absent contract."
+      cite: "§ Contractual, p. 17"
+    - label: "Retroactive Date"
+      effect: "Excludes acts/events first occurring before Retroactive Date."
+      carvebacks: ""
+      cite: "§ Retroactive Date, p. 17–18"
+    - label: "Recall"
+      effect: "Excludes costs to recall/repair/replace/repost products/media/work product."
+      carvebacks: "Resulting loss of use is not excluded."
+      cite: "§ Recall, p. 18"
+    - label: "Infrastructure Failure"
+      effect: "Excludes failures of satellite/power/utility/mechanical/telecom infrastructure outside Insured’s control."
+      carvebacks: ""
+      cite: "§ Infrastructure Failure, p. 18"
+    - label: "Licensing Bodies & Joint Ventures"
+      effect: "Excludes royalty/licensing fee obligations and certain IP-body and JV/contractor ownership disputes."
+      carvebacks: ""
+      cite: "§ Licensing Bodies & Joint Ventures, p. 18"
+    - label: "Over-Redemption"
+      effect: "Excludes gambling/contests/games of chance and over-redemption of awards/coupons beyond contracted amounts."
+      carvebacks: ""
+      cite: "§ Over-Redemption, p. 18"
+    - label: "First Party Data & Network Loss — specified causes"
+      effect: "Excludes seizure/nationalization; software error remediation or upgrades beyond pre-event; physical perils (e.g., fire, flood)."
+      carvebacks: ""
+      cite: "§ First Party Data & Network Loss (exclusions within), p. 18–19"
+  definitions:
+    professional_services: { text: "Professional services performed for others by or on behalf of the Insured Organization for a fee; excludes certain licensed professions (e.g., accountant, architect, healthcare, lawyer, insurance/real estate broker, engineer).", cite: "§ Professional Services (definition), p. 12–13" }
+    technology_services: { text: "Computer/cloud/electronic technology services (e.g., SaaS, PaaS, IaaS, NaaS; hosting; systems analysis; consulting/training; custom software; installation/integration) performed for others for a fee.", cite: "§ Tech Services (definition), p. 14" }
+    wrongful_act: { text: "Tech & Professional Services Wrongful Act: negligent act/error/omission/misstatement/misrepresentation or unintentional breach of contract in rendering or failing to render Professional or Tech Services; Media Wrongful Act and Tech Product Wrongful Act defined separately.", cite: "§ Tech & Professional Services Wrongful Act; Tech Product Wrongful Act; Media Wrongful Act (definitions), p. 10 & p. 14" }
+  conditions:
+    notice_reporting: { summary: "Notice of Claim as soon as practicable, no later than 60 days after end of Policy Period (or end of Optional Extension Period). Specific 60-day reporting for Breach Response, Cyber Extortion, and eCrime; BI/DBL/Data Recovery proofs due within 6 months after Policy Period; up to 50,000 covered to prepare proofs.", cite: "§ Notice of Claim or Loss, p. 20" }
+    extended_reporting: { available: true, duration: null, cite: "§ OPTIONAL EXTENSION PERIOD (period listed in Declarations; does not increase limits), p. 19–20" }
+    territory: { summary: "Not found in specimen.", cite: "Not found" }
+  unknowns:
+    - item: "Numeric limits (aggregate and each insuring agreement) and retentions (by coverage)"
+      searched: ["Within specimen: 'Limit of Liability and Coverage' section p. 19; looked for 'Each Claim', 'Per Claim' in PDF (not present); Declarations not provided", "Beazley MediaTech Declarations limits retention specimen", "SERFF Beazley MediaTech F00731 limits"]
+      next_best_sources: ["SERFF state filing portals (search: Beazley F00731 022019)", "Broker-issued sample Declarations for Beazley MediaTech", "Beazley-issued specimen Declarations, if any"]
+    - item: "Policy territory/jurisdiction clause"
+      searched: ["Within specimen (PDF find): 'territory', 'Territory', 'jurisdiction', 'governing law', 'venue', 'worldwide' (no results)", "site:beazley.com MediaTech territory", "F00731 territory jurisdiction"]
+      next_best_sources: ["SERFF form text for state-specific endorsements", "Beazley specimen endorsements for territory", "Issued policy jacket or state amendatory endorsements"]
+    - item: "Waiting Period hours (BI and Dependent BI)"
+      searched: ["Within specimen: 'Waiting Period' definition p. 15 (notes hours listed in Declarations)", "Beazley MediaTech 'Waiting Period' Declarations example", "MediaTech waiting period hours BI DBL"]
+      next_best_sources: ["Declarations page of issued policy", "Binder/quote showing Waiting Period hours", "Broker marketing specimen including sample Declarations"]

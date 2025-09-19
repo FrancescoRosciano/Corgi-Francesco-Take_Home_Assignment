@@ -1,0 +1,160 @@
+policy:
+  metadata:
+    carrier: "United States Liability Insurance Company (USLI)"
+    product: "MicroTekPak Technology Professional Liability"
+    form_code: "MTK (11-07)"
+    edition_date: "2007-11"
+    jurisdiction: null
+    source:
+      link: "https://www.ciuins.com/downloads/public/USLI/Policy/Tecnologyform.pdf"
+      type: "other"
+      citation: "footer 'MTK (11-07)', p. 2"
+
+  compare:
+    trigger: "claims_made_and_reported"
+    duty: "duty_to_defend"
+    defense_costs: "inside_limits"
+    consent_to_settle:
+      required: true
+      hammer: "soft_50"
+      details: "If the insured refuses a settlement recommended by the company, the company’s obligation is capped at (1) the amount it would have paid at the time of refusal + (2) covered claims expense to that date + (3) 50% of loss and claims expense in excess of that amount; the remaining 50% is the insured’s obligation."
+      cite: "§ V.B Defense and Settlement, p. 5"
+
+  limits:
+    per_claim_limit:
+      amount: null
+      currency: "USD"
+      cite: "§ VI.B Limits of Liability and Deductible (Limit for Each Claim set on Policy Declarations), p. 6"
+    aggregate_limit:
+      amount: null
+      currency: "USD"
+      cite: "§ VI.A Limits of Liability and Deductible (Aggregate Limit set on Policy Declarations), p. 6"
+    retention:
+      amount: null
+      currency: "USD"
+      applies_to: "each_claim"
+      cite: "§ VI.D Limits of Liability and Deductible (Deductible applies to each Claim; amount set on Policy Declarations), p. 6"
+    sublimits: []
+
+  coverage:
+    tech_services_eo: { covered: true, summary: "Loss from Claims first made and reported for Wrongful Acts arising from Professional Services, defined as Computer Technology Services and/or Internet Services performed for a fee.", cite: "§ I. Insuring Agreement & § III.N (Professional Services), p. 2 & p. 4" }
+    media_liability: { covered: true, summary: "Personal Injury (libel, slander/defamation, advertising injury) included within 'Wrongful Act'.", cite: "§ III.L (Personal Injury) & § III.O (Wrongful Act), p. 3–4" }
+    ip_infringement: { covered: false, summary: "Excludes infringement of patent, copyright, trademark, trade name, trade dress; and misappropriation of trade secrets/confidential info.", cite: "§ IV.N, p. 5" }
+    privacy: { covered: true, summary: "Violation of any right of privacy is part of 'Personal Injury' within Wrongful Act.", cite: "§ III.L (Personal Injury) & § III.O (Wrongful Act), p. 3–4" }
+    network_security: { covered: true, summary: "Unintentional introduction of Malicious Code and unintentional failure to prevent unauthorized access to or use of a third party’s electronic system/program.", cite: "§ III.O (Wrongful Act) & § III.J (Malicious Code), p. 3–4" }
+    business_interruption:
+      covered: false
+      dependent_providers: false
+      system_failure: false
+      cite: "Not found"
+    regulatory: { covered: false, summary: "No coverage grant for regulatory defense/fines in the base form.", cite: "Not found" }
+    pci: { covered: false, summary: "No PCI fines/assessments coverage in the base form.", cite: "Not found" }
+    breach_response: { covered: false, summary: "No first-party breach/incident response costs in the base form.", cite: "Not found" }
+    cyber_extortion: { covered: false, summary: "No cyber extortion/ ransomware threat expenses in the base form.", cite: "Not found" }
+    social_engineering: { covered: false, summary: "No social-engineering/voluntary parting coverage in the base form.", cite: "Not found" }
+    contractual_liability_carveback: { exists: false, summary: "Express contract liability is excluded unless the insured would be liable in absence of the contract; no carve-back stated.", cite: "§ IV.I, p. 5" }
+
+  exclusions:
+    - label: "Fraudulent/Criminal Acts"
+      effect: "No coverage for criminal, fraudulent, dishonest acts (defense costs reimbursed stop after final adjudication)."
+      carvebacks: "Defense costs payable until such conduct is established by final adjudication."
+      cite: "§ IV.A, p. 5"
+    - label: "Personal Profit/Advantage"
+      effect: "No coverage for gaining profit/advantage to which not legally entitled (defense ceases after final adjudication)."
+      carvebacks: "Defense costs payable until final adjudication."
+      cite: "§ IV.B, p. 5"
+    - label: "Insured vs. Insured"
+      effect: "Claims by one Insured against another Insured excluded."
+      carvebacks: ""
+      cite: "§ IV.C, p. 5"
+    - label: "Bodily Injury/Property Damage"
+      effect: "BI/PD and associated loss of use excluded."
+      carvebacks: ""
+      cite: "§ IV.D, p. 5"
+    - label: "Non-monetary Relief"
+      effect: "Claims seeking non-monetary relief excluded."
+      carvebacks: ""
+      cite: "§ IV.E, p. 5"
+    - label: "Failure to Maintain Insurance/Bond"
+      effect: "Excluded."
+      carvebacks: ""
+      cite: "§ IV.F, p. 5"
+    - label: "ERISA/Employee Benefits"
+      effect: "Excluded."
+      carvebacks: ""
+      cite: "§ IV.G, p. 5"
+    - label: "Antitrust/Unfair Trade Practices"
+      effect: "Excluded."
+      carvebacks: ""
+      cite: "§ IV.H, p. 5"
+    - label: "Contractual Liability"
+      effect: "Liability under express contract excluded unless liability would exist absent the contract."
+      carvebacks: "Implied carve-back only where liability exists independent of the contract."
+      cite: "§ IV.I, p. 5"
+    - label: "Prior & Pending/Notice"
+      effect: "Prior/pending litigation and earlier noticed matters excluded."
+      carvebacks: "Continuity wording if continuous USLI coverage; uses first USLI policy effective date."
+      cite: "§ IV.J (and proviso), p. 5"
+    - label: "Employment Practices"
+      effect: "Employment-related acts (e.g., harassment, discrimination) excluded."
+      carvebacks: ""
+      cite: "§ IV.K, p. 5"
+    - label: "Pollution"
+      effect: "Pollution and related clean-up costs excluded."
+      carvebacks: ""
+      cite: "§ IV.L, p. 5"
+    - label: "Services to Related Entities"
+      effect: "Work for entities owned/controlled by, owning/controlling, or under common control with Insured excluded."
+      carvebacks: ""
+      cite: "§ IV.M, p. 5"
+    - label: "Intellectual Property"
+      effect: "Patent, copyright, trademark, trade dress, and trade secret/confidential info claims excluded."
+      carvebacks: ""
+      cite: "§ IV.N, p. 5"
+    - label: "Product Performance Prior to Acceptance"
+      effect: "Product failing to perform intended function before installation/testing/final acceptance excluded."
+      carvebacks: ""
+      cite: "§ IV.O, p. 5"
+    - label: "Cost Guarantees/Overruns"
+      effect: "Guarantees/estimates and overruns excluded."
+      carvebacks: ""
+      cite: "§ IV.P, p. 5"
+    - label: "Fee Disputes"
+      effect: "Fee disputes or suits for fees by the insured excluded."
+      carvebacks: ""
+      cite: "§ IV.Q, p. 5"
+    - label: "Investment/Insurance Advice"
+      effect: "Investment/insurance counseling, transactions, and rate/return promises excluded."
+      carvebacks: ""
+      cite: "§ IV.R, p. 5"
+    - label: "Hardware Defect/COTS Software"
+      effect: "Malfunction/defect of hardware or sale of non-custom commercially available software excluded."
+      carvebacks: ""
+      cite: "§ IV.S, p. 5"
+
+  definitions:
+    professional_services: { text: "Services rendered for others for a fee solely in the conduct of Computer Technology Services and/or Internet Services.", cite: "§ III.N, p. 3" }
+    technology_services: { text: "Computer Technology Services include consulting, systems analysis, installation, programming, data processing, system integration, software development and design, disaster recovery, record retrieval, management and repair or maintenance of computer products, networks or systems, and education and training services related to the above.", cite: "§ III.E, p. 3" }
+    wrongful_act: { text: "Any actual/alleged error, omission, neglect or breach of duty; Personal Injury; unintentional introduction of a Malicious Code; or unintentional failure to prevent unauthorized access to or use of any electronic system or program of a third party.", cite: "§ III.O, p. 4" }
+
+  conditions:
+    notice_reporting: { summary: "As a condition precedent, written notice of a Claim or circumstance must be given as soon as practicable, and no later than 60 days after expiration if no ERP, or by the end of the ERP if purchased.", cite: "§ VIII.A–B Notice/Claim and Circumstance Reporting Provisions, p. 7" }
+    extended_reporting: { available: true, duration: "12/24/36 months (at 65%/125%/195% of annual premium)", cite: "§ VII.B Extended Reporting Period, p. 6" }
+    territory: { summary: "Not stated in the coverage form.", cite: "Not found" }
+
+  unknowns:
+    - item: "Specific per-claim and aggregate limits"
+      searched: ["MicroTek MTK (11-07) declarations", "USLI MicroTek specimen declarations"]
+      next_best_sources: ["Policy Declarations page of the issued policy", "Agent-provided specimen declarations"]
+    - item: "Deductible (amount) and any state-specific variations"
+      searched: ["USLI MicroTek deductible each claim", "USLI Technology Professional Package Application deductible"]
+      next_best_sources: ["Issued declarations", "USLI underwriting/quote proposal"]
+    - item: "Any sublimits (e.g., privacy breach expense, regulatory defense) in endorsements"
+      searched: ["USLI MicroTek endorsement MTK 260 Confidential or Proprietary Information", "USLI Technology Package endorsements form list"]
+      next_best_sources: ["SERFF state filings referencing MTK series", "USLI endorsement schedule for the bound policy"]
+    - item: "Business interruption, dependent provider, or system failure coverage"
+      searched: ["MicroTek business interruption first-party", "USLI MicroTek cyber business income coverage"]
+      next_best_sources: ["USLI Cyber/Breach add-on specimen", "Serff filings for MicroTek cyber endorsements"]
+    - item: "Territory/jurisdiction clause"
+      searched: ["MicroTek territory clause", "MTK (11-07) territorial limits", "USLI MicroTek worldwide coverage"]
+      next_best_sources: ["Full master policy jacket/conditions", "USLI underwriting manual for MicroTek"]

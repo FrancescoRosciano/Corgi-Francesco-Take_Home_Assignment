@@ -1,0 +1,17 @@
+{
+  "carrier": "Chubb",
+  "program": "DigiTech Enterprise Risk Management (ERM)",
+  "paper": "Likely surplus lines (Chubb Custom Insurance Company)",
+  "states_available": "Not specified (global)",
+  "form_codes_and_edition": "Not publicly listed",
+  "specimen_pdf_link": "https://www.chubb.com/content/dam/chubb-sites/chubb-com/us-en/business-insurance/digitech-enterprise-risk-management-digitech-erm/documents/pdf/17010186-digitech-erm-12.17.pdf",
+  "product_page_link": "https://www.chubb.com/us-en/business-insurance/industries/technology.html",
+  "min_max_limit": "Not specified (no minimum premium)",
+  "target_segments": "Technology firms seeking combined technology E&O and cyber cover, all sizes",
+  "notable_features": "Third‑party coverage for technology errors & omissions, privacy/security, payment card loss, regulatory proceedings and media liability; first‑party cover for incident response, business interruption, digital data recovery, telecom theft and extortion; optional cyber crime endorsements; broad customizable coverage and worldwide territory; neglected software exploit endorsement",
+  "last_verified_date": "2025-09-17",
+  "pdf_files": [
+    "Chubb - DigiTech Enterprise Risk Management (ERM).pdf"
+  ],
+  "source_csv_row": 5
+}

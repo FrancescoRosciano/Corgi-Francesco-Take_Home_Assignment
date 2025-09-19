@@ -1,0 +1,121 @@
+policy:
+  metadata:
+    carrier: "CNA (Continental Casualty Company)"
+    product: "Enterprise Professional Solutions (EPS+)"
+    form_code: null
+    edition_date: "2011-06"
+    jurisdiction: null
+    source:
+      link: "https://www.cna.com/system/files/agentcenter/465c7cbe-b3c0-4eff-939f-30f6c199fd69/cna-tech-coverage-comparison.pdf"
+      type: "carrier_pdf"
+      citation: "p. 1–3"
+
+  compare:
+    trigger: "claims_made"
+    duty: "duty_to_defend"
+    defense_costs: "inside_limits"
+    consent_to_settle:
+      required: true
+      hammer: "hard_100"
+      details: "Insurer needs Named Insured’s written consent to settle; if the insured refuses, the limit for that Claim is reduced to the proposed settlement plus Defense Costs incurred to the refusal date (no coinsurance applies to Tech/Media/NS&P parts)."
+      cite: "§ DEFENSE/SETTLEMENT/MEDIATION/PRE-CLAIM ASSISTANCE, p. 7"
+
+  limits:
+    per_claim_limit:
+      amount: null
+      currency: "USD"
+      cite: "§ LIMITS OF LIABILITY/RETENTIONS (Each Claim), p. 6"
+    aggregate_limit:
+      amount: null
+      currency: "USD"
+      cite: "§ LIMITS OF LIABILITY/RETENTIONS (Aggregate options), p. 6"
+    retention:
+      amount: null
+      currency: "USD"
+      applies_to: "each_claim"
+      cite: "§ LIMITS OF LIABILITY/RETENTIONS (Retentions), p. 6"
+    sublimits:
+      - name: "Privacy Event Expenses"
+        amount: null
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ Privacy Event Expenses/Network Extortion Expenses Sub-Limit of Liability, p. 6"
+      - name: "Network Extortion Expenses"
+        amount: null
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ Privacy Event Expenses/Network Extortion Expenses Sub-Limit of Liability, p. 6"
+      - name: "Privacy Regulation Proceedings"
+        amount: null
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ Privacy Regulation Proceedings in the Aggregate Limit, p. 6"
+
+  coverage:
+    tech_services_eo: { covered: true, summary: "Wrongful Act includes acts/errors in performing Technology or Telecommunication Services for others, or failure of the insured’s Technology Products to perform their intended function.", cite: "§ Glossary—Wrongful Act (VI, Technology & Telecommunications Liability), p. 18" }
+    media_liability: { covered: true, summary: "Wrongful Act means acts/errors in the course of performing Media Activity that cause defined injury (e.g., defamation, privacy, IP).", cite: "§ Glossary—Wrongful Act (V, Media Liability) & Personal/Proprietary Injury (items 3–6), pp. 18, 13" }
+    ip_infringement: { covered: true, summary: "Personal/Proprietary Injury includes infringement of copyright, title, slogan, logo, trademark, trade name, trade dress, service mark or name (software/code excluded except under Tech & Telecom Coverage Part).", cite: "§ Glossary—Personal/Proprietary Injury, p. 13" }
+    privacy: { covered: true, summary: "Coverage for Privacy Injury and Privacy Regulation Proceedings; definitions include Privacy Regulation Fines and Privacy Event Expenses.", cite: "§ Glossary—Privacy Injury; Privacy Regulation Proceedings; Privacy Regulation Fines; Privacy Event; Privacy Event Expenses, pp. 14–16" }
+    network_security: { covered: true, summary: "Wrongful Act includes Security Breach of the insured’s network; definitions include Network Extortion and related expenses.", cite: "§ Glossary—Wrongful Act (VII, NS&P); Security Breach; Network Extortion; Network Extortion Expenses, pp. 18–16" }
+    business_interruption:
+      covered: true
+      dependent_providers: true
+      system_failure: true
+      cite: "§ Cyber Endorsement/Information Risk, p. 3"
+    regulatory: { covered: true, summary: "Privacy Regulation Proceedings (e.g., HIPAA) covered as Claims; related fines are defined within policy context.", cite: "§ Glossary—Privacy Regulation Proceedings; Privacy Regulation Fines, pp. 15–16" }
+    pci: { covered: true, summary: "PCI fines and penalties available as optional coverage under Information Risk.", cite: "§ Cyber Endorsement/Information Risk, p. 4" }
+    breach_response: { covered: true, summary: "Privacy Event Expenses include legal, notification, call center, credit monitoring and related response costs per declarations sublimit.", cite: "§ Privacy Event; Privacy Event Expenses definitions, pp. 14–15" }
+    cyber_extortion: { covered: true, summary: "Network Extortion and Network Extortion Expenses defined and sublimited in the declarations.", cite: "§ Network Extortion; Network Extortion Expenses definitions & sublimit clause, pp. 16, 6" }
+    social_engineering: { covered: null, summary: "Cybercrime coverage is optional under Information Risk; the specimen does not specifically reference social engineering/funds transfer fraud.", cite: "§ Cyber Endorsement/Information Risk — 'Cybercrime coverage', p. 4" }
+    contractual_liability_carveback: { exists: true, summary: "Limited carve-back for liability ‘Assumed Under Contract’ arising out of Media Activity; otherwise Loss excludes assumption of liability/knowing contract violations.", cite: "§ Glossary—Assumed Under Contract, p. 10; § Loss—carve-outs, p. 17" }
+
+  exclusions:
+    - label: "Dishonest/Criminal/Fraudulent acts (final adjudication)"
+      effect: "No coverage for dishonest, criminal or fraudulent acts unless there is final adjudication; defense may be provided until adjudication."
+      carvebacks: "Defense until final adjudication."
+      cite: "§ Misc. Professional Liability—Exclusions B (Dishonest, Criminal, Fraudulent or Malicious Acts), p. 2"
+    - label: "Injunctive relief"
+      effect: "No indemnity for non-monetary relief; insurer may provide defense."
+      carvebacks: "Defense for injunctive Claims."
+      cite: "§ Misc. Professional Liability—Exclusions E (Injunctive Relief), p. 2"
+    - label: "Owned Entity"
+      effect: "No coverage for Claims by entities owned/controlled or where an insured is an executive/employee."
+      carvebacks: "None noted."
+      cite: "§ Misc. Professional Liability—Exclusions F (Owned Entity), p. 2"
+    - label: "Patent infringement"
+      effect: "Patent infringement excluded."
+      carvebacks: "None noted."
+      cite: "§ Misc. Professional Liability—Exclusions G (Patent Infringement), p. 2"
+    - label: "Pollution"
+      effect: "Claims arising out of pollutants, cleanup, or related BI/PD excluded."
+      carvebacks: "None noted."
+      cite: "§ Misc. Professional Liability—Exclusions H (Pollutants), p. 2"
+    - label: "Securities claims"
+      effect: "Public offering and related securities laws excluded."
+      carvebacks: "None noted."
+      cite: "§ Misc. Professional Liability—Exclusions I (Securities Claims), p. 3"
+    - label: "Antitrust/Unfair competition/RICO"
+      effect: "Antitrust, unfair competition, deceptive trade practices, and RICO excluded."
+      carvebacks: "Advertising misrepresentation carveback only when directly tied to Personal/Proprietary Rights Injury."
+      cite: "§ Misc. Professional Liability—Exclusions J, p. 3"
+
+  definitions:
+    professional_services: { text: "Services performed by the Insured Entity or Insured Person within the scope of duties on behalf of the Insured Entity and specified in the attached Professional Services Endorsement.", cite: "§ Glossary—Professional Services, p. 13" }
+    technology_services: { text: "Services of a technical/telecommunications nature performed for others (e.g., consulting, design, implementation, integration, maintenance, hosting), as defined by the policy.", cite: "§ Glossary—Technology Services / Telecommunication Services, p. 15" }
+    wrongful_act: { text: "For Tech & Telecom: acts/errors in performing Technology/Telecom Services for others, or failure of Technology Products; for Media: acts/errors in Media Activity; for NS&P: acts/errors resulting in Security Breach/Privacy injury.", cite: "§ Glossary—Wrongful Act (V–VII), p. 18" }
+
+  conditions:
+    notice_reporting: { summary: "Notice of Claim/Privacy Event must be given as soon as practicable once certain executives learn of it, and no later than 90 days after policy expiration (or ERP, if purchased).", cite: "§ NOTICE/DATE OF CLAIM/INTERRELATED CLAIM CLAUSE A, p. 7" }
+    extended_reporting: { available: true, duration: null, cite: "§ EXTENDED REPORTING PERIOD (1–3 years options; 75%/125%/150% premiums), p. 4" }
+    territory: { summary: "Coverage applies worldwide.", cite: "§ TERRITORY, p. 2" }
+
+  unknowns:
+    - item: "EPS+ specific form code(s) and specimen wording"
+      searched: ["\"Enterprise Professional Solutions\" CNA specimen form", "CNA EPS+ specimen policy", "SERFF Continental Casualty TechComplete/EPS+ 2011 2012 2022", "CNA Technology & Telecommunications Liability Coverage Part specimen EPS+"]
+      next_best_sources: ["SERFF state portals (search issuer: Continental Casualty Company; product: Professional Liability; forms around 06/2011 and 06/2022)", "CNA broker/agent center for EPS+ specimen PDFs"]
+    - item: "Declared limits, aggregates and retentions for EPS+"
+      searched: ["CNA EPS+ declarations sample", "TechComplete EPS+ limits schedule", "CNA Privacy Event Expenses sublimit schedule"]
+      next_best_sources: ["Actual EPS+ policy declarations page", "SERFF filing forms/rate exhibits showing limit structures"]
+    - item: "Social engineering wording within EPS+ (whether expressly included under Cybercrime/Information Risk)"
+      searched: ["CNA EPS+ social engineering endorsement", "CNA TechComplete social engineering Information Risk", "Continental Casualty social engineering fraud endorsement CNA-85627-XX"]
+      next_best_sources: ["CNA Cyber/Cybercrime or Crime coverage specimens referencing 'Social Engineering Fraud' endorsements", "SERFF filings for Continental Casualty—Crime or Cyber endorsements explicitly titled 'Social Engineering'"]

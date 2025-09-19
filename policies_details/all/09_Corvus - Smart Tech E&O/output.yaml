@@ -1,0 +1,173 @@
+policy:
+  metadata:
+    carrier: "Corvus Insurance"
+    product: "Smart Cyber Insurance (with Smart Tech E&O Coverage Endorsement)"
+    form_code: "CB-101-001"
+    edition_date: null
+    jurisdiction: null
+    source:
+      link: "https://www.corvusinsurance.com/hubfs/Corvus%20Smart%20Cyber%20Policy%20Form.pdf"
+      type: "carrier_pdf"
+      citation: "§ Notice to Policyholders, p. 1"
+  compare:
+    trigger: "claims_made_and_reported"
+    duty: "duty_to_defend"
+    defense_costs: "inside_limits"
+    consent_to_settle:
+      required: true
+      hammer: "soft_70"
+      details: "If the Insured refuses a settlement the Company recommends and the claimant will accept, the insurer’s liability is capped at the recommended amount plus up to 70% of additional costs above that to settle."
+      cite: "§ Defense, Settlement and Investigation of Claims, p. 24"
+  limits:
+    per_claim_limit:
+      amount: null
+      currency: "USD"
+      cite: "§ Declarations table added by Endorsement (Each Claim/Aggregate placeholders), p. 1"
+    aggregate_limit:
+      amount: null
+      currency: "USD"
+      cite: "§ Policy Limits (sublimits form part of aggregate), p. 24"
+    retention:
+      amount: null
+      currency: "USD"
+      applies_to: "each_claim"
+      cite: "§ Declarations table added by Endorsement (Retention placeholders), p. 1"
+    sublimits:
+      - name: "Pre-Claim Support Services (Breach Management & Incident Response)"
+        amount: 1000000
+        currency: "USD"
+        applies_to: "aggregate"
+        cite: "§ Dynamic Loss Prevention Services, III.B (up to $1,000,000), p. 3"
+  coverage:
+    tech_services_eo:
+      covered: true
+      summary: "Damages and Defense Expenses for Claims arising from a Technology and Professional Services Wrongful Act first taking place on/after the Retroactive Date."
+      cite: "§ Insuring Agreement F. Technology and Professional Services Liability (added by Endorsement), p. 1"
+    media_liability:
+      covered: true
+      summary: "Damages and Defense Expenses arising from Media Activities."
+      cite: "§ Third Party Insuring Agreements I.C, p. 1"
+    ip_infringement:
+      covered: true
+      summary: "Covered for infringement of copyright, trademark, trade name, title, slogan, service mark or service name, but only with respect to software/code/firmware under Tech & Professional Services Wrongful Act; patent infringement excluded."
+      cite: "§ Definitions added—Technology and Professional Services Wrongful Act (item c), p. 4; § Exclusions 11 (Patent Infringement), p. 5"
+    privacy:
+      covered: true
+      summary: "Network Security & Privacy Liability for Claims arising from a Privacy Breach."
+      cite: "§ Third Party Insuring Agreements I.A, p. 1"
+    network_security:
+      covered: true
+      summary: "Liability for Claims arising from a Security Breach."
+      cite: "§ Third Party Insuring Agreements I.A, p. 1"
+    business_interruption:
+      covered: true
+      dependent_providers: true
+      system_failure: true
+      cite: "§ First Party Insuring Agreements II.A (Business Interruption), II.B (Contingent BI), II.D (System Failure), p. 2"
+    regulatory:
+      covered: true
+      summary: "Regulatory Investigations, Fines, and Penalties arising from a Privacy or Security Breach."
+      cite: "§ Third Party Insuring Agreements I.B, p. 1"
+    pci:
+      covered: true
+      summary: "PCI DSS Assessment Expenses and Defense Expenses arising from a Privacy or Security Breach."
+      cite: "§ Third Party Insuring Agreements I.D, p. 1"
+    breach_response:
+      covered: true
+      summary: "Third-party Breach Management Expenses indemnified by the Insured and first-party Breach Response & Remediation Expenses following a Privacy or Security Breach."
+      cite: "§ Third Party Insuring Agreements I.E, p. 1; § First Party Insuring Agreements II.H, p. 2"
+    cyber_extortion:
+      covered: true
+      summary: "Extortion Expenses and Extortion Payment for Cyber Extortion Threat (including ransomware)."
+      cite: "§ First Party Insuring Agreements II.G, p. 2"
+    social_engineering:
+      covered: true
+      summary: "Financial Fraud, Telecommunications Fraud, Phishing Attack, theft of Funds Held in Escrow or Personal Funds."
+      cite: "§ First Party Insuring Agreements II.E, p. 2"
+    contractual_liability_carveback:
+      exists: true
+      summary: "Breach of Contract exclusion does not apply to liability the Insured would have absent the contract, breach of privacy policy, PCI DSS assessments; Endorsement further carves back for unintentional breach of a written contract to provide Technology Services/Products or Professional Services (but not assumed indemnity/hold harmless)."
+      cite: "§ Exclusions 7 (carve-backs a–c), p. 4; § Endorsement—Breach of Contract carve-back (item d), p. 2"
+  exclusions:
+    - label: "Insured vs. Insured"
+      effect: "Claims by/on behalf of one Insured against another are excluded."
+      carvebacks: "Carve-back for Employee outside Control Group as a result of a Privacy or Security Breach; wording also replaced by Endorsement."
+      cite: "§ Exclusions 3, p. 4; § Endorsement item 5 (Insured vs Insured replacement), p. 1"
+    - label: "Breach of Contract"
+      effect: "Breach of any contract, warranty, guarantee or promise excluded."
+      carvebacks: "Carve-backs for liability existing absent contract, breach of Insured’s privacy policy, PCI DSS assessments; plus Endorsement adds unintentional breach of written contract to provide Technology/Professional Services (no assumed indemnity)."
+      cite: "§ Exclusions 7 (a–c), p. 4; § Endorsement item 6(d), p. 2"
+    - label: "Patent & Trade Secret"
+      effect: "Patent infringement excluded; trade secret misappropriation excluded unless arising from a Privacy or Security Breach."
+      carvebacks: "Trade secret carve-back when arising from Privacy/Security Breach."
+      cite: "§ Exclusions 11, p. 5"
+    - label: "Description of Price / Cost Guarantees"
+      effect: "Price description errors and cost guarantees/estimates exceeded excluded."
+      carvebacks: ""
+      cite: "§ Exclusions 8, p. 4"
+    - label: "Delay / Failure to Deliver or Perform"
+      effect: "Delay in delivery/performance excluded."
+      carvebacks: "Carve-back if delay/failure results from a Technology Services Wrongful Act and the Insured made diligent efforts to deliver/perform."
+      cite: "§ Endorsement item 7(b), p. 2"
+    - label: "Express Warranties; Guarantees of ROI"
+      effect: "Breach of express warranty/obligations beyond reasonable standard of care; guarantees of cost savings/profits/ROI excluded."
+      carvebacks: "Allowance for agreements to perform to reasonable industry standards."
+      cite: "§ Endorsement item 7(a)(i–iii), p. 2"
+    - label: "Unauthorized or Surreptitious Collection of Information / Consent Failures"
+      effect: "Unauthorized collection or failure to provide notice/assent excluded."
+      carvebacks: ""
+      cite: "§ Endorsement item 7(h), p. 3"
+    - label: "Loss/Theft/Transfer of Funds; Unfair Competition & False Advertising"
+      effect: "Loss/theft/transfer of funds in Insured’s or liable third party’s custody; unfair competition, false/misleading advertising, consumer protection violations excluded."
+      carvebacks: ""
+      cite: "§ Endorsement item 7(i), p. 3"
+    - label: "Product/Work Recall or Rework"
+      effect: "Costs to withdraw/recall/inspect/repair/replace/reproduce/remove/dispose of technology products, work product, or property worked on excluded."
+      carvebacks: ""
+      cite: "§ Endorsement item 7(l), p. 3"
+    - label: "FDCPA"
+      effect: "Claims alleging violations of the Fair Debt Collection Practices Act excluded."
+      carvebacks: ""
+      cite: "§ Endorsement item 7(k), p. 3"
+    - label: "Prior Acts pre-Retro Date"
+      effect: "Acts/omissions before applicable Retroactive Date excluded."
+      carvebacks: ""
+      cite: "§ Endorsement item 7(j), p. 3"
+    - label: "Employment Practices"
+      effect: "Employment-related practices excluded."
+      carvebacks: "Does not apply to a Privacy Breach."
+      cite: "§ Exclusions 6, p. 4"
+  definitions:
+    professional_services:
+      text: "Services performed for others by/on behalf of the Insured for a fee; excludes work as accountant, architect, surveyor, healthcare provider, lawyer, insurance/real estate agent or broker, or civil/structural engineer."
+      cite: "§ Definitions added—Professional Services (Endorsement), p. 3"
+    technology_services:
+      text: "IT services for others (for a fee), including systems analysis/design, website design, IT staffing, project management, systems integration/conversion, data backup/processing, email, SaaS/PaaS/NaaS/hosting, security consulting/training, custom programming, install/support, and network management."
+      cite: "§ Definitions added—Technology Services (Endorsement), p. 4"
+    wrongful_act:
+      text: "Act/error/omission/neglect/misstatement or unintentional breach of duty or written contract (including Privacy Injury) in rendering Technology or Professional Services; failure of Technology Products to perform; certain IP/media-adjacent allegations as specified."
+      cite: "§ Definitions added—Technology and Professional Services Wrongful Act (Endorsement), p. 4"
+  conditions:
+    notice_reporting:
+      summary: "Claims and Loss must be reported as soon as practicable during the Policy Period or Extended Reporting Period; notice of circumstances during the Policy Period treats later Claims/Loss as first made when notice was given."
+      cite: "§ Claims Conditions 2. Notice of Claim, Loss or Circumstance, p. 22"
+    extended_reporting:
+      available: true
+      duration: 60
+      cite: "§ General Conditions 10.a (Automatic 60 days) & 10.b (Optional ERP), p. 26–27"
+    territory:
+      summary: "Coverage applies anywhere in the world."
+      cite: "§ General Conditions 16. Coverage Territory, p. 30"
+  unknowns:
+    - item: "Form code/identifier for the Smart Tech E&O Coverage Endorsement"
+      searched: ["site:corvusinsurance.com \"Smart Tech E&O Coverage Endorsement\"", "\"Smart Tech E&O Coverage Endorsement\" form code", "filetype:pdf \"Smart Tech E&O Coverage Endorsement\"", "SERFF Corvus endorsement form code", "Corvus Smart Tech E&O endorsement specimen footer code"]
+      next_best_sources: ["https://portals.naic.org/serff-filing-access", "https://www.corvusinsurance.com/hubfs/Tech%20E-O/Corvus%20-%20Smart%20Tech%20EO%20specimen.pdf", "https://www.corvusinsurance.com/broker-resources"]
+    - item: "Edition date of CB-101-001 and the Tech E&O endorsement"
+      searched: ["\"CB-101-001\" edition date", "site:corvusinsurance.com \"CB-101-001\"", "Smart Cyber Insurance form edition date", "SERFF CB-101-001 Corvus", "Corvus Smart Tech E&O endorsement edition date"]
+      next_best_sources: ["https://portals.naic.org/serff-filing-access", "https://www.corvusinsurance.com/broker-resources", "https://info.corvusinsurance.com/smart-cyber-form"]
+    - item: "Actual Declarations limits, retentions, and any waiting periods for BI/Reputational Loss"
+      searched: ["\"Item 5\" Declarations Corvus Smart Cyber", "\"Item 6\" Declarations Waiting Period Corvus", "Corvus waiting period Business Interruption Reputational Loss", "sample Declarations Corvus Smart Cyber"]
+      next_best_sources: ["Bound policy Declarations page", "Broker specimen with filled-in Declarations", "https://www.corvusinsurance.com/broker-resources"]
+    - item: "Jurisdiction-specific endorsements or state variations"
+      searched: ["Corvus state amendatory endorsement Smart Cyber", "CB-101-001 state endorsement", "Corvus Smart Tech E&O state variation endorsement"]
+      next_best_sources: ["https://portals.naic.org/serff-filing-access", "State DOI SERFF public portals", "Issued policy jacket for the specific state"]

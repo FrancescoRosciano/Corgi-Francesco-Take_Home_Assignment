@@ -1,0 +1,17 @@
+{
+  "carrier": "Philadelphia Insurance (PHLY)",
+  "program": "Integrated Technology E&O and Cyber Risk",
+  "paper": "Admitted",
+  "states_available": "Not specified",
+  "form_codes_and_edition": "Form 36-12151 (09/23)",
+  "specimen_pdf_link": "https://www.phly.com/Files/Integrated%20Technology%20Error%20and%20Omissions%20and%20Cyber%20Risk%20Coverage%20Form36-12151.pdf",
+  "product_page_link": "https://www.phly.com/mplDivision/professionalLiability/IntegratedTechnology.aspx",
+  "min_max_limit": "Not specified",
+  "target_segments": "Complex multifaceted technology companies, software firms, IT services",
+  "notable_features": "Bell Endorsement with $50K limits for various coverages, Technology Products and Services coverage, breach of warranties coverage, copyright infringement, business interruption",
+  "last_verified_date": "September 2025",
+  "pdf_files": [
+    "Philadelphia Insurance (PHLY) - Integrated Technology E&O and Cyber Risk.pdf"
+  ],
+  "source_csv_row": 23
+}

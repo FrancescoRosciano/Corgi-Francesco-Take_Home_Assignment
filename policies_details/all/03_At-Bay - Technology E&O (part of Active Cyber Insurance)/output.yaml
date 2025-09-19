@@ -1,0 +1,123 @@
+policy:
+  metadata:
+    carrier: "At-Bay Specialty Insurance Company"
+    product: "Technology E&O (part of Active Cyber Insurance)"
+    form_code: "AB-CYB-001.2"
+    edition_date: "2023-08"
+    jurisdiction: null
+    source:
+      link: "https://www.at-bay.com/wp-content/uploads/2023/06/Cyber-Insurance-Policy-Form.pdf"
+      type: "carrier_pdf"
+      citation: "p. 1"
+
+  compare:
+    trigger: "claims_made_and_reported"
+    duty: "duty_to_defend"
+    defense_costs: "inside_limits"
+    consent_to_settle:
+      required: true
+      hammer: "unclear"
+      details: "Insurer pays 100% of pre-refusal settlement value + 80% of all further Damages and Claim Expenses if insured refuses recommended settlement (insured coinsurance 20%)."
+      cite: "§ IV.B.1, p. 6–7"
+
+  limits:
+    per_claim_limit:
+      amount: null
+      currency: "USD"
+      cite: "§ II.B (Sub-Limits set on Declarations – ITEM 6), p. 3"
+    aggregate_limit:
+      amount: null
+      currency: "USD"
+      cite: "§ II.A.1–2 (Aggregate Limit set on Declarations – ITEM 4), p. 3"
+    retention:
+      amount: null
+      currency: "USD"
+      applies_to: "each_claim"
+      cite: "§ III.1 (Retention amounts set on Declarations by Insuring Agreement), p. 4–5"
+    sublimits: []
+
+  coverage:
+    tech_services_eo: { covered: false, summary: "No Tech/Professional Services E&O insuring agreement in this form.", cite: "§ I (Insuring Agreements list A–F only; no Tech/Professional Services E&O), p. 2–4" }
+    media_liability: { covered: true, summary: "Media Liability for Claims first made during the Policy Period/ERP for a Media Wrongful Act.", cite: "§ I.F.1, p. 3–4" }
+    ip_infringement: { covered: true, summary: "IP offenses (e.g., trademark/title/copyright) included within Media Wrongful Act definition.", cite: "§ V.40(b)–(c), p. 14" }
+    privacy: { covered: true, summary: "Information Privacy Liability (including Regulatory Liability, Event Response/Management, and PCI-DSS).", cite: "§ I.A.1–4, p. 2" }
+    network_security: { covered: true, summary: "Network Security Liability plus Event Response/Recovery for Network Security Events.", cite: "§ I.B.1–2, p. 2–3" }
+    business_interruption:
+      covered: true
+      dependent_providers: true
+      system_failure: false
+      cite: "§ I.C.1–2 (Direct & Contingent BI), p. 3; § V.65 (System Disruption must be directly caused by Info Privacy or Network Security Event), p. 20"
+    regulatory: { covered: true, summary: "Regulatory Claims incl. GDPR/other regulatory penalties and assessments/expenses.", cite: "§ I.A.2, p. 2; § V.58–59, p. 17" }
+    pci: { covered: true, summary: "PCI-DSS Claims incl. Penalties (assessments/fines/chargebacks/reissuance/fraud recoveries) and Response Expenses (PFI/QSA).", cite: "§ I.A.4, p. 2; § V.47–48, p. 16" }
+    breach_response: { covered: true, summary: "Event Response & Management/Recovery (technical forensics, legal, notification, credit monitoring, PR).", cite: "§ I.A.3 & I.B.2, p. 2–3; § V.67, p. 19" }
+    cyber_extortion: { covered: true, summary: "Extortion Loss for Extortion Threats first discovered during the Policy Period.", cite: "§ I.D.1, p. 3" }
+    social_engineering: { covered: true, summary: "Fraudulent Inducement (social engineering) coverage under Financial Fraud.", cite: "§ I.E.1, p. 2–3" }
+    contractual_liability_carveback: { exists: true, summary: "Contract exclusion has carve-backs incl. liability that would attach absent contract; confidentiality/security duties; implied/statutory standard of care; certain privacy/network duties; implied-contract idea misappropriation (media); PCI-DSS Claim; limited HIPAA business associate breach.", cite: "§ VI.A.2(a)–(g), p. 21–22" }
+
+  exclusions:
+    - label: "Conduct (fraud/intentional gain)"
+      effect: "Bars coverage for fraudulent/criminal/intentional acts and illegal profit; defense still provided until final adjudication."
+      carvebacks: "Defense and Damages until final, non-appealable adjudication; no imputation among Insured Persons."
+      cite: "§ VI.A.1, p. 21"
+    - label: "Contract"
+      effect: "Excludes liability for breach of contract, warranty, or guarantee."
+      carvebacks: "Liability that would attach absent contract; confidentiality/privacy/security duties; implied/statutory duty to prevent events; HIPAA BA unintentional breach; implied-contract idea misappropriation (media); PCI-DSS Claim."
+      cite: "§ VI.A.2, p. 21–22"
+    - label: "Bodily Injury / Property Damage"
+      effect: "Excludes BI/PD."
+      carvebacks: "Emotional distress/humiliation from Media Wrongful Act; mental injury from Information Privacy Wrongful Act."
+      cite: "§ VI.A.3–4, p. 22"
+    - label: "Prior Notice / Prior Knowledge / Pending or Prior Proceedings"
+      effect: "Bars known matters and prior-noticed events/claims; bars matters underlying prior/pending proceedings as of the Prior & Pending date."
+      carvebacks: ""
+      cite: "§ VI.A.5–7, p. 22–23"
+    - label: "Intellectual Property (general)"
+      effect: "Excludes IP infringement generally."
+      carvebacks: "Does not apply to otherwise covered Media Wrongful Acts (with software IP carve-out); carve-backs for certain privacy/network claims."
+      cite: "§ VI.A.12 and provisos, p. 23–24"
+    - label: "Insured vs. Insured (Third-Party)"
+      effect: "Bars claims by/for Insureds and certain related entities."
+      carvebacks: "Employee privacy claims tied to Info Privacy Events; regulatory privacy claims; some Insured Person claims."
+      cite: "§ VI.B.2(d)–(e), p. 25"
+    - label: "Unsolicited Communications (TCPA, etc.)"
+      effect: "Excludes violations of laws on unsolicited electronic communications."
+      carvebacks: "Carvebacks for Privacy Regulation violations or failures to protect leading to PPI release (Info Privacy)."
+      cite: "§ VI.B.14, p. 23"
+    - label: "Fees or Chargebacks"
+      effect: "Excludes the insured’s own fees/chargebacks/merchant fees."
+      carvebacks: "Carveback for PCI-DSS Claims."
+      cite: "§ VI.B.13, p. 23"
+    - label: "Infrastructure / Acts of God"
+      effect: "Excludes claims arising out of physical perils (e.g., fire, flood, wind, earthquake, etc.)."
+      carvebacks: ""
+      cite: "§ VI.A.11, p. 22"
+
+  definitions:
+    professional_services: { text: "Not found in this form.", cite: "Not found" }
+    technology_services: { text: "Not found in this form.", cite: "Not found" }
+    wrongful_act: { text: "Wrongful Act means any Information Privacy Wrongful Act, Network Security Wrongful Act, or Media Wrongful Act.", cite: "§ V.69, p. 21" }
+
+  conditions:
+    notice_reporting: { summary: "As a condition precedent, notice as soon as practicable; all Claims/Cyber Events must be noticed no later than 90 days after end of Policy Period (or end of ERP for Claims during ERP).", cite: "§ VII.E.1(c)–(d), p. 30–31" }
+    extended_reporting: { available: true, duration: null, cite: "§ VII.D.1–2 (60-day automatic discovery; optional 1- or 2-year ERP at 75%/125% premium), p. 29–30" }
+    territory: { summary: "Coverage applies worldwide (events occurring/discovered, Claims made, and Losses incurred anywhere in the world).", cite: "§ VII.S, p. 35" }
+
+  unknowns:
+    - item: "Per-claim limit, aggregate limit, and retention dollar amounts (Declarations)"
+      searched:
+        - "site:at-bay.com \"Cyber Insurance Policy Declarations\""
+        - "\"ITEM 6\" Declarations AB-CYB-001.2"
+        - "At-Bay Cyber declarations specimen limits retention"
+      next_best_sources:
+        - "Broker-issued specimen with completed Declarations"
+        - "Policy binder/declarations from the insured’s placement"
+        - "SERFF Filing Access (state portals): https://portals.naic.org/serff-filing-access"
+    - item: "Technology/Professional Services E&O insuring agreement (separate Tech & Cyber form AB-TEO-001.2)"
+      searched:
+        - "\"AB-TEO-001.2\""
+        - "At-Bay Technology & Cyber Insurance Policy Form"
+        - "SERFF At-Bay Specialty Insurance Company technology E&O form"
+      next_best_sources:
+        - "At-Bay Technology & Cyber Insurance Policy Form page: https://www.at-bay.com/broker-documents/technology-cyber-insurance-policy-form/"
+        - "SERFF Filing Access (state portals): https://portals.naic.org/serff-filing-access"
+        - "At-Bay Tech E&O Coverage Summary (gated): https://www.at-bay.com/broker-documents/tech-eo-overview/"

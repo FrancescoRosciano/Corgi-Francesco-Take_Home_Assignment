@@ -1,0 +1,152 @@
+policy:
+  metadata:
+    carrier: "ACE American Insurance Company (Chubb)"
+    product: "Professional Enterprise Risk Management Policy"
+    form_code: "PF-50822"
+    edition_date: "2019-02"
+    jurisdiction: "US-NC"
+    source:
+      link: "https://irp.cdn-website.com/c9a26f11/files/uploaded/23-24%20E-O%20Policy%20(Chubb).pdf"
+      type: "other"
+      citation: "Declarations (PF-50821 02/19), p. 1; policy footer PF-50822 (02/19)"
+  compare:
+    trigger: "claims_made"
+    duty: "hybrid"
+    defense_costs: "inside_limits"
+    consent_to_settle:
+      required: true
+      hammer: "unclear"
+      details: "If the Named Insured refuses a settlement recommended by the Insurer, limits are reduced to the proposed settlement+expenses to date plus 80% of subsequent covered Damages and Claims Expenses (insured bears 20%)."
+      cite: "§ IX. Defense and Settlement (D), p. 39"
+  limits:
+    per_claim_limit:
+      amount: 1000000
+      currency: "USD"
+      cite: "Declarations Item 3A (Maximum Single Limit of Insurance), p. 1"
+    aggregate_limit:
+      amount: 1000000
+      currency: "USD"
+      cite: "Declarations Item 3B (Maximum Policy Aggregate Limit), p. 1"
+    retention:
+      amount: 1000
+      currency: "USD"
+      applies_to: "each_claim"
+      cite: "Declarations Item 4 (P. Professional Liability — Each Claim Retention), p. 1"
+    sublimits:
+      - name: "Non-Panel Response Provider (Cyber Incident Response)"
+        amount: null
+        currency: "USD"
+        applies_to: "each_claim"
+        cite: "Declarations Item 4A2 (Non-Panel Response Provider — limits set on Declarations if elected), p. 2"
+  coverage:
+    tech_services_eo: 
+      covered: true
+      summary: "Professional Liability for 'Professional Services' including 'Professional Technology Services' (e.g., software design, hosting, integration) when a Claim is first made during the Policy Period and the Professional Incident occurs after the Retroactive Date."
+      cite: "§ I.P. Professional Liability, p. 34; § II. Definitions — Professional Services/Professional Technology Services, p. 28"
+    media_liability: 
+      covered: true
+      summary: "Electronic, Social and Printed Media Liability for Media Incidents (e.g., copyright, trademark, defamation) in publicly displayed Media Content."
+      cite: "§ I.F. Electronic, Social and Printed Media Liability, p. 33; § II. Definitions — Media Incident/Media Content, p. 26"
+    ip_infringement:
+      covered: true
+      summary: "Covered for media-related IP (e.g., copyright/trademark) under Media Liability; otherwise excluded by Intellectual Property exclusion (with limited carve-backs)."
+      cite: "§ I.F. (media IP per Media Incident), p. 33; § III.A.13 Intellectual Property exclusion & carve-backs, p. 32–33"
+    privacy: 
+      covered: true
+      summary: "Cyber, Privacy and Network Security Liability for violations involving Protected Information, privacy policy violations, and Regulatory Proceedings arising from a Cyber Incident."
+      cite: "§ I.E. Cyber, Privacy and Network Security Liability, p. 32; § II. Definitions — Protected Information/Regulatory Proceeding, p. 28–29"
+    network_security: 
+      covered: true
+      summary: "Liability for failures of network security (Network Security Failure) including unauthorized access, malware, denial of service, and other Cyber Incidents."
+      cite: "§ I.E., p. 32; § II. Definitions — Network Security Failure/Cyber Incident (for E), p. 25"
+    business_interruption:
+      covered: true
+      dependent_providers: true
+      system_failure: false
+      cite: "§ I.B. Business Interruption and Extra Expense (including Contingent BI and Shared Computer System), p. 34; § II. Definitions — Interruption in Service (requires Malicious Computer Act), p. 24"
+    regulatory: 
+      covered: true
+      summary: "Defense and insurability of civil monetary fines/penalties in a Regulatory Proceeding (where insurable by law); Insurer has right, but not duty, to defend Regulatory Proceedings."
+      cite: "§ I.E. (Regulatory Proceeding), p. 32; § II. Definitions — Regulatory Proceeding/Regulatory Fines, p. 29; § IX.B, p. 39"
+    pci: 
+      covered: true
+      summary: "Payment Card Loss included as Damages and carved back from contractual liability exclusion for Insuring Agreement E."
+      cite: "§ II. Definitions — Payment Card Loss, p. 23; § III.A.11(d) Contractual Liability carve-back, p. 32"
+    breach_response: 
+      covered: true
+      summary: "Cyber Incident Response Fund for forensic, legal, notification, PR, and credit monitoring costs; different limits apply if Non-Panel Response Provider is used."
+      cite: "§ I.A. Cyber Incident Response Fund, p. 33; Declarations Item 4A1–4A2 note, p. 1"
+    cyber_extortion: 
+      covered: true
+      summary: "Network Extortion coverage for extortion demands and Extortion Expenses (including cryptocurrency) due to Network Extortion Threats."
+      cite: "§ I.D. Network Extortion, p. 34; § II. Definitions — Extortion Expenses, p. 24"
+    social_engineering: 
+      covered: false
+      summary: "No base insuring agreement for social engineering/fraudulent instruction; endorsement adds exclusion for failure to safeguard funds under Insuring Agreement P."
+      cite: "Not found (no affirmative insuring agreement); PF-50943 Failure to Safeguard Funds Exclusion, p. 58–59"
+    contractual_liability_carveback: 
+      exists: true
+      summary: "Contract exclusion does not apply to: (a) unintentional failure to perform Professional Services (P); (b) disclosure/theft of Protected Information and privacy policy violations (A, E); (c) Payment Card Loss (E); (d) misappropriation of idea under implied contract (F)."
+      cite: "§ III.A.11(a)–(e), p. 32"
+  exclusions:
+    - label: "Contractual Liability"
+      effect: "Excludes liability assumed under contract unless it would attach absent the contract; multiple carve-backs (P, A/E, E, F)."
+      carvebacks: "Unintentional failure to perform Professional Services (P); disclosure/theft of Protected Information and privacy policy violations (A, E); Payment Card Loss (E); misappropriation of idea under implied contract (F)."
+      cite: "§ III.A.11, p. 32"
+    - label: "Intellectual Property"
+      effect: "Excludes IP infringement/misappropriation broadly, with limited carve-back for trade secret theft under A–D; media IP handled under F."
+      carvebacks: "Trade Secret theft (A–D) from a Cyber Incident."
+      cite: "§ III.A.13 and carve-backs, p. 32–33"
+    - label: "Bodily Injury"
+      effect: "Excludes bodily injury; carve-back for mental anguish from privacy (E) and media (F) incidents."
+      carvebacks: "Mental injury/anguish from E or F."
+      cite: "§ III.A.5 (as amended), p. 63–64"
+    - label: "Property Damage"
+      effect: "Excludes PD and loss of use; expressly bars PD under P and A–F."
+      carvebacks: "None in base form (amended endorsement clarifies scope)."
+      cite: "PF-50845 Property Damage Exclusion Amended, p. 60–61"
+    - label: "Conduct / Illegal Profit"
+      effect: "Excludes fraudulent/criminal/intentional acts and illegal profit; defense advanced until final adjudication."
+      carvebacks: "Defense until final, non-appealable adjudication; limited imputation rules."
+      cite: "§ III.A.1, p. 30"
+    - label: "Prior Knowledge / Prior Notice / Pending or Prior"
+      effect: "Bars Claims tied to known incidents, prior notices, or prior proceedings before Pending or Prior Proceedings Date."
+      carvebacks: ""
+      cite: "§ III.A.2–4, p. 30–31"
+    - label: "Failure to Safeguard Funds (endorsement)"
+      effect: "Excludes claims alleging failure to safeguard funds or acting on fraudulent instructions (under P)."
+      carvebacks: ""
+      cite: "PF-50943, p. 58–59"
+    - label: "Pollution / Environmental Agents (endorsement)"
+      effect: "Adds exclusion for Environmental Agents (e.g., mold, bacteria, viruses) under P and F."
+      carvebacks: ""
+      cite: "PF-50900 & PF-50917, p. 52–54"
+    - label: "Nuclear"
+      effect: "Excludes nuclear hazards."
+      carvebacks: ""
+      cite: "PF-50913, p. 61–62"
+  definitions:
+    professional_services:
+      text: "Services specified in Item 9 of the Declarations or Professional Technology Services, performed by or on behalf of an Insured for others for a fee."
+      cite: "§ II. Definitions — Professional Services, p. 28"
+    technology_services:
+      text: "Technology training/consulting; information systems/network analysis, design, programming, integration; software design/distribution/hosting/servicing/installation/maintenance; website design/programming/maintenance; database design or data caching/collecting/compiling/processing/mining/recording/analysis/destruction."
+      cite: "§ II. Definitions — Professional Technology Services, p. 28"
+    wrongful_act:
+      text: "Professional Incident means any error, misstatement, misleading statement, act, omission, neglect, or breach of duty committed or attempted solely in the rendering of or failure to render Professional Services (excluding Media or Cyber Incidents)."
+      cite: "§ II. Definitions — Professional Incident, p. 28"
+  conditions:
+    notice_reporting:
+      summary: "Provide written notice of Cyber Incident or Claim as soon as practicable, but no later than 90 days after policy expiration (or ERP). Potential Claim (circumstance) notices allowed; later Claims from such notices deemed first made when notice was received."
+      cite: "§ VIII.A–D Notice, p. 38–39"
+    extended_reporting:
+      available: true
+      duration: 12
+      cite: "§ V. Extended Reporting Period (A–E), p. 36; Declarations Item 7, p. 2"
+    territory:
+      summary: "Not found in base specimen."
+      cite: "Not found"
+  unknowns:
+    - item: "Exact CHUBB DIGITECH® Enterprise Risk Management base form code and full specimen wording"
+      searched: ["\"CHUBB DIGITECH Enterprise Risk Management Policy\" specimen", "PF-48169 Chubb Cyber ERM specimen", "site:westchester.com DigiTech ERM brochure", "site:chubb.com DigiTech ERM brochure", "SERFF ACE/Westchester DigiTech ERM form code filing"]
+      next_best_sources: ["DIGITECH® ERM brochure (Westchester) — https://www.westchester.com/content/dam/chubb-sites/westchester/us-en/documents/westchester_digitechenterpriseriskmanagementsmall.pdf", "Chubb Cyber ERM specimen PF-48169 (02/19) — https://danvillein.gov/egov/documents/1644588217_45448.pdf", "Westchester DigiTech ERM product page — https://www.westchester.com/en/products/small-business/professional-lines/digitech-enterprise-risk-management.html"]

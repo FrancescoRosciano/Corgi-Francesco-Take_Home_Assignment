@@ -1,0 +1,17 @@
+{
+  "carrier": "Zurich North America",
+  "program": "Pro Plus (Technology & Cyber)",
+  "paper": "Admitted or surplus lines (global) depending on jurisdiction",
+  "states_available": "Most states",
+  "form_codes_and_edition": "Not publicly listed",
+  "specimen_pdf_link": "https://edge.sitecorecloud.io/zurichinsura267-zwpzna-prod-c557/media/project/zurich-headless/zna/docs/kh/zws/pro-plus-sales-sheet.pdf",
+  "product_page_link": "https://www.zurichna.com/industries/technology-insurance",
+  "min_max_limit": "Line size up to $20m or more",
+  "target_segments": "Technology companies, from startups to global organisations, manufacturing, professional service industries",
+  "notable_features": "Modular professional liability and cyber product; broad coverage with no proof of negligence requirement; covers inadvertent release of trade secrets, software code infringement and media liability; includes breach response, business interruption, digital asset replacement, cyber extortion, system failure and social engineering; worldwide coverage; flexible modular format, duty to defend, defense costs for privacy-related regulatory proceedings, consumer-redress funds coverage, cyber security solutions",
+  "last_verified_date": "2025-09-17",
+  "pdf_files": [
+    "Zurich North America - Pro Plus (Technology & Cyber).pdf"
+  ],
+  "source_csv_row": 9
+}

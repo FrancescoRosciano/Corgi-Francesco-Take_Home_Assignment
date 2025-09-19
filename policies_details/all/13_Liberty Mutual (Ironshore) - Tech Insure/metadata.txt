@@ -1,0 +1,15 @@
+{
+  "carrier": "Liberty Mutual (Ironshore)",
+  "program": "Tech Insure",
+  "paper": "Admitted",
+  "states_available": "Not specified",
+  "form_codes_and_edition": "Not specified",
+  "specimen_pdf_link": "Not found — specimen wording not public; request via Liberty/Ironshore portal",
+  "product_page_link": "https://business.libertymutual.com/commercial-solutions/professional-liability/technology-professional-liability/",
+  "min_max_limit": "Up to $20M primary, Up to $20M excess",
+  "target_segments": "Software developers, cloud computing providers, website design firms, IT consultants",
+  "notable_features": "Combined E&O, cyber, and media liability; unintentional breach of contract coverage; copyright infringement coverage; worldwide coverage; defense costs coverage",
+  "last_verified_date": "September 2025",
+  "pdf_files": [],
+  "source_csv_row": 19
+}

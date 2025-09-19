@@ -1,0 +1,18 @@
+{
+  "carrier": "USLI",
+  "program": "MicroTek Professional Liability Package",
+  "paper": "Admitted",
+  "states_available": "All states",
+  "form_codes_and_edition": "Not specified",
+  "specimen_pdf_link": "https://insurance.usli.com/media/z3eete3x/hz_professional_microtek.pdf",
+  "product_page_link": "https://customers.usli.com/sites/docs/newsletter/2021/september/Technology-Professionals.pdf",
+  "min_max_limit": "E&O up to $5M, revenues up to $1M, 7 or fewer consultants",
+  "target_segments": "Smaller technology firms, artificial intelligence, SaaS, custom software developers, managed service providers",
+  "notable_features": "Premiums as low as $995, 50/50 hammer clause, $0 deductible on E&O, intellectual property coverage option, full prior acts available, broad definition of services",
+  "last_verified_date": "September 2025",
+  "pdf_files": [
+    "USLI - MicroTek Professional Liability Package - Factsheet.pdf",
+    "USLI - MicroTek Professional Liability Package.pdf"
+  ],
+  "source_csv_row": 24
+}

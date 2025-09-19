@@ -1,0 +1,17 @@
+{
+  "carrier": "Beazley",
+  "program": "MediaTech (Technology E&O + Cyber)",
+  "paper": "Surplus lines (non-admitted)",
+  "states_available": "Not specified (global)",
+  "form_codes_and_edition": "F00731 022019",
+  "specimen_pdf_link": "https://www.beazley.com/globalassets/product-documents/policy-form/beazley-media-tech-policy-us.pdf",
+  "product_page_link": "https://www.beazley.com/en-US/products/cyber-usa/mediatech/",
+  "min_max_limit": "Up to $25m/€25m/£15m",
+  "target_segments": "Technology & business service companies",
+  "notable_features": "Claims-made policy; integrated technology E&O, media and cyber insuring agreements; unintentional breach‑of‑contract carve‑back; claims expenses erode limits; worldwide territory; includes breach response, regulatory defense, payment card liabilities, first party data & network loss, eCrime, Criminal reward",
+  "last_verified_date": "2025-09-17",
+  "pdf_files": [
+    "Beazley - MediaTech (Technology E&O + Cyber).pdf"
+  ],
+  "source_csv_row": 2
+}
